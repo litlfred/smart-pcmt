@@ -3,7 +3,7 @@
              xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
              xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
              id="Definitions_PC_DT_03"
-             name="PC-DT-03: WHO-hosted PCMT Catalogue Access Matrix"
+             name="PC-DT-03: Catalogue access"
              namespace="https://litlfred.github.io/smart-pcmt/dmn/PC-DT-03">
   <description>
     PC-DT-03: Catalogue access matrix in the WHO-hosted Product Catalogue Management Tool (PCMT).
@@ -13,7 +13,7 @@
     Tracked in litlfred/smart-ra#145 (Step 3) and litlfred/dth-pc#2 section 2e (PC-8).
   </description>
 
-  <decision id="Decision_PC_DT_03" name="Catalogue Access Matrix (user group x catalogue -> view / edit / own)">
+  <decision id="Decision_PC_DT_03" name="Catalogue access">
     <description>
       Determines whether a user group (WHOGroup, CAGroup, CBGroup) may view, edit, or own a target
       catalogue (Catalogues -> WHO, Catalogues -> CA, Catalogues -> CB) in the WHO-hosted PCMT
