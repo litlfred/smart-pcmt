@@ -49,12 +49,12 @@
     {
       "harness": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "ref": "3c67d95cc484fe24d84eb335edd8b4a792183e08"
+      "ref": "0d7b10262be439884ecc8e5ccad0622c45571eb1"
     },
     {
       "harness": "dth-pc",
       "repository": "litlfred/dth-pc",
-      "ref": "02495368be1ecc3b9437a3285449cf72b1a63d6d"
+      "ref": "d90fe5610f52eddf9424cb18a17111b61e7b7b02"
     }
   ],
   "instances": [
@@ -213,7 +213,7 @@
     {
       "instance": "dth-pc",
       "repository": "litlfred/dth-pc",
-      "sha": "02495368be1ecc3b9437a3285449cf72b1a63d6d",
+      "sha": "d90fe5610f52eddf9424cb18a17111b61e7b7b02",
       "upstreamRoot": "",
       "path": "dth-pc",
       "via": "dth-pc",
@@ -227,7 +227,7 @@
           "id": "glossary",
           "path": "dth-pc/glossary",
           "upstreamPath": "glossary",
-          "treeDigest": "2d273019772808f4cca966479c0a04f9a36866c047ba7e536872fd7828fd956f",
+          "treeDigest": "59eaa799c91dd4c319e8fad5c29e6c6870c43ab18b81c998e0d941225b27086d",
           "files": 1
         }
       ],
@@ -235,14 +235,14 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-10-31",
-        "ref": "02495368be1ecc3b9437a3285449cf72b1a63d6d",
+        "ref": "d90fe5610f52eddf9424cb18a17111b61e7b7b02",
         "approver": "unverified"
       }
     },
     {
       "instance": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "sha": "3c67d95cc484fe24d84eb335edd8b4a792183e08",
+      "sha": "0d7b10262be439884ecc8e5ccad0622c45571eb1",
       "upstreamRoot": "",
       "path": "dth-sc",
       "via": "dth-sc",
@@ -256,7 +256,7 @@
           "id": "glossary",
           "path": "dth-sc/glossary",
           "upstreamPath": "glossary",
-          "treeDigest": "e6a6590222e8a2e3a75c5fed524e5193b3dcdb55a93d232f5a867c1f3b41f45d",
+          "treeDigest": "add58309a4526aed313f4683dc983ecbff9b77592283f973b08e53c354f67f6d",
           "files": 1
         }
       ],
@@ -264,7 +264,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-10-31",
-        "ref": "3c67d95cc484fe24d84eb335edd8b4a792183e08",
+        "ref": "0d7b10262be439884ecc8e5ccad0622c45571eb1",
         "approver": "unverified"
       }
     },

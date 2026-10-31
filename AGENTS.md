@@ -36,10 +36,14 @@ logical models here realise those concepts. They never redefine them:
 - code lists (Status, NameType, RegulationType, ProductRelationship,
   AttributeType) stay FHIR CodeSystems, not glossary terms.
 
-The logical models (`GenericProduct`, `TradeItem`, `ProductAuthorization`, and
-`RegulatedTradeItem` under `input/fsh/models/`, plus `PCMTGlossary#unit-of-use`
-in `input/fsh/codesystems/glossary.fsh`) realise the three-layer product master
-data separation from handbook Ch 2 (pp. 28-29, Fig. 9). The WHO-hosted PCMT
+The logical models (`Product`, `DthPcTradeItem`, and `DthPcRegulatedTradeItem` in
+`input/fsh/models/dth-pc/dth-pc-fig-9.fsh`, alongside `GenericProduct`,
+`TradeItem`, `ProductAuthorization`, and `RegulatedTradeItem` under
+`input/fsh/models/`, plus `PCMTGlossary#unit-of-use` in
+`input/fsh/codesystems/glossary.fsh`) realise the three-layer product master
+data separation from handbook Ch 2 (pp. 28-29, Fig. 9), with example instances
+in `input/fsh/examples/dth-pc-*.fsh` and figure/table generator
+`scripts/dth_pc_figures.py`. The WHO-hosted PCMT
 catalogue access matrix (`decisions/PC-DT-03.dmn`) and catalogue access, copy,
 and export workflow (`processes/PC-BP-09-pcmt-access.bpmn`) realise handbook
 Ch 6 §6.2 (pp. 46-47, Fig. 14). Tracked in litlfred/smart-ra#145 and
