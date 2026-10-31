@@ -4,14 +4,18 @@
 The WHO Digital transformation handbook for health product catalogues (dth-pc)
 shows example products twice: Fig. 12 (mapping across the product packaging
 hierarchy using FHIR resources) and Fig. 13, the NPC01101001 table. Both are
-written once, as Product instances in input/fsh/examples/dth-pc-*.fsh. This
+written once, as Product instances in input/fsh/examples/dth-pc-*.fsh. Its
+Fig. 9 data model is this IG's Product plus the DthPcTradeItem and
+DthPcRegulatedTradeItem logical models (input/fsh/models/dth-pc/). This
 script reads what sushi compiled from them and writes:
 
+  dth-pc-fig-9.svg       the three classes, one box per logical model
+  dth-pc-fig-9-authorization.md   DthPcRegulatedTradeItem beside ProductAuthorization
   dth-pc-fig-12.svg      the packaging figure, one box per product
   dth-pc-npc-table.md    the NPC01101001 table, one row per trade item
 
-Nothing here holds product data: every label, identifier and number comes
-from the compiled JSON.
+Nothing here holds product data or element names: every label, identifier,
+number and cardinality comes from the compiled JSON.
 
     sushi build . && python3 scripts/dth_pc_figures.py \
         fsh-generated/resources <out-dir> --commit <smart-pcmt sha>
@@ -28,6 +32,9 @@ DAR = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 REPO = "https://github.com/litlfred/smart-pcmt"
 FIG12_FSH = "input/fsh/examples/dth-pc-packaging.fsh"
 NPC_FSH = "input/fsh/examples/dth-pc-npc-lamivudine.fsh"
+FIG9_FSH = "input/fsh/models/dth-pc/dth-pc-fig-9.fsh"
+PRODUCT_FSH = "input/fsh/models/product.fsh"
+AUTH_FSH = "input/fsh/models/ProductAuthorization.fsh"
 
 
 def load(resources: pathlib.Path, prefix: str) -> dict[str, dict]:
@@ -66,6 +73,87 @@ def is_generic(pid: str, products: dict) -> bool:
 
 def source_link(commit: str, path: str) -> str:
     return f"{REPO}/blob/{commit}/{path}"
+
+
+# ---------------------------------------------------------------- Fig. 9
+
+# The classes in the figure's order, the heading the handbook prints for each,
+# and the FSH file that defines it. The associations are the figure's.
+FIG9_CLASSES = [
+    ("Product", "Generic Product", PRODUCT_FSH),
+    ("DthPcTradeItem", "Trade Item", FIG9_FSH),
+    ("DthPcRegulatedTradeItem", "Regulated Trade Item", FIG9_FSH),
+]
+FIG9_ASSOC = [("1", "0..*"), ("1", "0..*")]
+C_W, C_GAP, C_LH, C_TOP, C_HEAD = 274, 54, 24, 16, 58
+C_FILL, C_INK, C_LINE = "#9FD6EE", "#1F2854", "#8C94AC"
+
+
+def elements(sd: dict) -> list[tuple[int, str, str]]:
+    """(depth, name, cardinality) for every element below the root, in order."""
+    out = []
+    for e in sd["differential"]["element"]:
+        parts = e["path"].split(".")
+        if len(parts) < 2:
+            continue
+        out.append((len(parts) - 2, parts[-1], f"{e.get('min', '')}..{e.get('max', '')}"))
+    return out
+
+
+def fig9_svg(sds: dict, commit: str) -> str:
+    rows = {sid: elements(sds[sid]) for sid, _, _ in FIG9_CLASSES}
+    h = C_TOP * 2 + C_HEAD + max(len(r) for r in rows.values()) * C_LH
+    w = len(FIG9_CLASSES) * C_W + (len(FIG9_CLASSES) - 1) * C_GAP + 2
+    x = lambda i: 1 + i * (C_W + C_GAP)
+    e = html.escape
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" '
+         f'font-family="\'Source Sans Pro\',\'Open Sans\',Helvetica,Arial,sans-serif" font-size="14" role="img">',
+         '<title>Relationship between Generic Product, Trade Item and Regulated Trade Item, '
+         'drawn from the smart-pcmt logical models</title>']
+    for i, (sid, heading, fsh) in enumerate(FIG9_CLASSES):
+        x0 = x(i)
+        o.append(f'<g id="class-{sid}"><rect x="{x0}" y="0" width="{C_W}" height="{h}" rx="12" fill="{C_FILL}"/>')
+        o.append(f'<a href="{e(source_link(commit, fsh))}"><text x="{x0 + 12}" y="{C_TOP + 14}" font-weight="700" '
+                 f'fill="{C_INK}">{e(heading.upper())}</text></a>')
+        o.append(f'<text x="{x0 + 12}" y="{C_TOP + 32}" font-size="11.5" font-style="italic" fill="{C_INK}">logical model {e(sid)}</text>')
+        rs = rows[sid]
+        y = lambda k: C_TOP + C_HEAD + k * C_LH
+        spine = lambda d: x0 + 10 + d * 8
+        tops = [k for k, r in enumerate(rs) if r[0] == 0]
+        if tops:
+            o.append(f'<path d="M{spine(0)} {y(tops[0]) - 5}V{y(tops[-1]) - 5}" stroke="{C_INK}" stroke-width="0.8"/>')
+        for k, (d, name, card) in enumerate(rs):
+            if d == 0:
+                kids = 0
+                while k + kids + 1 < len(rs) and rs[k + kids + 1][0] > 0:
+                    kids += 1
+                if kids:
+                    o.append(f'<path d="M{spine(1)} {y(k) - 5}V{y(k + kids) - 5}" stroke="{C_INK}" stroke-width="0.8"/>')
+            tx = x0 + 22 + d * 24
+            o.append(f'<path d="M{spine(d)} {y(k) - 5}H{tx - 4}" stroke="{C_INK}" stroke-width="0.8"/>'
+                     f'<circle cx="{tx - 4}" cy="{y(k) - 5}" r="2.6" fill="{C_INK}"/>'
+                     f'<text x="{tx + 4}" y="{y(k)}" fill="{C_INK}">{e(name)} {e(card)}</text>')
+        o.append("</g>")
+    for i, (l, r) in enumerate(FIG9_ASSOC):
+        x1, x2, yy = x(i) + C_W, x(i + 1), h / 2
+        o.append(f'<path d="M{x1} {yy}H{x2}" stroke="{C_LINE}" stroke-width="1.2"/>'
+                 f'<text x="{x1 + 6}" y="{yy - 6}" font-size="13" fill="{C_INK}">{l}</text>'
+                 f'<text x="{x2 - 6}" y="{yy + 16}" font-size="13" text-anchor="end" fill="{C_INK}">{r}</text>')
+    o.append("</svg>")
+    return "\n".join(o) + "\n"
+
+
+def compare_table(a: dict, b: dict, a_fsh: str, b_fsh: str, commit: str) -> str:
+    """Two logical models side by side, matched by element path exactly."""
+    def paths(sd):
+        return {e["path"].split(".", 1)[1]: f"{e.get('min', '')}..{e.get('max', '')}"
+                for e in sd["differential"]["element"] if "." in e["path"]}
+    pa, pb = paths(a), paths(b)
+    out = [f"| Element | [{a['name']}]({source_link(commit, a_fsh)}) | [{b['name']}]({source_link(commit, b_fsh)}) |",
+           "| --- | --- | --- |"]
+    for p in list(pa) + [p for p in pb if p not in pa]:
+        out.append(f"| `{p}` | {f'`{pa[p]}`' if p in pa else '—'} | {f'`{pb[p]}`' if p in pb else '—'} |")
+    return "\n".join(out) + "\n"
 
 
 # ---------------------------------------------------------------- Fig. 12
@@ -230,6 +318,11 @@ def main() -> None:
     ap.add_argument("--commit", required=True, help="the smart-pcmt commit the instances come from")
     args = ap.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
+    sds = {sid: json.loads((args.resources / f"StructureDefinition-{sid}.json").read_text())
+           for sid in ("Product", "DthPcTradeItem", "DthPcRegulatedTradeItem", "ProductAuthorization")}
+    (args.out / "dth-pc-fig-9.svg").write_text(fig9_svg(sds, args.commit))
+    (args.out / "dth-pc-fig-9-authorization.md").write_text(compare_table(
+        sds["DthPcRegulatedTradeItem"], sds["ProductAuthorization"], FIG9_FSH, AUTH_FSH, args.commit))
     (args.out / "dth-pc-fig-12.svg").write_text(fig12_svg(load(args.resources, "DthPcFig12"), args.commit))
     (args.out / "dth-pc-npc-table.md").write_text(npc_table(load(args.resources, "DthPcNpc"), args.commit))
 
