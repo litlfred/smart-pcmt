@@ -6,6 +6,8 @@
                   id="Definitions_PC_BP_09_PCMT_Access"
                   targetNamespace="https://litlfred.github.io/smart-pcmt/bpmn/PC-BP-09-pcmt-access">
 
+  <bpmn:resource id="pers:pc-r-09" name="PC-R-09: PCMT User Group" />
+
   <bpmn:collaboration id="Collaboration_PC_BP_09">
     <bpmn:participant id="Participant_WHO_PCMT"
                       name="WHO-hosted Product Catalogue Management Tool (PCMT) — Catalogue Access &amp; Curation (Fig. 14, p. 47)"
@@ -25,7 +27,7 @@
     </bpmn:documentation>
 
     <bpmn:laneSet id="LaneSet_PC_BP_09">
-      <bpmn:lane id="Lane_WHOGroup" name="WHO Group (WHOGroup)">
+      <bpmn:lane id="Lane_WHOGroup" name="WHO Group (WHOGroup)" partitionElementRef="pers:pc-r-09">
         <bpmn:documentation>
           WHO product catalogue governance team responsible for importing global nomenclature and
           source catalogues (GMDN, INN, WHO EML, EMDN) and maintaining Catalogues -&gt; WHO
@@ -33,6 +35,19 @@
         </bpmn:documentation>
         <bpmn:flowNodeRef>StartEvent_SourceReady</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_ImportPublishWHO</bpmn:flowNodeRef>
+      </bpmn:lane>
+
+      <bpmn:lane id="Lane_CountryGroup" name="Country User Group (CAGroup / CBGroup)" partitionElementRef="pers:pc-r-09">
+        <bpmn:documentation>
+          National Ministry of Health / Logistics Management / Regulatory user group (CAGroup for
+          Country A, CBGroup for Country B) that views Catalogues -&gt; WHO, copies selected products
+          into its owned country catalogue (Catalogues -&gt; CA or Catalogues -&gt; CB), curates
+          TradeItem and ProductAuthorization records, and exports to national eLMIS/ERP systems.
+        </bpmn:documentation>
+        <bpmn:flowNodeRef>Task_BrowseSelectWHO</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_EditCountryCatalogue</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_ExportSynchronize</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndEvent_Published</bpmn:flowNodeRef>
       </bpmn:lane>
 
       <bpmn:lane id="Lane_PCMTAccessEngine" name="WHO-hosted PCMT Access Control &amp; Copy Engine">
@@ -46,19 +61,6 @@
         <bpmn:flowNodeRef>Task_CopyFromWHOToCountry</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>EndEvent_AccessDenied</bpmn:flowNodeRef>
       </bpmn:lane>
-
-      <bpmn:lane id="Lane_CountryGroup" name="Country User Group (CAGroup / CBGroup)">
-        <bpmn:documentation>
-          National Ministry of Health / Logistics Management / Regulatory user group (CAGroup for
-          Country A, CBGroup for Country B) that views Catalogues -&gt; WHO, copies selected products
-          into its owned country catalogue (Catalogues -&gt; CA or Catalogues -&gt; CB), curates
-          TradeItem and ProductAuthorization records, and exports to national eLMIS/ERP systems.
-        </bpmn:documentation>
-        <bpmn:flowNodeRef>Task_BrowseSelectWHO</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Task_EditCountryCatalogue</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Task_ExportSynchronize</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>EndEvent_Published</bpmn:flowNodeRef>
-      </bpmn:lane>
     </bpmn:laneSet>
 
     <bpmn:startEvent id="StartEvent_SourceReady" name="Source Catalogues Ready (GMDN, INN, WHO EML, EMDN)">
@@ -66,27 +68,32 @@
     </bpmn:startEvent>
 
     <bpmn:userTask id="Task_ImportPublishWHO" name="Import Source Catalogues &amp; Publish Catalogues -&gt; WHO">
+      <bpmn:documentation>WHOGroup imports global source catalogues (GMDN, INN, WHO EML, EMDN) and publishes common product records in Catalogues -&gt; WHO (Ch 6, pp. 46-47, Fig. 14).</bpmn:documentation>
       <bpmn:incoming>Flow_1</bpmn:incoming>
       <bpmn:outgoing>Flow_2</bpmn:outgoing>
     </bpmn:userTask>
 
     <bpmn:userTask id="Task_BrowseSelectWHO" name="Browse Catalogues -&gt; WHO (View-Only) &amp; Request Product Copy or Country Edit">
+      <bpmn:documentation>Country user group (CAGroup / CBGroup) browses Catalogues -&gt; WHO in view-only mode and requests a product copy or country catalogue edit (Ch 6, pp. 46-47, Fig. 14).</bpmn:documentation>
       <bpmn:incoming>Flow_2</bpmn:incoming>
       <bpmn:outgoing>Flow_3</bpmn:outgoing>
     </bpmn:userTask>
 
     <bpmn:serviceTask id="Task_EvalAccessMatrix" name="Evaluate Catalogue Access Matrix (PC-DT-03: userGroup x catalogue)">
+      <bpmn:documentation>WHO-hosted PCMT evaluates the PC-DT-03 access decision table for the requesting userGroup and target catalogue (view, edit, own, or none).</bpmn:documentation>
       <bpmn:incoming>Flow_3</bpmn:incoming>
       <bpmn:outgoing>Flow_4</bpmn:outgoing>
     </bpmn:serviceTask>
 
     <bpmn:exclusiveGateway id="Gateway_AccessDecision" name="Permitted by PC-DT-03?">
+      <bpmn:documentation>Routes the request based on PC-DT-03 outcome: allow copy/edit when the userGroup has view access on Catalogues -&gt; WHO and ownership of the target Country Catalogue; deny cross-country or unauthorized write requests.</bpmn:documentation>
       <bpmn:incoming>Flow_4</bpmn:incoming>
       <bpmn:outgoing>Flow_AllowCopy</bpmn:outgoing>
       <bpmn:outgoing>Flow_Deny</bpmn:outgoing>
     </bpmn:exclusiveGateway>
 
     <bpmn:serviceTask id="Task_CopyFromWHOToCountry" name="Copy Selected GenericProduct / TradeItem from Catalogues -&gt; WHO to Country Catalogue">
+      <bpmn:documentation>PCMT copy engine associates or copies selected GenericProduct and TradeItem attributes from Catalogues -&gt; WHO into the designated Country Catalogue (Ch 6, p. 46, Fig. 14).</bpmn:documentation>
       <bpmn:incoming>Flow_AllowCopy</bpmn:incoming>
       <bpmn:outgoing>Flow_5</bpmn:outgoing>
     </bpmn:serviceTask>
@@ -96,11 +103,13 @@
     </bpmn:endEvent>
 
     <bpmn:userTask id="Task_EditCountryCatalogue" name="Edit Owned Country Catalogue (Catalogues -&gt; CA / CB) &amp; Attach ProductAuthorization">
+      <bpmn:documentation>Country user group curates country-specific identifiers and attaches national regulatory ProductAuthorization attributes in its owned Country Catalogue (Catalogues -&gt; CA or CB, PC-DT-02).</bpmn:documentation>
       <bpmn:incoming>Flow_5</bpmn:incoming>
       <bpmn:outgoing>Flow_6</bpmn:outgoing>
     </bpmn:userTask>
 
     <bpmn:serviceTask id="Task_ExportSynchronize" name="Export &amp; Synchronize Country Catalogue to National eLMIS / ERP">
+      <bpmn:documentation>PCMT exports and synchronizes approved Country Catalogue product master data to national supply chain systems (eLMIS, WMS, ERP).</bpmn:documentation>
       <bpmn:incoming>Flow_6</bpmn:incoming>
       <bpmn:outgoing>Flow_7</bpmn:outgoing>
     </bpmn:serviceTask>
@@ -123,88 +132,105 @@
   <bpmndi:BPMNDiagram id="BPMNDiagram_PC_BP_09">
     <bpmndi:BPMNPlane id="BPMNPlane_PC_BP_09" bpmnElement="Collaboration_PC_BP_09">
       <bpmndi:BPMNShape id="Shape_Participant_WHO_PCMT" bpmnElement="Participant_WHO_PCMT" isHorizontal="true">
-        <dc:Bounds x="120" y="60" width="1360" height="540" />
+        <dc:Bounds x="120" y="60" width="1260" height="580" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Lane_WHOGroup" bpmnElement="Lane_WHOGroup" isHorizontal="true">
-        <dc:Bounds x="150" y="60" width="1330" height="160" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Shape_Lane_PCMTAccessEngine" bpmnElement="Lane_PCMTAccessEngine" isHorizontal="true">
-        <dc:Bounds x="150" y="220" width="1330" height="190" />
+        <dc:Bounds x="150" y="60" width="1230" height="160" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Lane_CountryGroup" bpmnElement="Lane_CountryGroup" isHorizontal="true">
-        <dc:Bounds x="150" y="410" width="1330" height="190" />
+        <dc:Bounds x="150" y="220" width="1230" height="190" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_PCMTAccessEngine" bpmnElement="Lane_PCMTAccessEngine" isHorizontal="true">
+        <dc:Bounds x="150" y="410" width="1230" height="230" />
       </bpmndi:BPMNShape>
 
       <bpmndi:BPMNShape id="Shape_StartEvent_SourceReady" bpmnElement="StartEvent_SourceReady">
-        <dc:Bounds x="210" y="122" width="36" height="36" />
+        <dc:Bounds x="210" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="184" y="144" width="90" height="54" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_ImportPublishWHO" bpmnElement="Task_ImportPublishWHO">
-        <dc:Bounds x="300" y="100" width="180" height="80" />
+        <dc:Bounds x="300" y="80" width="180" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_BrowseSelectWHO" bpmnElement="Task_BrowseSelectWHO">
-        <dc:Bounds x="300" y="465" width="180" height="80" />
+        <dc:Bounds x="300" y="275" width="180" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_EvalAccessMatrix" bpmnElement="Task_EvalAccessMatrix">
-        <dc:Bounds x="540" y="275" width="180" height="80" />
+        <dc:Bounds x="520" y="460" width="180" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Gateway_AccessDecision" bpmnElement="Gateway_AccessDecision" isMarkerVisible="true">
-        <dc:Bounds x="775" y="290" width="50" height="50" />
+        <dc:Bounds x="735" y="475" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="712" y="425" width="76" height="40" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_CopyFromWHOToCountry" bpmnElement="Task_CopyFromWHOToCountry">
-        <dc:Bounds x="890" y="250" width="190" height="130" />
+        <dc:Bounds x="890" y="435" width="190" height="130" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_EndEvent_AccessDenied" bpmnElement="EndEvent_AccessDenied">
-        <dc:Bounds x="1150" y="297" width="36" height="36" />
+        <dc:Bounds x="1160" y="572" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1204" y="563" width="140" height="54" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_EditCountryCatalogue" bpmnElement="Task_EditCountryCatalogue">
-        <dc:Bounds x="890" y="465" width="190" height="80" />
+        <dc:Bounds x="890" y="275" width="190" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_ExportSynchronize" bpmnElement="Task_ExportSynchronize">
-        <dc:Bounds x="1140" y="465" width="190" height="80" />
+        <dc:Bounds x="1110" y="275" width="180" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_EndEvent_Published" bpmnElement="EndEvent_Published">
-        <dc:Bounds x="1390" y="487" width="36" height="36" />
+        <dc:Bounds x="1320" y="297" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1295" y="339" width="80" height="54" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
 
       <bpmndi:BPMNEdge id="Edge_Flow_1" bpmnElement="Flow_1">
-        <di:waypoint x="246" y="140" />
-        <di:waypoint x="300" y="140" />
+        <di:waypoint x="246" y="120" />
+        <di:waypoint x="300" y="120" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_2" bpmnElement="Flow_2">
-        <di:waypoint x="390" y="180" />
-        <di:waypoint x="390" y="465" />
+        <di:waypoint x="390" y="160" />
+        <di:waypoint x="390" y="275" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_3" bpmnElement="Flow_3">
-        <di:waypoint x="480" y="505" />
-        <di:waypoint x="510" y="505" />
-        <di:waypoint x="510" y="315" />
-        <di:waypoint x="540" y="315" />
+        <di:waypoint x="480" y="315" />
+        <di:waypoint x="500" y="315" />
+        <di:waypoint x="500" y="500" />
+        <di:waypoint x="520" y="500" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_4" bpmnElement="Flow_4">
-        <di:waypoint x="720" y="315" />
-        <di:waypoint x="775" y="315" />
+        <di:waypoint x="700" y="500" />
+        <di:waypoint x="735" y="500" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_AllowCopy" bpmnElement="Flow_AllowCopy">
-        <di:waypoint x="825" y="315" />
-        <di:waypoint x="890" y="315" />
+        <di:waypoint x="785" y="500" />
+        <di:waypoint x="890" y="500" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="794" y="432" width="90" height="58" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_Deny" bpmnElement="Flow_Deny">
-        <di:waypoint x="800" y="290" />
-        <di:waypoint x="800" y="245" />
-        <di:waypoint x="1168" y="245" />
-        <di:waypoint x="1168" y="297" />
+        <di:waypoint x="760" y="525" />
+        <di:waypoint x="760" y="590" />
+        <di:waypoint x="1160" y="590" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="768" y="530" width="114" height="54" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_5" bpmnElement="Flow_5">
-        <di:waypoint x="985" y="380" />
-        <di:waypoint x="985" y="465" />
+        <di:waypoint x="985" y="435" />
+        <di:waypoint x="985" y="355" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_6" bpmnElement="Flow_6">
-        <di:waypoint x="1080" y="505" />
-        <di:waypoint x="1140" y="505" />
+        <di:waypoint x="1080" y="315" />
+        <di:waypoint x="1110" y="315" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_7" bpmnElement="Flow_7">
-        <di:waypoint x="1330" y="505" />
-        <di:waypoint x="1390" y="505" />
+        <di:waypoint x="1290" y="315" />
+        <di:waypoint x="1320" y="315" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
