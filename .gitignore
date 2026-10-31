@@ -47,3 +47,18 @@ auto-save-list
 tramp
 .\#*
 .swp
+
+# BEGIN index mounts (generated from index.config.json — do not edit)
+/smart-base/
+/fhir-harness/
+/who-iris/
+/folio-assistant-core/
+/cat-harness/
+/cat-harness-tools/
+/bootstrap/
+/bootstrap-tools/
+/dpi-h-ra/
+/dth-sc/
+/dth-pc/
+# END index mounts
+node_modules/
