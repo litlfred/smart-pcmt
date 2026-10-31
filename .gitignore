@@ -57,5 +57,8 @@ tramp
 /cat-harness-tools/
 /bootstrap/
 /bootstrap-tools/
+/dpi-h-ra/
+/dth-sc/
+/dth-pc/
 # END index mounts
 node_modules/

@@ -238,6 +238,160 @@
       }
     },
     {
+      "name": "dpi-h-ra",
+      "source": {
+        "remote": {
+          "repository": "litlfred/smart-ra",
+          "ref": "2c01ca03314dd7aba2bbbe04d1ef9b988e634e28",
+          "overrides": {
+            "dpi-h-ra": {
+              "directories": [
+                "glossary",
+                "archimate"
+              ]
+            },
+            "who-iris": {
+              "skip": true
+            },
+            "smart-base": {
+              "skip": true
+            },
+            "fhir-harness": {
+              "skip": true
+            },
+            "folio-assistant-core": {
+              "skip": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-31",
+              "ref": "2c01ca03314dd7aba2bbbe04d1ef9b988e634e28",
+              "evidence": "litlfred, 2026-10-31, litlfred/smart-ra#145: dependency chain smart-ra <- dth-sc <- dth-pc <- smart-pcmt; main tip 2c01ca033 = #147 (product catalogue and supply chain ArchiMate views 0.3.0-draft.1) on #148 (RA glossary as SKOS)."
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "dth-sc",
+      "source": {
+        "remote": {
+          "repository": "litlfred/dth-sc",
+          "ref": "3c67d95cc484fe24d84eb335edd8b4a792183e08",
+          "overrides": {
+            "dth-sc": {
+              "directories": [
+                "glossary"
+              ]
+            },
+            "dpi-h-ra": {
+              "skip": true
+            },
+            "who-iris": {
+              "skip": true
+            },
+            "smart-base": {
+              "skip": true
+            },
+            "fhir-harness": {
+              "skip": true
+            },
+            "folio-assistant-core": {
+              "skip": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-31",
+              "ref": "3c67d95cc484fe24d84eb335edd8b4a792183e08",
+              "evidence": "litlfred, 2026-10-31, litlfred/smart-ra#145: dependency chain smart-ra <- dth-sc <- dth-pc <- smart-pcmt (dth-sc#1 3c67d95)."
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "dth-pc",
+      "source": {
+        "remote": {
+          "repository": "litlfred/dth-pc",
+          "ref": "02495368be1ecc3b9437a3285449cf72b1a63d6d",
+          "overrides": {
+            "dth-pc": {
+              "directories": [
+                "glossary"
+              ]
+            },
+            "dth-sc": {
+              "skip": true
+            },
+            "dpi-h-ra": {
+              "skip": true
+            },
+            "who-iris": {
+              "skip": true
+            },
+            "smart-base": {
+              "skip": true
+            },
+            "fhir-harness": {
+              "skip": true
+            },
+            "folio-assistant-core": {
+              "skip": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-31",
+              "ref": "02495368be1ecc3b9437a3285449cf72b1a63d6d",
+              "evidence": "litlfred, 2026-10-31, litlfred/smart-ra#145: 'smart-pcmt \u2026 should be harnessed properly itself, then things like LM and SKOS etc aligned. smart-pcmt is downstream of dth-pc.' Dependency chain: smart-ra <- dth-sc <- dth-pc <- smart-pcmt (dth-pc#1 02495368)."
+            }
+          }
+        }
+      }
+    },
+    {
       "name": "smart-pcmt",
       "source": {
         "local": {

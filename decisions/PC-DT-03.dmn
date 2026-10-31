@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/"
+             xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
+             xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
+             id="Definitions_PC_DT_03"
+             name="PC-DT-03: WHO-hosted PCMT Catalogue Access Matrix"
+             namespace="https://litlfred.github.io/smart-pcmt/dmn/PC-DT-03">
+  <description>
+    PC-DT-03: Catalogue access matrix in the WHO-hosted Product Catalogue Management Tool (PCMT).
+    Maps (userGroup, catalogue) to view, edit, and ownership permissions per WHO Digital Adaptation
+    Kit / Digital Health Handbook for Product Catalogue (Ch 6: WHO-hosted Product Catalogue Management
+    Tool, section 6.2 Access, pp. 46-47, Figure 14: Catalogue access in the WHO-hosted PCMT).
+    Tracked in litlfred/smart-ra#145 (Step 3) and litlfred/dth-pc#2 section 2e (PC-8).
+  </description>
+
+  <decision id="Decision_PC_DT_03" name="Catalogue Access Matrix (user group x catalogue -> view / edit / own)">
+    <description>
+      Determines whether a user group (WHOGroup, CAGroup, CBGroup) may view, edit, or own a target
+      catalogue (Catalogues -> WHO, Catalogues -> CA, Catalogues -> CB) in the WHO-hosted PCMT
+      (Figure 14, p. 47).
+    </description>
+    <decisionTable id="DecisionTable_PC_DT_03" hitPolicy="UNIQUE">
+      <input id="Input_UserGroup" label="User Group">
+        <inputExpression id="InputExpr_UserGroup" typeRef="string">
+          <text>userGroup</text>
+        </inputExpression>
+      </input>
+      <input id="Input_Catalogue" label="Target Catalogue">
+        <inputExpression id="InputExpr_Catalogue" typeRef="string">
+          <text>catalogue</text>
+        </inputExpression>
+      </input>
+
+      <output id="Output_CanView" label="Can View" name="canView" typeRef="boolean" />
+      <output id="Output_CanEdit" label="Can Edit" name="canEdit" typeRef="boolean" />
+      <output id="Output_CanOwn" label="Can Own" name="canOwn" typeRef="boolean" />
+      <output id="Output_AccessSummary" label="Access Summary" name="accessSummary" typeRef="string" />
+
+      <!-- WHOGroup permissions (Figure 14, p. 47) -->
+      <rule id="Rule_PC_DT_03_1">
+        <description>WHOGroup owns, views, and edits the global WHO catalogue (Catalogues -&gt; WHO) populated from GMDN, INN, WHO EML, and EMDN.</description>
+        <inputEntry id="IE_1_1"><text>"WHOGroup"</text></inputEntry>
+        <inputEntry id="IE_1_2"><text>"Catalogues -> WHO"</text></inputEntry>
+        <outputEntry id="OE_1_1"><text>true</text></outputEntry>
+        <outputEntry id="OE_1_2"><text>true</text></outputEntry>
+        <outputEntry id="OE_1_3"><text>true</text></outputEntry>
+        <outputEntry id="OE_1_4"><text>"WHOGroup owns, views, and edits Catalogues -> WHO and imports source catalogues (GMDN, INN, WHO EML, EMDN)."</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_03_2">
+        <description>WHOGroup does not own or edit Country A catalogue (Catalogues -&gt; CA).</description>
+        <inputEntry id="IE_2_1"><text>"WHOGroup"</text></inputEntry>
+        <inputEntry id="IE_2_2"><text>"Catalogues -> CA"</text></inputEntry>
+        <outputEntry id="OE_2_1"><text>false</text></outputEntry>
+        <outputEntry id="OE_2_2"><text>false</text></outputEntry>
+        <outputEntry id="OE_2_3"><text>false</text></outputEntry>
+        <outputEntry id="OE_2_4"><text>"WHOGroup does not own or edit Country A catalogue (Catalogues -> CA); country catalogues are managed by CAGroup."</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_03_3">
+        <description>WHOGroup does not own or edit Country B catalogue (Catalogues -&gt; CB).</description>
+        <inputEntry id="IE_3_1"><text>"WHOGroup"</text></inputEntry>
+        <inputEntry id="IE_3_2"><text>"Catalogues -> CB"</text></inputEntry>
+        <outputEntry id="OE_3_1"><text>false</text></outputEntry>
+        <outputEntry id="OE_3_2"><text>false</text></outputEntry>
+        <outputEntry id="OE_3_3"><text>false</text></outputEntry>
+        <outputEntry id="OE_3_4"><text>"WHOGroup does not own or edit Country B catalogue (Catalogues -> CB); country catalogues are managed by CBGroup."</text></outputEntry>
+      </rule>
+
+      <!-- CAGroup permissions (Figure 14, p. 47) -->
+      <rule id="Rule_PC_DT_03_4">
+        <description>CAGroup has read-only view access to Catalogues -&gt; WHO and can copy product definitions into Catalogues -&gt; CA.</description>
+        <inputEntry id="IE_4_1"><text>"CAGroup"</text></inputEntry>
+        <inputEntry id="IE_4_2"><text>"Catalogues -> WHO"</text></inputEntry>
+        <outputEntry id="OE_4_1"><text>true</text></outputEntry>
+        <outputEntry id="OE_4_2"><text>false</text></outputEntry>
+        <outputEntry id="OE_4_3"><text>false</text></outputEntry>
+        <outputEntry id="OE_4_4"><text>"CAGroup can view Catalogues -> WHO (read-only) and copy selected products into Catalogues -> CA."</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_03_5">
+        <description>CAGroup owns, views, and edits Country A catalogue (Catalogues -&gt; CA).</description>
+        <inputEntry id="IE_5_1"><text>"CAGroup"</text></inputEntry>
+        <inputEntry id="IE_5_2"><text>"Catalogues -> CA"</text></inputEntry>
+        <outputEntry id="OE_5_1"><text>true</text></outputEntry>
+        <outputEntry id="OE_5_2"><text>true</text></outputEntry>
+        <outputEntry id="OE_5_3"><text>true</text></outputEntry>
+        <outputEntry id="OE_5_4"><text>"CAGroup owns, views, and edits Country A catalogue (Catalogues -> CA)."</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_03_6">
+        <description>CAGroup has no access to Country B catalogue (Catalogues -&gt; CB).</description>
+        <inputEntry id="IE_6_1"><text>"CAGroup"</text></inputEntry>
+        <inputEntry id="IE_6_2"><text>"Catalogues -> CB"</text></inputEntry>
+        <outputEntry id="OE_6_1"><text>false</text></outputEntry>
+        <outputEntry id="OE_6_2"><text>false</text></outputEntry>
+        <outputEntry id="OE_6_3"><text>false</text></outputEntry>
+        <outputEntry id="OE_6_4"><text>"CAGroup cannot view, edit, or own Country B catalogue (Catalogues -> CB)."</text></outputEntry>
+      </rule>
+
+      <!-- CBGroup permissions (Figure 14, p. 47) -->
+      <rule id="Rule_PC_DT_03_7">
+        <description>CBGroup has read-only view access to Catalogues -&gt; WHO and can copy product definitions into Catalogues -&gt; CB.</description>
+        <inputEntry id="IE_7_1"><text>"CBGroup"</text></inputEntry>
+        <inputEntry id="IE_7_2"><text>"Catalogues -> WHO"</text></inputEntry>
+        <outputEntry id="OE_7_1"><text>true</text></outputEntry>
+        <outputEntry id="OE_7_2"><text>false</text></outputEntry>
+        <outputEntry id="OE_7_3"><text>false</text></outputEntry>
+        <outputEntry id="OE_7_4"><text>"CBGroup can view Catalogues -> WHO (read-only) and copy selected products into Catalogues -> CB."</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_03_8">
+        <description>CBGroup has no access to Country A catalogue (Catalogues -&gt; CA).</description>
+        <inputEntry id="IE_8_1"><text>"CBGroup"</text></inputEntry>
+        <inputEntry id="IE_8_2"><text>"Catalogues -> CA"</text></inputEntry>
+        <outputEntry id="OE_8_1"><text>false</text></outputEntry>
+        <outputEntry id="OE_8_2"><text>false</text></outputEntry>
+        <outputEntry id="OE_8_3"><text>false</text></outputEntry>
+        <outputEntry id="OE_8_4"><text>"CBGroup cannot view, edit, or own Country A catalogue (Catalogues -> CA)."</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_03_9">
+        <description>CBGroup owns, views, and edits Country B catalogue (Catalogues -&gt; CB).</description>
+        <inputEntry id="IE_9_1"><text>"CBGroup"</text></inputEntry>
+        <inputEntry id="IE_9_2"><text>"Catalogues -> CB"</text></inputEntry>
+        <outputEntry id="OE_9_1"><text>true</text></outputEntry>
+        <outputEntry id="OE_9_2"><text>true</text></outputEntry>
+        <outputEntry id="OE_9_3"><text>true</text></outputEntry>
+        <outputEntry id="OE_9_4"><text>"CBGroup owns, views, and edits Country B catalogue (Catalogues -> CB)."</text></outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

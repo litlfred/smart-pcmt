@@ -36,10 +36,14 @@ logical models here realise those concepts. They never redefine them:
 - code lists (Status, NameType, RegulationType, ProductRelationship,
   AttributeType) stay FHIR CodeSystems, not glossary terms.
 
-The plan for aligning the models (split `Product` into Generic Product, Trade
-Item and Regulated Trade Item per the handbook's Fig 9) and for modelling the
-WHO-hosted global and country catalogues is litlfred/smart-ra#145. Issues are
-disabled on this fork.
+The logical models (`GenericProduct`, `TradeItem`, `ProductAuthorization`, and
+`RegulatedTradeItem` under `input/fsh/models/`, plus `PCMTGlossary#unit-of-use`
+in `input/fsh/codesystems/glossary.fsh`) realise the three-layer product master
+data separation from handbook Ch 2 (pp. 28-29, Fig. 9). The WHO-hosted PCMT
+catalogue access matrix (`decisions/PC-DT-03.dmn`) and catalogue access, copy,
+and export workflow (`processes/PC-BP-09-pcmt-access.bpmn`) realise handbook
+Ch 6 §6.2 (pp. 46-47, Fig. 14). Tracked in litlfred/smart-ra#145 and
+litlfred/dth-pc#2 §2e (PC-8). Issues are disabled on this fork.
 
 ## Sources that are not open
 
