@@ -101,6 +101,9 @@ Usage: #example
 Title: "dth-pc: MFR002 trade item P006009 (no GTIN)"
 * insert CountryTradeItemId(P006009)
 * insert TradeItem(Lamivudine 50 Mg tablet [MFR002 P006009], MFR002, KE, 1095)
-// The table gives Child Quantity 30 with no child identifier; it is not
-// encoded here (see the PR).
+// The table gives Child Quantity 30 but no child identifier, so the child
+// is named only as not given.
+* associatedProduct[+].product.display = "child not identified in the source"
+* associatedProduct[=].relationship = ProductRelationship#contains
+* associatedProduct[=].quantity.value = 30
 * insert Eaches(7200)
