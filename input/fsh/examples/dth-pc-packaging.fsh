@@ -1,6 +1,6 @@
 // Example products from the WHO Digital transformation handbook for
 // health product catalogues (ISBN 9789240116191, "dth-pc").
-// Fig. 11: "Example of packaging variations across manufacturers".
+// Fig. 12: "Mapping across product packaging hierarchy using FHIR resource".
 //
 // The figure gives identifiers, box titles, links and two quantities.
 // It gives no status, unit of use, or count of units of use, all of which
@@ -14,8 +14,8 @@
 Alias: $GTIN = https://www.gs1.org/gtin
 Alias: $DAR = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 
-RuleSet: DthPcFig11Source
-* description = "Source: WHO, Digital transformation handbook for health product catalogues, Fig. 11 (Example of packaging variations across manufacturers)."
+RuleSet: DthPcFig12Source
+* description = "Source: WHO, Digital transformation handbook for health product catalogues, Fig. 12 (Mapping across product packaging hierarchy using FHIR resource)."
 
 RuleSet: UnitOfUseNotGiven
 * unitOfUse.extension[0].url = $DAR
@@ -27,73 +27,73 @@ RuleSet: ContainsGeneric(generic)
 * associatedProduct[=].quantity.extension[0].url = $DAR
 * associatedProduct[=].quantity.extension[0].valueCode = #unknown
 
-Instance: DthPcFig11GenericMR001
+Instance: DthPcFig12GenericMR001
 InstanceOf: Product
 Usage: #example
-Title: "dth-pc Fig. 11: generic product MR001"
+Title: "dth-pc Fig. 12: generic product MR001"
 * identifier[0].value = "MR001"
 * name[0].nameType = http://hl7.org/fhir/device-nametype#user-friendly-name
 * name[0].value = "Generic product"
-* insert DthPcFig11Source
+* insert DthPcFig12Source
 * status = #active
 * insert UnitOfUseNotGiven
 
-Instance: DthPcFig11TradeItemMfrA
+Instance: DthPcFig12TradeItemMfrA
 InstanceOf: Product
 Usage: #example
-Title: "dth-pc Fig. 11: trade item (Manufacturer A)"
+Title: "dth-pc Fig. 12: trade item (Manufacturer A)"
 * identifier[0].system = $GTIN
 * identifier[0].value = "17801415202675"
 * name[0].nameType = http://hl7.org/fhir/device-nametype#user-friendly-name
 * name[0].value = "Trade item (MFR A)"
-* insert DthPcFig11Source
+* insert DthPcFig12Source
 * status = #active
 * manufacturer.display = "Manufacturer A"
 * insert UnitOfUseNotGiven
-* insert ContainsGeneric(DthPcFig11GenericMR001)
+* insert ContainsGeneric(DthPcFig12GenericMR001)
 
-Instance: DthPcFig11MfrBPallet
+Instance: DthPcFig12MfrBPallet
 InstanceOf: Product
 Usage: #example
-Title: "dth-pc Fig. 11: Manufacturer B pallet (tertiary)"
+Title: "dth-pc Fig. 12: Manufacturer B pallet (tertiary)"
 * identifier[0].system = $GTIN
 * identifier[0].value = "18901415202906"
 * name[0].nameType = http://hl7.org/fhir/device-nametype#user-friendly-name
 * name[0].value = "Trade item (MFR B) Tertiary (Pallet)"
-* insert DthPcFig11Source
+* insert DthPcFig12Source
 * status = #active
 * manufacturer.display = "Manufacturer B"
 * insert UnitOfUseNotGiven
-* insert ContainsGeneric(DthPcFig11GenericMR001)
-* associatedProduct[+].product = Reference(DthPcFig11MfrBCase)
+* insert ContainsGeneric(DthPcFig12GenericMR001)
+* associatedProduct[+].product = Reference(DthPcFig12MfrBCase)
 * associatedProduct[=].relationship = ProductRelationship#pallet_contains
 * associatedProduct[=].quantity.value = 100
 
-Instance: DthPcFig11MfrBCase
+Instance: DthPcFig12MfrBCase
 InstanceOf: Product
 Usage: #example
-Title: "dth-pc Fig. 11: Manufacturer B case (tertiary)"
+Title: "dth-pc Fig. 12: Manufacturer B case (tertiary)"
 * identifier[0].system = $GTIN
 * identifier[0].value = "08901415202908"
 * name[0].nameType = http://hl7.org/fhir/device-nametype#user-friendly-name
 * name[0].value = "Trade item (MFR B) Tertiary (Case)"
-* insert DthPcFig11Source
+* insert DthPcFig12Source
 * status = #active
 * manufacturer.display = "Manufacturer B"
 * insert UnitOfUseNotGiven
-* associatedProduct[+].product = Reference(DthPcFig11MfrBInnerPack)
+* associatedProduct[+].product = Reference(DthPcFig12MfrBInnerPack)
 * associatedProduct[=].relationship = ProductRelationship#case_contains
 * associatedProduct[=].quantity.value = 50
 
-Instance: DthPcFig11MfrBInnerPack
+Instance: DthPcFig12MfrBInnerPack
 InstanceOf: Product
 Usage: #example
-Title: "dth-pc Fig. 11: Manufacturer B inner pack (secondary)"
+Title: "dth-pc Fig. 12: Manufacturer B inner pack (secondary)"
 * identifier[0].system = $GTIN
 * identifier[0].value = "08901415202910"
 * name[0].nameType = http://hl7.org/fhir/device-nametype#user-friendly-name
 * name[0].value = "Trade item (MFR B) Secondary (Inner pack)"
-* insert DthPcFig11Source
+* insert DthPcFig12Source
 * status = #active
 * manufacturer.display = "Manufacturer B"
 * insert UnitOfUseNotGiven
