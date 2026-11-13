@@ -55,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "346a04c9e29b4f5c9d51e7720b2a3818d3ebd7f2",
+          "ref": "d983238a48b267985b42c55dfc94b2a16a3109cf",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -65,8 +65,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "346a04c9e29b4f5c9d51e7720b2a3818d3ebd7f2",
-              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
+              "ref": "d983238a48b267985b42c55dfc94b2a16a3109cf",
+              "evidence": "Owner litlfred, 2026-11-13: merge+repin window until 2:30pm; smart-pcmt#1 lock coherence with smart-ra@59b8f1b needs fhir-harness, cat-harness and cat-harness-tools at their mains; Q-CONSENT-1 A."
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "a107d8ef4947d6ebcc937312b0a6000e59743d1d",
+          "ref": "4de2e3b1409781f3c069bc14eac1c0bd65b52740",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -158,8 +158,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "a107d8ef4947d6ebcc937312b0a6000e59743d1d",
-              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
+              "ref": "4de2e3b1409781f3c069bc14eac1c0bd65b52740",
+              "evidence": "Owner litlfred, 2026-11-13: merge+repin window until 2:30pm; smart-pcmt#1 lock coherence with smart-ra@59b8f1b needs fhir-harness, cat-harness and cat-harness-tools at their mains; Q-CONSENT-1 A."
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "ed3c8eb404200c1d101c99893a67d22102815587",
+          "ref": "76c7d4ac263517d0ba87e346f953a9a106b78b0a",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -183,8 +183,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "ed3c8eb404200c1d101c99893a67d22102815587",
-              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
+              "ref": "76c7d4ac263517d0ba87e346f953a9a106b78b0a",
+              "evidence": "Owner litlfred, 2026-11-13: merge+repin window until 2:30pm; smart-pcmt#1 lock coherence with smart-ra@59b8f1b needs fhir-harness, cat-harness and cat-harness-tools at their mains; Q-CONSENT-1 A."
             }
           }
         }
