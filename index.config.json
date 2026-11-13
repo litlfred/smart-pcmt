@@ -342,7 +342,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-pc",
-          "ref": "d0311cd009356e950f1b1dbf99f8c793a57fa1a6",
+          "ref": "9af78c51430de3c02e0b8ce37b6748e708e92b3b",
           "overrides": {
             "dth-pc": {
               "directories": [
@@ -384,8 +384,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "d0311cd009356e950f1b1dbf99f8c793a57fa1a6",
-              "evidence": "Owner litlfred, 2026-11-13 (card in this session): re-pin smart-pcmt option B, dpi-h-ra, dth-sc and dth-pc to each repo's main; Q-CONSENT-1 A."
+              "ref": "9af78c51430de3c02e0b8ce37b6748e708e92b3b",
+              "evidence": "Owner litlfred, 2026-11-13 (card in this session): smart-pcmt's dth-pc pin = A, the scaffold tip 9af78c5 (dth-pc main is a stub without a declaration); Q-CONSENT-1 A."
             }
           }
         }

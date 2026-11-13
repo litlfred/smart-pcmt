@@ -54,7 +54,7 @@
     {
       "harness": "dth-pc",
       "repository": "litlfred/dth-pc",
-      "ref": "d0311cd009356e950f1b1dbf99f8c793a57fa1a6"
+      "ref": "9af78c51430de3c02e0b8ce37b6748e708e92b3b"
     }
   ],
   "instances": [
@@ -233,6 +233,35 @@
       }
     },
     {
+      "instance": "dth-pc",
+      "repository": "litlfred/dth-pc",
+      "sha": "9af78c51430de3c02e0b8ce37b6748e708e92b3b",
+      "upstreamRoot": "",
+      "path": "dth-pc",
+      "via": "dth-pc",
+      "pinnedBy": "declared",
+      "declaration": {
+        "file": "dth-pc.json",
+        "sha256": "8bc664fb0bcc5bd1abf1762fd6478585bd5b080f68f0b5477669e618887d8023"
+      },
+      "directories": [
+        {
+          "id": "glossary",
+          "path": "dth-pc/glossary",
+          "upstreamPath": "glossary",
+          "treeDigest": "8c465f38d3f9871b582cbbf36f3a1ec13944eb6a44246d9c08d4d6b22b8dc9ec",
+          "files": 1
+        }
+      ],
+      "trust": {
+        "basis": "consent",
+        "by": "litlfred",
+        "on": "2026-11-13",
+        "ref": "9af78c51430de3c02e0b8ce37b6748e708e92b3b",
+        "approver": "unverified"
+      }
+    },
+    {
       "instance": "dth-sc",
       "repository": "litlfred/dth-sc",
       "sha": "79a8b286707c6b1a93461eda5716b78af89a7a4d",
@@ -384,11 +413,5 @@
       }
     }
   ],
-  "unmounted": [
-    {
-      "instance": "dth-pc",
-      "state": "missing",
-      "detail": "no declaration of `dth-pc` in litlfred/dth-pc@d0311cd00935"
-    }
-  ]
+  "unmounted": []
 }
