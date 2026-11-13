@@ -1,6 +1,6 @@
 Logical: 	Product
 Title: 		"Product"
-Description:	"A Product represents a physical item or set of items which can be held in inventory, ordered, exchanged, dispensed or other utilized within the health system, clinical and supply chain workflows."
+Description:	"A Product represents a physical item or set of items which can be held in inventory, ordered, exchanged, dispensed or other utilized within the health system, clinical and supply chain workflows. Anchored to dth-pc Product Master Data (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data) and Generic Product (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product)."
 Characteristics: #can-be-target
 
 

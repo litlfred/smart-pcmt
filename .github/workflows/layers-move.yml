@@ -1,0 +1,24 @@
+# Moves a sandbox's layers cache ref into place.
+#
+# An agent sandbox may push only `claude/` branches, so its
+# `bun run cat layers:publish` leaves the layers commit on
+# `claude/cat-layers/<key>`. On a PR that re-pins `index.lock.json`, the
+# reusable workflow checks that branch holds THIS lock's layers commit, moves
+# it to `refs/cat/layers/<key>` and deletes the branch. The `layers-ref` gate
+# in harness-pr-checks.yml waits for it. It needs `contents: write`, which the
+# PR checks do not have, so it is its own workflow, as
+# cat-harness-tools' `.github/workflows/layer-layers-move.yml` asks
+# (owner, 2026-11-10, "B. Branch + small mover").
+name: Move a sandbox's layers cache ref
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths: [index.lock.json]
+
+permissions:
+  contents: write
+
+jobs:
+  move:
+    uses: litlfred/cat-harness-tools/.github/workflows/layer-layers-move.yml@76c7d4ac263517d0ba87e346f953a9a106b78b0a # index.lock.json

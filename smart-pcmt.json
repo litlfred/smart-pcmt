@@ -1,0 +1,62 @@
+{
+  "$schema": "cat-harness-declaration/1.0.0",
+  "name": "smart-pcmt",
+  "version": "0.1.0",
+  "repository": "litlfred/smart-pcmt",
+  "iriBase": "https://litlfred.github.io/smart-pcmt/",
+  "title": "WHO SMART Guidelines \u2014 Product Catalogue (PCMT)",
+  "description": "The WHO SMART Product Catalog implementation guide (FHIR IG source under input/), as a harnessed instance of smart-base, in the shape of smart-immunizations. Downstream of litlfred/dth-pc (owner, 2026-10-31): its logical models and terms align to the product catalogue concepts dth-pc defines (Generic Product, Trade Item, Regulated Trade Item, Product Master Data) and never redefine them. Plan: litlfred/smart-ra#145.",
+  "needs": [
+    "smart-base",
+    "dpi-h-ra",
+    "dth-sc",
+    "dth-pc"
+  ],
+  "assets": [
+    {
+      "id": "agent-instructions",
+      "src": "AGENTS.md",
+      "role": "agent-instructions",
+      "title": "AGENTS.md \u2014 smart-pcmt",
+      "description": "Cold start for work here: what this instance is, its place downstream of dth-pc, and the declaration rule."
+    },
+    {
+      "id": "instance-readme",
+      "src": "README.md",
+      "role": "instance-readme",
+      "title": "WHO SMART Guidelines \u2014 Product Catalogue",
+      "description": "The WHO SMART Product Catalog implementation guide."
+    }
+  ],
+  "directories": [
+    {
+      "id": "processes",
+      "path": "processes/",
+      "description": "BPMN 2.0 business process diagrams for the WHO-hosted Product Catalogue Management Tool (PCMT), starting with PC-BP-09-pcmt-access.bpmn (handbook Ch 6, pp. 46-47, Fig. 14; litlfred/smart-ra#145, litlfred/dth-pc#2 \u00a72e).",
+      "graphTypologies": [
+        "processes"
+      ]
+    },
+    {
+      "id": "decisions",
+      "path": "decisions/",
+      "description": "DMN 1.3 decision tables for the WHO-hosted Product Catalogue Management Tool (PCMT), starting with PC-DT-03.dmn (catalogue access matrix user group \u00d7 catalogue \u2192 view / edit / own, handbook Ch 6, p. 47, Fig. 14; litlfred/smart-ra#145, litlfred/dth-pc#2 \u00a72e).",
+      "graphTypologies": [
+        "processes"
+      ]
+    },
+    {
+      "id": "qa",
+      "path": "test/results/",
+      "storage": {
+        "branch": "cat/cat-harness/qa-reports",
+        "keyedBy": "commit"
+      },
+      "description": "What auditing THIS instance produced: one QA verdict sidecar per audited subject. Stored on the cat/cat-harness/qa-reports branch keyed by commit, as smart-immunizations declares its own.",
+      "graphTypologies": [
+        "qa"
+      ]
+    }
+  ],
+  "_needs_comment": "Dependency chain: smart-ra <- dth-sc <- dth-pc <- smart-pcmt (owner, 2026-10-31; litlfred/smart-ra#145, litlfred/dth-pc#2). smart-pcmt is downstream of dth-pc and aligns its logical models, glossary terms, processes, and decision tables to the product catalogue concepts dth-pc defines, which in turn link to dth-sc and dpi-h-ra (smart-ra). smart-base provides the SMART Guidelines base IG and DAK conventions."
+}

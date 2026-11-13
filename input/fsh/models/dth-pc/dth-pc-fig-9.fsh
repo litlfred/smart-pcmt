@@ -7,7 +7,7 @@
 
 Logical: DthPcTradeItem
 Title: "Trade Item (DTH product catalogue handbook, Fig. 9)"
-Description: "A packaged, identified unit of a Generic Product as traded, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Generic Product has zero or more Trade Items."
+Description: "A packaged, identified unit of a Generic Product as traded, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Generic Product has zero or more Trade Items. Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item."
 Characteristics: #can-be-target
 
 * identifier 1..* Identifier "Trade item identifier, e.g. a GTIN or a Country Trade Item Identifier"
@@ -35,7 +35,7 @@ Characteristics: #can-be-target
 
 Logical: DthPcRegulatedTradeItem
 Title: "Regulated Trade Item (DTH product catalogue handbook, Fig. 9)"
-Description: "A trade item as authorised in a jurisdiction, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Trade Item has zero or more Regulated Trade Items. This IG's ProductAuthorization carries a related but different set of elements."
+Description: "A trade item as authorised in a jurisdiction, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Trade Item has zero or more Regulated Trade Items. This IG's ProductAuthorization carries a related but different set of elements. Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item."
 Characteristics: #can-be-target
 
 * identifier 1..* Identifier "Authorisation identifier, e.g. a marketing authorisation or product registration number"

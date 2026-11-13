@@ -1,5 +1,5 @@
 Logical: ProductAuthorization Title: "Product Authorization"
-Description: "A record of authorization or compliance for one or more Products with a set of regulatory, policy, (pre-)qualification, or legal requirements."
+Description: "A record of authorization or compliance for one or more Products with a set of regulatory, policy, (pre-)qualification, or legal requirements. Anchored to dth-pc Regulated Trade Item (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item)."
 Characteristics: #can-be-target
 
 

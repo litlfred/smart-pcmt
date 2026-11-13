@@ -16,5 +16,9 @@ This is an ImplementationGuide for the Product Catalogue requirements for the SM
 
 ## Changes and feedback
   
-Feedback and issues about this empty framework can be submitted via the [issues](issues) page, and will be incorporated into subsequent releases.
+Feedback and issues can be submitted via the upstream [issues](https://github.com/WorldHealthOrganization/smart-pcmt/issues) page, and will be incorporated into subsequent releases.
+
+## Harness
+
+This fork (litlfred/smart-pcmt) is a harnessed instance of smart-base, in the shape of smart-immunizations: `index.config.json` mounts the platform layers and `smart-pcmt.json` declares the instance. It is downstream of [dth-pc](https://github.com/litlfred/dth-pc), whose product catalogue concepts its logical models realise. See [AGENTS.md](AGENTS.md).
  
