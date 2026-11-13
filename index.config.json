@@ -242,7 +242,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "2c01ca03314dd7aba2bbbe04d1ef9b988e634e28",
+          "ref": "59b8f1b7b70e83b3c1578584f0cb81e9cb37cc30",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -278,9 +278,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "2c01ca03314dd7aba2bbbe04d1ef9b988e634e28",
-              "evidence": "litlfred, 2026-10-31, litlfred/smart-ra#145: dependency chain smart-ra <- dth-sc <- dth-pc <- smart-pcmt; main tip 2c01ca033 = #147 (product catalogue and supply chain ArchiMate views 0.3.0-draft.1) on #148 (RA glossary as SKOS)."
+              "on": "2026-11-13",
+              "ref": "59b8f1b7b70e83b3c1578584f0cb81e9cb37cc30",
+              "evidence": "Owner litlfred, 2026-11-13 (card in this session): re-pin smart-pcmt option B, dpi-h-ra, dth-sc and dth-pc to each repo's main; Q-CONSENT-1 A."
             }
           }
         }
@@ -291,7 +291,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "0d7b10262be439884ecc8e5ccad0622c45571eb1",
+          "ref": "79a8b286707c6b1a93461eda5716b78af89a7a4d",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -329,9 +329,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "0d7b10262be439884ecc8e5ccad0622c45571eb1",
-              "evidence": "litlfred, 2026-10-31, litlfred/smart-ra#145: dependency chain smart-ra <- dth-sc <- dth-pc <- smart-pcmt (dth-sc#1 3c67d95)."
+              "on": "2026-11-13",
+              "ref": "79a8b286707c6b1a93461eda5716b78af89a7a4d",
+              "evidence": "Owner litlfred, 2026-11-13 (card in this session): re-pin smart-pcmt option B, dpi-h-ra, dth-sc and dth-pc to each repo's main; Q-CONSENT-1 A."
             }
           }
         }
@@ -342,7 +342,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-pc",
-          "ref": "d90fe5610f52eddf9424cb18a17111b61e7b7b02",
+          "ref": "d0311cd009356e950f1b1dbf99f8c793a57fa1a6",
           "overrides": {
             "dth-pc": {
               "directories": [
@@ -383,9 +383,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "d90fe5610f52eddf9424cb18a17111b61e7b7b02",
-              "evidence": "litlfred, 2026-10-31, litlfred/smart-ra#145: 'smart-pcmt … should be harnessed properly itself, then things like LM and SKOS etc aligned. smart-pcmt is downstream of dth-pc.' Dependency chain: smart-ra <- dth-sc <- dth-pc <- smart-pcmt (dth-pc#1 d90fe561)."
+              "on": "2026-11-13",
+              "ref": "d0311cd009356e950f1b1dbf99f8c793a57fa1a6",
+              "evidence": "Owner litlfred, 2026-11-13 (card in this session): re-pin smart-pcmt option B, dpi-h-ra, dth-sc and dth-pc to each repo's main; Q-CONSENT-1 A."
             }
           }
         }
