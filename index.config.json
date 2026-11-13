@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "437eee5e87bd8f87334b06a4682d3e25c5953943",
+          "ref": "856c458eca57c4e72be3346b3402daf755d7990f",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -130,8 +130,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "437eee5e87bd8f87334b06a4682d3e25c5953943",
-              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
+              "ref": "856c458eca57c4e72be3346b3402daf755d7990f",
+              "evidence": "owner, merge-manager session session_01EucfRpkvK7d4FJyuqypQzm, 2026-11-13 ~09:31Z card: smart-pcmt re-pin folio-assistant-core and cat-harness-tools to current main after cat-harness-tools#2001 and folio-assistant-core#778 merge (A)"
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "76c7d4ac263517d0ba87e346f953a9a106b78b0a",
+          "ref": "31e8a3edb90f97938bfacbce02357904ee0a7c4a",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -183,8 +183,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "76c7d4ac263517d0ba87e346f953a9a106b78b0a",
-              "evidence": "Owner litlfred, 2026-11-13: merge+repin window until 2:30pm; smart-pcmt#1 lock coherence with smart-ra@59b8f1b needs fhir-harness, cat-harness and cat-harness-tools at their mains; Q-CONSENT-1 A."
+              "ref": "31e8a3edb90f97938bfacbce02357904ee0a7c4a",
+              "evidence": "owner, merge-manager session session_01EucfRpkvK7d4FJyuqypQzm, 2026-11-13 ~09:31Z card: smart-pcmt re-pin folio-assistant-core and cat-harness-tools to current main after cat-harness-tools#2001 and folio-assistant-core#778 merge (A)"
             }
           }
         }
