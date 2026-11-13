@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "625ab8347493f46c32752a18dea7b02202d29727",
+          "ref": "ec3d1cf7993b499e3362297f7fcbad2c79b66f80",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,9 +42,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "625ab8347493f46c32752a18dea7b02202d29727",
-              "evidence": "owner card 2026-10-30T19:41Z 'A. Yes, merge within 2 hours' (re-pin smart-trust and smart-immunizations); standing rule 'Merge all ready and then deal with aftermath'. Same layer set as smart-trust main 15a5edb (smart-trust#95)."
+              "on": "2026-11-13",
+              "ref": "ec3d1cf7993b499e3362297f7fcbad2c79b66f80",
+              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
             }
           }
         }
@@ -55,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "3772521c4f6e0a1a88c2a01bfbe361f4ccab3b83",
+          "ref": "346a04c9e29b4f5c9d51e7720b2a3818d3ebd7f2",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -64,9 +64,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "3772521c4f6e0a1a88c2a01bfbe361f4ccab3b83",
-              "evidence": "owner card 2026-10-30T19:41Z 'A. Yes, merge within 2 hours' (re-pin smart-trust and smart-immunizations); standing rule 'Merge all ready and then deal with aftermath'. Same layer set as smart-trust main 15a5edb (smart-trust#95)."
+              "on": "2026-11-13",
+              "ref": "346a04c9e29b4f5c9d51e7720b2a3818d3ebd7f2",
+              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
             }
           }
         }
@@ -77,7 +77,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "f524a7e98bde3b8f390f0163a81829b158ad11b2",
+          "ref": "cf722fb3f8623aa92872129a1788aa992a887e3f",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -101,9 +101,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "f524a7e98bde3b8f390f0163a81829b158ad11b2",
-              "evidence": "owner card 2026-10-30T19:41Z 'A. Yes, merge within 2 hours' (re-pin smart-trust and smart-immunizations); standing rule 'Merge all ready and then deal with aftermath'. Same layer set as smart-trust main 15a5edb (smart-trust#95)."
+              "on": "2026-11-13",
+              "ref": "cf722fb3f8623aa92872129a1788aa992a887e3f",
+              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
             }
           }
         }
@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "a7f06bcbebfc9b9489425b4c06e8cc0a15003d62",
+          "ref": "437eee5e87bd8f87334b06a4682d3e25c5953943",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -129,9 +129,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "a7f06bcbebfc9b9489425b4c06e8cc0a15003d62",
-              "evidence": "owner card 2026-10-30T19:41Z 'A. Yes, merge within 2 hours' (re-pin smart-trust and smart-immunizations); standing rule 'Merge all ready and then deal with aftermath'. Same layer set as smart-trust main 15a5edb (smart-trust#95)."
+              "on": "2026-11-13",
+              "ref": "437eee5e87bd8f87334b06a4682d3e25c5953943",
+              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "279c0fc88e8276486f7e0b8c3a2244e3a07f1344",
+          "ref": "a107d8ef4947d6ebcc937312b0a6000e59743d1d",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -157,9 +157,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "279c0fc88e8276486f7e0b8c3a2244e3a07f1344",
-              "evidence": "owner card 2026-10-30T19:41Z 'A. Yes, merge within 2 hours' (re-pin smart-trust and smart-immunizations); standing rule 'Merge all ready and then deal with aftermath'. Same layer set as smart-trust main 15a5edb (smart-trust#95)."
+              "on": "2026-11-13",
+              "ref": "a107d8ef4947d6ebcc937312b0a6000e59743d1d",
+              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "d2d0ae247504f3dafbd1ba439a1967df1e833c84",
+          "ref": "ed3c8eb404200c1d101c99893a67d22102815587",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -182,9 +182,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "d2d0ae247504f3dafbd1ba439a1967df1e833c84",
-              "evidence": "owner card 2026-10-30T19:41Z 'A. Yes, merge within 2 hours' (re-pin smart-trust and smart-immunizations); standing rule 'Merge all ready and then deal with aftermath'. Same layer set as smart-trust main 15a5edb (smart-trust#95)."
+              "on": "2026-11-13",
+              "ref": "ed3c8eb404200c1d101c99893a67d22102815587",
+              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
             }
           }
         }
@@ -195,7 +195,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
+          "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -204,9 +204,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
-              "evidence": "card 2026-10-30T15:38Z: B. Use litlfred workflow now"
+              "on": "2026-11-13",
+              "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
+              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
             }
           }
         }
@@ -217,7 +217,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
+          "ref": "0f88368db7560afac6d3e16fd905cbb974350f82",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -229,9 +229,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
-              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip b7fb762."
+              "on": "2026-11-13",
+              "ref": "0f88368db7560afac6d3e16fd905cbb974350f82",
+              "evidence": "Owner litlfred, 2026-11-13: merge+repin window to 2:30pm; smart-* PRs made merge-ready (owner); re-pin smart-pcmt's layers to the cascade set (Q-CONSENT-1 A, Q-CASCADE-FREEZE B)."
             }
           }
         }
@@ -385,7 +385,7 @@
               "by": "litlfred",
               "on": "2026-10-31",
               "ref": "d90fe5610f52eddf9424cb18a17111b61e7b7b02",
-              "evidence": "litlfred, 2026-10-31, litlfred/smart-ra#145: 'smart-pcmt \u2026 should be harnessed properly itself, then things like LM and SKOS etc aligned. smart-pcmt is downstream of dth-pc.' Dependency chain: smart-ra <- dth-sc <- dth-pc <- smart-pcmt (dth-pc#1 d90fe561)."
+              "evidence": "litlfred, 2026-10-31, litlfred/smart-ra#145: 'smart-pcmt … should be harnessed properly itself, then things like LM and SKOS etc aligned. smart-pcmt is downstream of dth-pc.' Dependency chain: smart-ra <- dth-sc <- dth-pc <- smart-pcmt (dth-pc#1 d90fe561)."
             }
           }
         }
