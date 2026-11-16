@@ -450,7 +450,8 @@
         "input/system-requirements/",
         "input/testing/",
         "input/vocabulary/",
-        "fsh-generated/"
+        "fsh-generated/",
+        "qa/ig-content-qa.json"
       ]
     }
   }
