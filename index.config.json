@@ -290,7 +290,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "b6b6521140d1d114da4427073ef2898b91cb3aee",
+          "ref": "9778d5b596c4cd9677d80ceff7658349748fbc29",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -328,9 +328,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "b6b6521140d1d114da4427073ef2898b91cb3aee",
-              "evidence": "Re-pin smart-pcmt#5 to current main (folio-assistant-g4rf)"
+              "on": "2026-11-16",
+              "ref": "9778d5b596c4cd9677d80ceff7658349748fbc29",
+              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
         }
@@ -341,7 +341,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-pc",
-          "ref": "759995708b3728466296cac4a4b53fadc4865919",
+          "ref": "10ca063de9db1ad463edde9e04e0d4ce5227dda7",
           "overrides": {
             "dth-pc": {
               "directories": [
@@ -382,9 +382,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "759995708b3728466296cac4a4b53fadc4865919",
-              "evidence": "Owner litlfred, 2026-11-15 (card Q-PB-1 A / G4 smart-pcmt#5): re-pin smart-pcmt's layers to current main (https://claude.ai/code/project/chan_017WNUkNK8kdDziPK58Pv6G9?solo=thread&thread=cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR)."
+              "on": "2026-11-16",
+              "ref": "10ca063de9db1ad463edde9e04e0d4ce5227dda7",
+              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
         }
