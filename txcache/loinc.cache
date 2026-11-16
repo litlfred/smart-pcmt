@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "5792-7"
+}, "url": "http://smart.who.int/refmart/ValueSet/COUNTRYISO3", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"true", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "code" : "5792-7",
+  "system" : "http://loinc.org",
+  "severity" : "error",
+  "error" : "The provided code 'http://loinc.org#5792-7' was not found in the value set 'http://smart.who.int/refmart/ValueSet/COUNTRYISO3'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://smart.who.int/refmart/ValueSet/COUNTRYISO3: Analysing http://smart.who.int/refmart/ValueSet/COUNTRYISO3 for validation purposes\n1ms http://smart.who.int/refmart/ValueSet/COUNTRYISO3: Parameters: disp-lang=en-US, generate-narrative, membership-only, default-to-latest\n1ms http://smart.who.int/refmart/ValueSet/COUNTRYISO3: Validate \"[http://loinc.org#5792-7 (\"undefined\")]\"\n2ms http://smart.who.int/refmart/ValueSet/COUNTRYISO3: Check \"http://loinc.org#5792-7\"\n3ms http://smart.who.int/refmart/ValueSet/COUNTRYISO3: ValueSet has neither compose nor expansion - cannot determine membership",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://loinc.org#5792-7' was not found in the value set 'http://smart.who.int/refmart/ValueSet/COUNTRYISO3'"
+    },
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------

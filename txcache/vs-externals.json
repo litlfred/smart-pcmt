@@ -1,0 +1,9 @@
+{
+  "http://smart.who.int/pcmt/CodeSystem/RegulationType" : null,
+  "http://smart.who.int/refmart/ValueSet/COUNTRYISO3" : null,
+  "http://terminology.ehdsi.eu/ValueSet/eHDSIRouteofAdministration" : {
+    "server" : "http://tx.hl7europe.eu/r4",
+    "filename" : "vs-f4494ab7-5c10-49a0-b5b8-370d5fd0aee1.json"
+  },
+  "http://smart.who.int/smart-base/ImplementationGuide-SGImplementationGuide" : null
+}

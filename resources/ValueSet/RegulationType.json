@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "RegulationType",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RegulationType</b></p><a name=\"RegulationType\"> </a><a name=\"hcRegulationType\"> </a><ul><li>Include all codes defined in <code>http://smart.who.int/pcmt/CodeSystem/RegulationType</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "url" : "http://smart.who.int/pcmt/ValueSet/RegulationType",
+  "version" : "0.2.0",
+  "name" : "RegulationType",
+  "title" : "Regulation Type for a Regulated Product",
+  "status" : "draft",
+  "date" : "2026-11-16T19:53:30+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "Regulated Product Regulation type",
+  "compose" : {
+    "include" : [{
+      "system" : "http://smart.who.int/pcmt/CodeSystem/RegulationType"
+    }]
+  }
+}

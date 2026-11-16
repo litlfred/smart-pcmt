@@ -1,0 +1,63 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Status for a Product Schema API",
+    "description": "JSON Schema for Status for a Product ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-Status.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-Status",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-Status.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-Status",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-Status.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-Status": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/pcmt/ValueSet-Status.schema.json",
+        "title": "Status for a Product Schema",
+        "description": "JSON Schema for Status for a Product ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/pcmt/CodeSystem/Status"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "active",
+              "in-active",
+              "invalid"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the Status for a Product ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/pcmt/ValueSet-Status.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/pcmt/ValueSet-Status.displays.json",
+        "fhir:valueSet": "http://smart.who.int/pcmt/ValueSet/Status",
+        "fhir:version": "0.2.0",
+        "fhir:expansionTimestamp": "2026-11-16T19:56:53+00:00"
+      }
+    }
+  }
+}

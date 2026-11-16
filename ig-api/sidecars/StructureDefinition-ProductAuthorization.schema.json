@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt/StructureDefinition-ProductAuthorization.schema.json",
+  "title": "Product Authorization",
+  "description": "A record of authorization or compliance for one or more Products with a set of regulatory, policy, (pre-)qualification, or legal requirements. Anchored to dth-pc Regulated Trade Item (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item).",
+  "type": "object",
+  "properties": {
+    "resourceType": {
+      "type": "string",
+      "const": "ProductAuthorization",
+      "description": "Resource type identifier for ProductAuthorization logical model"
+    },
+    "@context": {
+      "description": "JSON-LD context for this logical model with ValueSet vocabularies",
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "uri",
+          "description": "URI reference to external JSON-LD context"
+        },
+        {
+          "type": "object",
+          "description": "Inline JSON-LD context",
+          "properties": {
+            "@version": {
+              "type": "number",
+              "const": 1.1
+            },
+            "fhir": {
+              "type": "string",
+              "const": "http://hl7.org/fhir/"
+            }
+          },
+          "additionalProperties": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        {
+          "type": "array",
+          "description": "Array of JSON-LD context objects/URIs",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "object"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "@type": {
+      "type": "string",
+      "description": "JSON-LD type identifier for ProductAuthorization logical model",
+      "examples": [
+        "LogicalModel-ProductAuthorization"
+      ]
+    },
+    "number": {
+      "type": "object",
+      "description": "The identifier of the authorisation for the Products"
+    },
+    "status": {
+      "$ref": "./ValueSet-Status.schema.json",
+      "description": "The status of the authoriation e.g. 'active' 'inactive'"
+    },
+    "type": {
+      "$ref": "./ValueSet-RegulationType.schema.json",
+      "description": "The type of authorization (e.g. pre-qualification)"
+    },
+    "jurisdiction": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 1,
+      "description": "The jurisidiction(s) (e.g. country, economic commuinity or region) where the authorisation is issued"
+    },
+    "holder": {
+      "type": "object",
+      "description": "The organisation responsible for the product i.e. the grantee of the authorisation"
+    },
+    "product": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "FHIR Reference"
+      },
+      "minItems": 1,
+      "description": "Products that are covered under this authorization"
+    },
+    "validityPeriod": {
+      "type": "object",
+      "description": "Validity Period of this authorization"
+    }
+  },
+  "required": [
+    "resourceType",
+    "status",
+    "type",
+    "jurisdiction",
+    "holder",
+    "product"
+  ],
+  "allOf": [
+    {
+      "$ref": "./StructureDefinition-FHIRSchemaBase.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "resourceDefinition": {
+          "type": "string",
+          "format": "uri",
+          "const": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization"
+        },
+        "fhir:parent": {
+          "type": "string",
+          "const": "http://hl7.org/fhir/StructureDefinition/Base"
+        },
+        "jsonld:valuesets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "const": [
+            "RegulationType",
+            "Status"
+          ]
+        },
+        "jsonld:contextTemplate": {
+          "type": "object",
+          "const": {
+            "@version": 1.1,
+            "fhir": "http://hl7.org/fhir/",
+            "RegulationType": "http://smart.who.int/pcmt/ValueSet-RegulationType.jsonld",
+            "Status": "http://smart.who.int/pcmt/ValueSet-Status.jsonld"
+          }
+        }
+      }
+    }
+  ]
+}

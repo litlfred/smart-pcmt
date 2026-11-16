@@ -1,0 +1,173 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "ValueSets Enumeration API",
+    "description": "API endpoint providing an enumeration of all available ValueSet schemas",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSets.schema.json": {
+      "get": {
+        "summary": "Get enumeration of all ValueSet schemas",
+        "description": "Returns a list of all available ValueSet schemas with metadata",
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved valueset enumeration",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnumerationResponse"
+                },
+                "example": {
+                  "type": "valueset",
+                  "count": 4,
+                  "schemas": [
+                    {
+                      "filename": "ValueSet-AttributeType.schema.json",
+                      "id": "http://smart.who.int/pcmt/ValueSet-AttributeType.schema.json",
+                      "title": "AttributeType for a Product Schema",
+                      "description": "JSON Schema for AttributeType for a Product ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+                      "url": "./ValueSet-AttributeType.schema.json",
+                      "valueSetUrl": "http://smart.who.int/pcmt/ValueSet/AttributeType"
+                    },
+                    {
+                      "filename": "ValueSet-NameType.schema.json",
+                      "id": "http://smart.who.int/pcmt/ValueSet-NameType.schema.json",
+                      "title": "Name Type for a Product Schema",
+                      "description": "JSON Schema for Name Type for a Product ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+                      "url": "./ValueSet-NameType.schema.json",
+                      "valueSetUrl": "http://smart.who.int/pcmt/ValueSet/NameType"
+                    },
+                    {
+                      "filename": "ValueSet-ProductRelationship.schema.json",
+                      "id": "http://smart.who.int/pcmt/ValueSet-ProductRelationship.schema.json",
+                      "title": "Product Relationships Schema",
+                      "description": "JSON Schema for Product Relationships ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+                      "url": "./ValueSet-ProductRelationship.schema.json",
+                      "valueSetUrl": "http://smart.who.int/pcmt/ValueSet/ProductRelationship"
+                    },
+                    {
+                      "filename": "ValueSet-Status.schema.json",
+                      "id": "http://smart.who.int/pcmt/ValueSet-Status.schema.json",
+                      "title": "Status for a Product Schema",
+                      "description": "JSON Schema for Status for a Product ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+                      "url": "./ValueSet-Status.schema.json",
+                      "valueSetUrl": "http://smart.who.int/pcmt/ValueSet/Status"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "EnumerationResponse": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "#/ValueSets.schema.json",
+        "title": "ValueSet Enumeration Schema",
+        "description": "JSON Schema defining the structure of the ValueSet enumeration endpoint response",
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "valueset",
+            "description": "The type of schemas enumerated (valueset)"
+          },
+          "count": {
+            "type": "integer",
+            "description": "Total number of schemas available"
+          },
+          "schemas": {
+            "type": "array",
+            "description": "Array of available schemas",
+            "items": {
+              "type": "object",
+              "properties": {
+                "filename": {
+                  "type": "string",
+                  "description": "Schema filename"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "Schema $id"
+                },
+                "title": {
+                  "type": "string",
+                  "description": "Schema title"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Schema description"
+                },
+                "url": {
+                  "type": "string",
+                  "description": "Relative URL to the schema file"
+                },
+                "valueSetUrl": {
+                  "type": "string",
+                  "description": "FHIR canonical URL of the ValueSet"
+                },
+                "codeCount": {
+                  "type": "integer",
+                  "description": "Number of codes in the ValueSet"
+                }
+              },
+              "required": [
+                "filename",
+                "title",
+                "url"
+              ]
+            }
+          }
+        },
+        "required": [
+          "type",
+          "count",
+          "schemas"
+        ],
+        "example": {
+          "type": "valueset",
+          "count": 4,
+          "schemas": [
+            {
+              "filename": "ValueSet-AttributeType.schema.json",
+              "id": "http://smart.who.int/pcmt/ValueSet-AttributeType.schema.json",
+              "title": "AttributeType for a Product Schema",
+              "description": "JSON Schema for AttributeType for a Product ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+              "url": "./ValueSet-AttributeType.schema.json",
+              "valueSetUrl": "http://smart.who.int/pcmt/ValueSet/AttributeType"
+            },
+            {
+              "filename": "ValueSet-NameType.schema.json",
+              "id": "http://smart.who.int/pcmt/ValueSet-NameType.schema.json",
+              "title": "Name Type for a Product Schema",
+              "description": "JSON Schema for Name Type for a Product ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+              "url": "./ValueSet-NameType.schema.json",
+              "valueSetUrl": "http://smart.who.int/pcmt/ValueSet/NameType"
+            },
+            {
+              "filename": "ValueSet-ProductRelationship.schema.json",
+              "id": "http://smart.who.int/pcmt/ValueSet-ProductRelationship.schema.json",
+              "title": "Product Relationships Schema",
+              "description": "JSON Schema for Product Relationships ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+              "url": "./ValueSet-ProductRelationship.schema.json",
+              "valueSetUrl": "http://smart.who.int/pcmt/ValueSet/ProductRelationship"
+            },
+            {
+              "filename": "ValueSet-Status.schema.json",
+              "id": "http://smart.who.int/pcmt/ValueSet-Status.schema.json",
+              "title": "Status for a Product Schema",
+              "description": "JSON Schema for Status for a Product ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+              "url": "./ValueSet-Status.schema.json",
+              "valueSetUrl": "http://smart.who.int/pcmt/ValueSet/Status"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

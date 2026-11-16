@@ -1,0 +1,62 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "pcmt-glossary",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem pcmt-glossary</b></p><a name=\"pcmt-glossary\"> </a><a name=\"hcpcmt-glossary\"> </a><p>This case-sensitive code system <code>http://smart.who.int/pcmt/CodeSystem/pcmt-glossary</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unit-of-use<a name=\"pcmt-glossary-unit-of-use\"> </a></td><td>Unit of Use</td><td>Smallest unit of a product that can be administered or dispensed to a patient (handbook Fig 11, p.31).</td></tr><tr><td style=\"white-space:nowrap\">unitOfUse<a name=\"pcmt-glossary-unitOfUse\"> </a></td><td>Unit of Use (camelCase alias)</td><td>Smallest unit of a product that can be administered or dispensed to a patient (handbook Fig 11, p.31).</td></tr><tr><td style=\"white-space:nowrap\">dosageForm<a name=\"pcmt-glossary-dosageForm\"> </a></td><td>Dosage Form</td><td>Physical form in which a pharmaceutical product is produced and dispensed, such as tablet, capsule, or injectable solution.</td></tr><tr><td style=\"white-space:nowrap\">routeOfAdministration<a name=\"pcmt-glossary-routeOfAdministration\"> </a></td><td>Route of Administration</td><td>Path by which a health product is taken into the body, such as oral, intravenous, or topical.</td></tr><tr><td style=\"white-space:nowrap\">strength<a name=\"pcmt-glossary-strength\"> </a></td><td>Strength</td><td>Amount of active ingredient per unit of use, such as 500mg per tablet or 10mg/mL.</td></tr><tr><td style=\"white-space:nowrap\">shelfLife<a name=\"pcmt-glossary-shelfLife\"> </a></td><td>Shelf Life</td><td>Length of time a health product may be stored without becoming unfit for use, consumption, or sale.</td></tr><tr><td style=\"white-space:nowrap\">storageHandling<a name=\"pcmt-glossary-storageHandling\"> </a></td><td>Storage and Handling</td><td>Conditions required to maintain product quality during storage and transport, such as temperature range or light protection.</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/pcmt/CodeSystem/pcmt-glossary",
+  "version" : "0.2.0",
+  "name" : "PCMTGlossary",
+  "title" : "PCMT Glossary Terms",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-11-16T19:53:30+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "CodeSystem for product attributes and terminology used in the SMART Product Catalogue Management Tool (PCMT). Core domain entities (Generic Product, Trade Item, Regulated Trade Item, Product Master Data) are anchored in the mounted dth-pc glossary (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/).",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "unit-of-use",
+    "display" : "Unit of Use",
+    "definition" : "Smallest unit of a product that can be administered or dispensed to a patient (handbook Fig 11, p.31)."
+  },
+  {
+    "code" : "unitOfUse",
+    "display" : "Unit of Use (camelCase alias)",
+    "definition" : "Smallest unit of a product that can be administered or dispensed to a patient (handbook Fig 11, p.31)."
+  },
+  {
+    "code" : "dosageForm",
+    "display" : "Dosage Form",
+    "definition" : "Physical form in which a pharmaceutical product is produced and dispensed, such as tablet, capsule, or injectable solution."
+  },
+  {
+    "code" : "routeOfAdministration",
+    "display" : "Route of Administration",
+    "definition" : "Path by which a health product is taken into the body, such as oral, intravenous, or topical."
+  },
+  {
+    "code" : "strength",
+    "display" : "Strength",
+    "definition" : "Amount of active ingredient per unit of use, such as 500mg per tablet or 10mg/mL."
+  },
+  {
+    "code" : "shelfLife",
+    "display" : "Shelf Life",
+    "definition" : "Length of time a health product may be stored without becoming unfit for use, consumption, or sale."
+  },
+  {
+    "code" : "storageHandling",
+    "display" : "Storage and Handling",
+    "definition" : "Conditions required to maintain product quality during storage and transport, such as temperature range or light protection."
+  }]
+}

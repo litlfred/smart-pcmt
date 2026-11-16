@@ -1,0 +1,630 @@
+{
+  "$schema": "ig-ast/v1",
+  "authority": "cache",
+  "provisional": [
+    "indices",
+    "dependencies",
+    "versions"
+  ],
+  "provisionalUntil": "a full IG Publisher run",
+  "generatedAt": "2026-11-16T19:57:29.796823706Z",
+  "ig": {
+    "root": ".",
+    "version": "4.0.1"
+  },
+  "inputDigestMode": {
+    "mode": "git"
+  },
+  "inputs": {
+    "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+    "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+    "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+  },
+  "packages": [
+    {
+      "id": "hl7.fhir.r4.core",
+      "version": "4.0.1",
+      "canonical": "http://hl7.org/fhir",
+      "fhirVersion": "4.0.1",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.cpg",
+      "version": "2.0.0",
+      "canonical": "http://hl7.org/fhir/uv/cpg",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.1.0",
+        "hl7.terminology.r4#6.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.cql",
+      "version": "2.0.0",
+      "canonical": "http://hl7.org/fhir/uv/cql",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0",
+        "hl7.terminology.r4#6.5.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.crmi",
+      "version": "2.0.0",
+      "canonical": "http://hl7.org/fhir/uv/crmi",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.3.0",
+        "hl7.terminology.r4#7.2.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r4",
+      "version": "5.1.0",
+      "canonical": "http://hl7.org/fhir/extensions",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r4",
+      "version": "5.3.0-ballot-tc1",
+      "canonical": "http://hl7.org/fhir/extensions",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#6.5.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r4",
+      "version": "5.4.0",
+      "canonical": "http://hl7.org/fhir/extensions",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#7.5.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r5",
+      "version": "5.2.0",
+      "canonical": "http://hl7.org/fhir/extensions",
+      "fhirVersion": "5.0.0",
+      "dependencies": [
+        "hl7.fhir.r5.core#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r5",
+      "version": "5.3.0",
+      "canonical": "http://hl7.org/fhir/extensions",
+      "fhirVersion": "5.0.0",
+      "dependencies": [
+        "hl7.terminology.r5#7.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.sdc",
+      "version": "4.0.0",
+      "canonical": "http://hl7.org/fhir/uv/sdc",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.r4.examples#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.3.0-ballot-tc1",
+        "hl7.fhir.uv.tools.r4#1.1.2",
+        "hl7.fhir.uv.xver-r5.r4#0.1.0",
+        "hl7.terminology.r4#7.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.tools.r4",
+      "version": "1.1.2",
+      "canonical": "http://hl7.org/fhir/tools",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0",
+        "hl7.terminology.r4#7.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.tools.r4",
+      "version": "1.3.0",
+      "canonical": "http://hl7.org/fhir/tools",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.3.0",
+        "hl7.terminology.r4#7.4.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.xver-r5.r4",
+      "version": "0.1.0",
+      "canonical": "http://hl7.org/fhir/uv/xver",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0",
+        "hl7.terminology.r4#7.1.0"
+      ]
+    },
+    {
+      "id": "hl7.terminology",
+      "version": "7.3.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "5.0.0",
+      "dependencies": [
+        "hl7.fhir.r5.core#5.0.0",
+        "hl7.fhir.uv.extensions.r5#5.3.0"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "3.1.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "6.1.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "6.5.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "7.1.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "7.2.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.3.0"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "7.5.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r5",
+      "version": "7.1.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "5.0.0",
+      "dependencies": [
+        "hl7.fhir.uv.extensions.r5#5.2.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.balp",
+      "version": "1.1.0",
+      "canonical": "https://profiles.ihe.net/ITI/BALP",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "ihe.iti.mcsd",
+      "version": "3.8.0",
+      "canonical": "https://profiles.ihe.net/ITI/mCSD",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0",
+        "ihe.iti.balp#1.1.0"
+      ]
+    },
+    {
+      "id": "smart.who.int.base",
+      "version": "current",
+      "canonical": "http://smart.who.int/base",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.cpg#2.0.0",
+        "hl7.fhir.uv.cql#2.0.0",
+        "hl7.fhir.uv.crmi#2.0.0",
+        "hl7.fhir.uv.extensions.r4#5.3.0",
+        "hl7.fhir.uv.sdc#4.0.0",
+        "hl7.terminology#7.3.0"
+      ]
+    }
+  ],
+  "terminology": {
+    "server": {
+      "address": "https://tx.fhir.org/r4",
+      "version": "1.0.3"
+    },
+    "expansions": [
+      {
+        "valueSet": "http://smart.who.int/pcmt/ValueSet/AttributeType|0.2.0",
+        "builtFrom": {
+          "used-codesystem": [
+            "http://smart.who.int/pcmt/CodeSystem/AttributeType|0.2.0"
+          ]
+        },
+        "codeSystems": [
+          "http://smart.who.int/pcmt/CodeSystem/AttributeType"
+        ]
+      },
+      {
+        "valueSet": "http://smart.who.int/pcmt/ValueSet/NameType|0.2.0",
+        "builtFrom": {
+          "used-codesystem": [
+            "http://hl7.org/fhir/device-nametype|4.0.1"
+          ]
+        },
+        "codeSystems": [
+          "http://hl7.org/fhir/device-nametype"
+        ]
+      },
+      {
+        "valueSet": "http://smart.who.int/pcmt/ValueSet/ProductRelationship|0.2.0",
+        "builtFrom": {
+          "used-codesystem": [
+            "http://smart.who.int/pcmt/CodeSystem/ProductRelationship|0.2.0"
+          ]
+        },
+        "codeSystems": [
+          "http://smart.who.int/pcmt/CodeSystem/ProductRelationship"
+        ]
+      },
+      {
+        "valueSet": "http://smart.who.int/pcmt/ValueSet/Status|0.2.0",
+        "builtFrom": {
+          "used-codesystem": [
+            "http://smart.who.int/pcmt/CodeSystem/Status|0.2.0"
+          ]
+        },
+        "codeSystems": [
+          "http://smart.who.int/pcmt/CodeSystem/Status"
+        ]
+      }
+    ]
+  },
+  "toolchain": {
+    "publisher": "3.0.0",
+    "core": "7.0.1",
+    "sushi": "SUSHI v3.21.0 (implements FHIR Shorthand specification v3.0.0)",
+    "java": "17.0.21"
+  },
+  "resources": [
+    {
+      "key": "Binary/DthPcFig12GenericMR001",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Binary",
+      "id": "DthPcFig12GenericMR001",
+      "name": null,
+      "file": "resources/Binary/DthPcFig12GenericMR001.json",
+      "source": "fsh-generated/resources/Binary-DthPcFig12GenericMR001.json"
+    },
+    {
+      "key": "Binary/DthPcFig12MfrBCase",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Binary",
+      "id": "DthPcFig12MfrBCase",
+      "name": null,
+      "file": "resources/Binary/DthPcFig12MfrBCase.json",
+      "source": "fsh-generated/resources/Binary-DthPcFig12MfrBCase.json"
+    },
+    {
+      "key": "Binary/DthPcFig12MfrBInnerPack",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Binary",
+      "id": "DthPcFig12MfrBInnerPack",
+      "name": null,
+      "file": "resources/Binary/DthPcFig12MfrBInnerPack.json",
+      "source": "fsh-generated/resources/Binary-DthPcFig12MfrBInnerPack.json"
+    },
+    {
+      "key": "Binary/DthPcFig12MfrBPallet",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Binary",
+      "id": "DthPcFig12MfrBPallet",
+      "name": null,
+      "file": "resources/Binary/DthPcFig12MfrBPallet.json",
+      "source": "fsh-generated/resources/Binary-DthPcFig12MfrBPallet.json"
+    },
+    {
+      "key": "Binary/DthPcFig12TradeItemMfrA",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Binary",
+      "id": "DthPcFig12TradeItemMfrA",
+      "name": null,
+      "file": "resources/Binary/DthPcFig12TradeItemMfrA.json",
+      "source": "fsh-generated/resources/Binary-DthPcFig12TradeItemMfrA.json"
+    },
+    {
+      "key": "Binary/DthPcNpc01101001",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Binary",
+      "id": "DthPcNpc01101001",
+      "name": null,
+      "file": "resources/Binary/DthPcNpc01101001.json",
+      "source": "fsh-generated/resources/Binary-DthPcNpc01101001.json"
+    },
+    {
+      "key": "Binary/DthPcNpcMfr001Gtin58904093825700",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Binary",
+      "id": "DthPcNpcMfr001Gtin58904093825700",
+      "name": null,
+      "file": "resources/Binary/DthPcNpcMfr001Gtin58904093825700.json",
+      "source": "fsh-generated/resources/Binary-DthPcNpcMfr001Gtin58904093825700.json"
+    },
+    {
+      "key": "Binary/DthPcNpcMfr001Gtin58904093825793",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Binary",
+      "id": "DthPcNpcMfr001Gtin58904093825793",
+      "name": null,
+      "file": "resources/Binary/DthPcNpcMfr001Gtin58904093825793.json",
+      "source": "fsh-generated/resources/Binary-DthPcNpcMfr001Gtin58904093825793.json"
+    },
+    {
+      "key": "Binary/DthPcNpcMfr002SkuP006008",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Binary",
+      "id": "DthPcNpcMfr002SkuP006008",
+      "name": null,
+      "file": "resources/Binary/DthPcNpcMfr002SkuP006008.json",
+      "source": "fsh-generated/resources/Binary-DthPcNpcMfr002SkuP006008.json"
+    },
+    {
+      "key": "Binary/DthPcNpcMfr002SkuP006009",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Binary",
+      "id": "DthPcNpcMfr002SkuP006009",
+      "name": null,
+      "file": "resources/Binary/DthPcNpcMfr002SkuP006009.json",
+      "source": "fsh-generated/resources/Binary-DthPcNpcMfr002SkuP006009.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/CodeSystem/AttributeType|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/CodeSystem/AttributeType",
+      "version": "0.2.0",
+      "resourceType": "CodeSystem",
+      "id": "AttributeType",
+      "name": "AttributeType",
+      "file": "resources/CodeSystem/AttributeType.json",
+      "source": "fsh-generated/resources/CodeSystem-AttributeType.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/CodeSystem/ProductRelationship|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/CodeSystem/ProductRelationship",
+      "version": "0.2.0",
+      "resourceType": "CodeSystem",
+      "id": "ProductRelationship",
+      "name": "ProductRelationship",
+      "file": "resources/CodeSystem/ProductRelationship.json",
+      "source": "fsh-generated/resources/CodeSystem-ProductRelationship.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/CodeSystem/RegulatationType|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/CodeSystem/RegulatationType",
+      "version": "0.2.0",
+      "resourceType": "CodeSystem",
+      "id": "RegulatationType",
+      "name": "RegulatationType",
+      "file": "resources/CodeSystem/RegulatationType.json",
+      "source": "fsh-generated/resources/CodeSystem-RegulatationType.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/CodeSystem/Status|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/CodeSystem/Status",
+      "version": "0.2.0",
+      "resourceType": "CodeSystem",
+      "id": "Status",
+      "name": "Status",
+      "file": "resources/CodeSystem/Status.json",
+      "source": "fsh-generated/resources/CodeSystem-Status.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/CodeSystem/pcmt-glossary|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/CodeSystem/pcmt-glossary",
+      "version": "0.2.0",
+      "resourceType": "CodeSystem",
+      "id": "pcmt-glossary",
+      "name": "PCMTGlossary",
+      "file": "resources/CodeSystem/pcmt-glossary.json",
+      "source": "fsh-generated/resources/CodeSystem-pcmt-glossary.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/ImplementationGuide/smart.who.int.pcmt|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/ImplementationGuide/smart.who.int.pcmt",
+      "version": "0.2.0",
+      "resourceType": "ImplementationGuide",
+      "id": "smart.who.int.pcmt",
+      "name": "SMARTPCMT",
+      "file": "resources/ImplementationGuide/smart.who.int.pcmt.json",
+      "source": "fsh-generated/resources/ImplementationGuide-smart.who.int.pcmt.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem",
+      "version": "0.2.0",
+      "resourceType": "StructureDefinition",
+      "id": "DthPcRegulatedTradeItem",
+      "name": "DthPcRegulatedTradeItem",
+      "file": "resources/StructureDefinition/DthPcRegulatedTradeItem.json",
+      "source": "fsh-generated/resources/StructureDefinition-DthPcRegulatedTradeItem.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem",
+      "version": "0.2.0",
+      "resourceType": "StructureDefinition",
+      "id": "DthPcTradeItem",
+      "name": "DthPcTradeItem",
+      "file": "resources/StructureDefinition/DthPcTradeItem.json",
+      "source": "fsh-generated/resources/StructureDefinition-DthPcTradeItem.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/GenericProduct",
+      "version": "0.2.0",
+      "resourceType": "StructureDefinition",
+      "id": "GenericProduct",
+      "name": "GenericProduct",
+      "file": "resources/StructureDefinition/GenericProduct.json",
+      "source": "fsh-generated/resources/StructureDefinition-GenericProduct.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/StructureDefinition/MedicationCatalogItem|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/MedicationCatalogItem",
+      "version": "0.2.0",
+      "resourceType": "StructureDefinition",
+      "id": "MedicationCatalogItem",
+      "name": "MedicationCatalogItem",
+      "file": "resources/StructureDefinition/MedicationCatalogItem.json",
+      "source": "fsh-generated/resources/StructureDefinition-MedicationCatalogItem.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+      "version": "0.2.0",
+      "resourceType": "StructureDefinition",
+      "id": "ProductAuthorization",
+      "name": "ProductAuthorization",
+      "file": "resources/StructureDefinition/ProductAuthorization.json",
+      "source": "fsh-generated/resources/StructureDefinition-ProductAuthorization.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/StructureDefinition/ProductID|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/ProductID",
+      "version": "0.2.0",
+      "resourceType": "StructureDefinition",
+      "id": "ProductID",
+      "name": "ProductID",
+      "file": "resources/StructureDefinition/ProductID.json",
+      "source": "fsh-generated/resources/StructureDefinition-ProductID.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/Product",
+      "version": "0.2.0",
+      "resourceType": "StructureDefinition",
+      "id": "Product",
+      "name": "Product",
+      "file": "resources/StructureDefinition/Product.json",
+      "source": "fsh-generated/resources/StructureDefinition-Product.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem",
+      "version": "0.2.0",
+      "resourceType": "StructureDefinition",
+      "id": "RegulatedTradeItem",
+      "name": "RegulatedTradeItem",
+      "file": "resources/StructureDefinition/RegulatedTradeItem.json",
+      "source": "fsh-generated/resources/StructureDefinition-RegulatedTradeItem.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/TradeItem",
+      "version": "0.2.0",
+      "resourceType": "StructureDefinition",
+      "id": "TradeItem",
+      "name": "TradeItem",
+      "file": "resources/StructureDefinition/TradeItem.json",
+      "source": "fsh-generated/resources/StructureDefinition-TradeItem.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/ValueSet/AttributeType|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/ValueSet/AttributeType",
+      "version": "0.2.0",
+      "resourceType": "ValueSet",
+      "id": "AttributeType",
+      "name": "AttributeType",
+      "file": "resources/ValueSet/AttributeType.json",
+      "source": "fsh-generated/resources/ValueSet-AttributeType.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/ValueSet/NameType|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/ValueSet/NameType",
+      "version": "0.2.0",
+      "resourceType": "ValueSet",
+      "id": "NameType",
+      "name": "NameType",
+      "file": "resources/ValueSet/NameType.json",
+      "source": "fsh-generated/resources/ValueSet-NameType.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/ValueSet/ProductRelationship|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/ValueSet/ProductRelationship",
+      "version": "0.2.0",
+      "resourceType": "ValueSet",
+      "id": "ProductRelationship",
+      "name": "ProductRelationship",
+      "file": "resources/ValueSet/ProductRelationship.json",
+      "source": "fsh-generated/resources/ValueSet-ProductRelationship.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/ValueSet/RegulationType|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/ValueSet/RegulationType",
+      "version": "0.2.0",
+      "resourceType": "ValueSet",
+      "id": "RegulationType",
+      "name": "RegulationType",
+      "file": "resources/ValueSet/RegulationType.json",
+      "source": "fsh-generated/resources/ValueSet-RegulationType.json"
+    },
+    {
+      "key": "http://smart.who.int/pcmt/ValueSet/Status|0.2.0",
+      "canonical": "http://smart.who.int/pcmt/ValueSet/Status",
+      "version": "0.2.0",
+      "resourceType": "ValueSet",
+      "id": "Status",
+      "name": "Status",
+      "file": "resources/ValueSet/Status.json",
+      "source": "fsh-generated/resources/ValueSet-Status.json"
+    }
+  ]
+}

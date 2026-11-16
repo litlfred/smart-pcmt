@@ -1,0 +1,234 @@
+[
+  {
+    "outputFile": "Binary-DthPcFig12GenericMR001.json",
+    "fshName": "DthPcFig12GenericMR001",
+    "fshType": "Instance",
+    "fshFile": "examples/dth-pc-packaging.fsh",
+    "startLine": 30,
+    "endLine": 39
+  },
+  {
+    "outputFile": "Binary-DthPcFig12MfrBCase.json",
+    "fshName": "DthPcFig12MfrBCase",
+    "fshType": "Instance",
+    "fshFile": "examples/dth-pc-packaging.fsh",
+    "startLine": 72,
+    "endLine": 86
+  },
+  {
+    "outputFile": "Binary-DthPcFig12MfrBInnerPack.json",
+    "fshName": "DthPcFig12MfrBInnerPack",
+    "fshType": "Instance",
+    "fshFile": "examples/dth-pc-packaging.fsh",
+    "startLine": 88,
+    "endLine": 99
+  },
+  {
+    "outputFile": "Binary-DthPcFig12MfrBPallet.json",
+    "fshName": "DthPcFig12MfrBPallet",
+    "fshType": "Instance",
+    "fshFile": "examples/dth-pc-packaging.fsh",
+    "startLine": 55,
+    "endLine": 70
+  },
+  {
+    "outputFile": "Binary-DthPcFig12TradeItemMfrA.json",
+    "fshName": "DthPcFig12TradeItemMfrA",
+    "fshType": "Instance",
+    "fshFile": "examples/dth-pc-packaging.fsh",
+    "startLine": 41,
+    "endLine": 53
+  },
+  {
+    "outputFile": "Binary-DthPcNpc01101001.json",
+    "fshName": "DthPcNpc01101001",
+    "fshType": "Instance",
+    "fshFile": "examples/dth-pc-npc-lamivudine.fsh",
+    "startLine": 44,
+    "endLine": 56
+  },
+  {
+    "outputFile": "Binary-DthPcNpcMfr001Gtin58904093825700.json",
+    "fshName": "DthPcNpcMfr001Gtin58904093825700",
+    "fshType": "Instance",
+    "fshFile": "examples/dth-pc-npc-lamivudine.fsh",
+    "startLine": 71,
+    "endLine": 85
+  },
+  {
+    "outputFile": "Binary-DthPcNpcMfr001Gtin58904093825793.json",
+    "fshName": "DthPcNpcMfr001Gtin58904093825793",
+    "fshType": "Instance",
+    "fshFile": "examples/dth-pc-npc-lamivudine.fsh",
+    "startLine": 58,
+    "endLine": 69
+  },
+  {
+    "outputFile": "Binary-DthPcNpcMfr002SkuP006008.json",
+    "fshName": "DthPcNpcMfr002SkuP006008",
+    "fshType": "Instance",
+    "fshFile": "examples/dth-pc-npc-lamivudine.fsh",
+    "startLine": 87,
+    "endLine": 96
+  },
+  {
+    "outputFile": "Binary-DthPcNpcMfr002SkuP006009.json",
+    "fshName": "DthPcNpcMfr002SkuP006009",
+    "fshType": "Instance",
+    "fshFile": "examples/dth-pc-npc-lamivudine.fsh",
+    "startLine": 98,
+    "endLine": 109
+  },
+  {
+    "outputFile": "CodeSystem-AttributeType.json",
+    "fshName": "AttributeType",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/AttributeType.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "CodeSystem-ProductRelationship.json",
+    "fshName": "ProductRelationship",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/ProductRelationship.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "CodeSystem-RegulatationType.json",
+    "fshName": "RegulatationType",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/regulationtype.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "CodeSystem-Status.json",
+    "fshName": "Status",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/status.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "CodeSystem-pcmt-glossary.json",
+    "fshName": "PCMTGlossary",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/glossary.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-DthPcRegulatedTradeItem.json",
+    "fshName": "DthPcRegulatedTradeItem",
+    "fshType": "Logical",
+    "fshFile": "models/dth-pc/dth-pc-fig-9.fsh",
+    "startLine": 36,
+    "endLine": 56
+  },
+  {
+    "outputFile": "StructureDefinition-DthPcTradeItem.json",
+    "fshName": "DthPcTradeItem",
+    "fshType": "Logical",
+    "fshFile": "models/dth-pc/dth-pc-fig-9.fsh",
+    "startLine": 8,
+    "endLine": 34
+  },
+  {
+    "outputFile": "StructureDefinition-GenericProduct.json",
+    "fshName": "GenericProduct",
+    "fshType": "Logical",
+    "fshFile": "models/genericproduct.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-MedicationCatalogItem.json",
+    "fshName": "MedicationCatalogItem",
+    "fshType": "Profile",
+    "fshFile": "profiles/MedicationCatalogItem.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-Product.json",
+    "fshName": "Product",
+    "fshType": "Logical",
+    "fshFile": "models/product.fsh",
+    "startLine": 1,
+    "endLine": 44
+  },
+  {
+    "outputFile": "StructureDefinition-ProductAuthorization.json",
+    "fshName": "ProductAuthorization",
+    "fshType": "Logical",
+    "fshFile": "models/ProductAuthorization.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-ProductID.json",
+    "fshName": "ProductID",
+    "fshType": "Extension",
+    "fshFile": "extensions/ProductID.fsh",
+    "startLine": 2,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-RegulatedTradeItem.json",
+    "fshName": "RegulatedTradeItem",
+    "fshType": "Logical",
+    "fshFile": "models/RegulatedTradeItem.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "StructureDefinition-TradeItem.json",
+    "fshName": "TradeItem",
+    "fshType": "Logical",
+    "fshFile": "models/TradeItem.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "ValueSet-AttributeType.json",
+    "fshName": "AttributeType",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/AttributeType.fsh",
+    "startLine": 2,
+    "endLine": 7
+  },
+  {
+    "outputFile": "ValueSet-NameType.json",
+    "fshName": "NameType",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/nameType.fsh",
+    "startLine": 2,
+    "endLine": 7
+  },
+  {
+    "outputFile": "ValueSet-ProductRelationship.json",
+    "fshName": "ProductRelationship",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/ProductRelationship.fsh",
+    "startLine": 2,
+    "endLine": 7
+  },
+  {
+    "outputFile": "ValueSet-RegulationType.json",
+    "fshName": "RegulationType",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/regulationType.fsh",
+    "startLine": 2,
+    "endLine": 7
+  },
+  {
+    "outputFile": "ValueSet-Status.json",
+    "fshName": "Status",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/status.fsh",
+    "startLine": 2,
+    "endLine": 7
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Name Type for a Product Schema API",
+    "description": "JSON Schema for Name Type for a Product ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-NameType.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-NameType",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-NameType.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-NameType",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-NameType.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-NameType": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/pcmt/ValueSet-NameType.schema.json",
+        "title": "Name Type for a Product Schema",
+        "description": "JSON Schema for Name Type for a Product ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://hl7.org/fhir/device-nametype"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "udi-label-name",
+              "user-friendly-name",
+              "patient-reported-name",
+              "manufacturer-name",
+              "model-name",
+              "other"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the Name Type for a Product ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/pcmt/ValueSet-NameType.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/pcmt/ValueSet-NameType.displays.json",
+        "fhir:valueSet": "http://smart.who.int/pcmt/ValueSet/NameType",
+        "fhir:version": "0.2.0",
+        "fhir:expansionTimestamp": "2026-11-16T19:56:53+00:00"
+      }
+    }
+  }
+}

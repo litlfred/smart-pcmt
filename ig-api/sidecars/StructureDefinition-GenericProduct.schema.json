@@ -1,0 +1,281 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt/StructureDefinition-GenericProduct.schema.json",
+  "title": "Generic Product",
+  "description": "In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information (WHO DTH Product Catalogue Handbook, p. 8; Ch 2, p. 28; Fig. 9, p. 29). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product.",
+  "type": "object",
+  "properties": {
+    "resourceType": {
+      "type": "string",
+      "const": "GenericProduct",
+      "description": "Resource type identifier for GenericProduct logical model"
+    },
+    "@context": {
+      "description": "JSON-LD context for this logical model with ValueSet vocabularies",
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "uri",
+          "description": "URI reference to external JSON-LD context"
+        },
+        {
+          "type": "object",
+          "description": "Inline JSON-LD context",
+          "properties": {
+            "@version": {
+              "type": "number",
+              "const": 1.1
+            },
+            "fhir": {
+              "type": "string",
+              "const": "http://hl7.org/fhir/"
+            }
+          },
+          "additionalProperties": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        {
+          "type": "array",
+          "description": "Array of JSON-LD context objects/URIs",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "object"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "@type": {
+      "type": "string",
+      "description": "JSON-LD type identifier for GenericProduct logical model",
+      "examples": [
+        "LogicalModel-GenericProduct"
+      ]
+    },
+    "identifier": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "Identifier for the generic product (e.g. National Product Code)"
+    },
+    "status": {
+      "$ref": "./ValueSet-Status.schema.json",
+      "description": "Product status"
+    },
+    "name": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "FHIR BackboneElement"
+      },
+      "minItems": 1,
+      "description": "The name of the generic product"
+    },
+    "id": {
+      "type": "object",
+      "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."
+    },
+    "modifierExtension": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "FHIR Extension"
+      },
+      "description": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."
+    },
+    "nameType": {
+      "$ref": "./ValueSet-NameType.schema.json",
+      "description": "The type of name"
+    },
+    "nameValue": {
+      "type": "string",
+      "description": "The name of the generic product"
+    },
+    "description": {
+      "type": "string",
+      "description": "The description of the generic product"
+    },
+    "classification": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "A categorization or classification of the generic product (e.g. ATC/DDD, ICD-11)"
+    },
+    "dosageForm": {
+      "$ref": "./ValueSet-v3-DispensableDrugForm.schema.json",
+      "description": "The physical form of the medication"
+    },
+    "strength": {
+      "type": "object",
+      "description": "The strength of the generic product (e.g. 500 mg)"
+    },
+    "routeOfAdministration": {
+      "type": "array",
+      "items": {
+        "$ref": "./ValueSet-eHDSIRouteofAdministration.schema.json",
+        "description": "Coding-shaped {system, code} object from ValueSet eHDSIRouteofAdministration"
+      },
+      "description": "The route of administration of the medication"
+    },
+    "unitOfUse": {
+      "type": "object",
+      "description": "The unit in which the generic product is used or counted"
+    },
+    "doseQuantity": {
+      "type": "object",
+      "description": "The number of doses"
+    },
+    "attribute": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "FHIR BackboneElement"
+      },
+      "description": "Attributes or characteristics of the generic product"
+    },
+    "type": {
+      "$ref": "./ValueSet-AttributeType.schema.json",
+      "description": "The attribute type"
+    },
+    "value[x]": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "object",
+          "description": "FHIR Ratio"
+        },
+        {
+          "type": "object",
+          "description": "FHIR Annotation"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "object",
+          "description": "FHIR Duration"
+        },
+        {
+          "type": "object"
+        }
+      ],
+      "description": "The value of the attribute"
+    },
+    "associatedProduct": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "FHIR BackboneElement"
+      },
+      "description": "Associations with other products"
+    },
+    "product": {
+      "type": "object",
+      "description": "The associated product"
+    },
+    "relationship": {
+      "type": "array",
+      "items": {
+        "$ref": "./ValueSet-ProductRelationship.schema.json",
+        "description": "Coding-shaped {system, code} object from ValueSet ProductRelationship"
+      },
+      "minItems": 1,
+      "description": "The relationship"
+    },
+    "quantity": {
+      "type": "object",
+      "description": "How many"
+    }
+  },
+  "required": [
+    "resourceType",
+    "status",
+    "name",
+    "nameType",
+    "nameValue",
+    "unitOfUse",
+    "type",
+    "value[x]",
+    "product",
+    "relationship",
+    "quantity"
+  ],
+  "allOf": [
+    {
+      "$ref": "./StructureDefinition-FHIRSchemaBase.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "resourceDefinition": {
+          "type": "string",
+          "format": "uri",
+          "const": "http://smart.who.int/pcmt/StructureDefinition/GenericProduct"
+        },
+        "fhir:parent": {
+          "type": "string",
+          "const": "http://hl7.org/fhir/StructureDefinition/Base"
+        },
+        "jsonld:valuesets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "const": [
+            "AttributeType",
+            "NameType",
+            "ProductRelationship",
+            "Status",
+            "eHDSIRouteofAdministration",
+            "v3-DispensableDrugForm"
+          ]
+        },
+        "jsonld:contextTemplate": {
+          "type": "object",
+          "const": {
+            "@version": 1.1,
+            "fhir": "http://hl7.org/fhir/",
+            "AttributeType": "http://smart.who.int/pcmt/ValueSet-AttributeType.jsonld",
+            "NameType": "http://smart.who.int/pcmt/ValueSet-NameType.jsonld",
+            "ProductRelationship": "http://smart.who.int/pcmt/ValueSet-ProductRelationship.jsonld",
+            "Status": "http://smart.who.int/pcmt/ValueSet-Status.jsonld",
+            "eHDSIRouteofAdministration": "http://smart.who.int/pcmt/ValueSet-eHDSIRouteofAdministration.jsonld",
+            "v3-DispensableDrugForm": "http://smart.who.int/pcmt/ValueSet-v3-DispensableDrugForm.jsonld"
+          }
+        }
+      }
+    }
+  ]
+}

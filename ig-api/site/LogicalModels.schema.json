@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "#/LogicalModels.schema.json",
+  "title": "Logical Model Enumeration Schema",
+  "description": "JSON Schema defining the structure of the Logical Model enumeration endpoint response",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "logical_model",
+      "description": "The type of schemas enumerated (logical_model)"
+    },
+    "count": {
+      "type": "integer",
+      "description": "Total number of schemas available"
+    },
+    "schemas": {
+      "type": "array",
+      "description": "Array of available schemas",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "description": "Schema filename"
+          },
+          "id": {
+            "type": "string",
+            "description": "Schema $id"
+          },
+          "title": {
+            "type": "string",
+            "description": "Schema title"
+          },
+          "description": {
+            "type": "string",
+            "description": "Schema description"
+          },
+          "url": {
+            "type": "string",
+            "description": "Relative URL to the schema file"
+          },
+          "logicalModelUrl": {
+            "type": "string",
+            "description": "FHIR canonical URL of the Logical Model"
+          },
+          "propertyCount": {
+            "type": "integer",
+            "description": "Number of properties in the Logical Model"
+          }
+        },
+        "required": [
+          "filename",
+          "title",
+          "url"
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "count",
+    "schemas"
+  ],
+  "example": {
+    "type": "logical_model",
+    "count": 7,
+    "schemas": [
+      {
+        "filename": "StructureDefinition-DthPcRegulatedTradeItem.schema.json",
+        "id": "http://smart.who.int/pcmt/StructureDefinition-DthPcRegulatedTradeItem.schema.json",
+        "title": "Regulated Trade Item (DTH product catalogue handbook, Fig. 9)",
+        "description": "A trade item as authorised in a jurisdiction, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Trade Item has zero or more Regulated Trade Items. This IG's ProductAuthorization carries a related but different set of elements. Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item.",
+        "url": "./StructureDefinition-DthPcRegulatedTradeItem.schema.json",
+        "propertyCount": 18
+      },
+      {
+        "filename": "StructureDefinition-DthPcTradeItem.schema.json",
+        "id": "http://smart.who.int/pcmt/StructureDefinition-DthPcTradeItem.schema.json",
+        "title": "Trade Item (DTH product catalogue handbook, Fig. 9)",
+        "description": "A packaged, identified unit of a Generic Product as traded, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Generic Product has zero or more Trade Items. Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item.",
+        "url": "./StructureDefinition-DthPcTradeItem.schema.json",
+        "propertyCount": 23
+      },
+      {
+        "filename": "StructureDefinition-GenericProduct.schema.json",
+        "id": "http://smart.who.int/pcmt/StructureDefinition-GenericProduct.schema.json",
+        "title": "Generic Product",
+        "description": "In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information (WHO DTH Product Catalogue Handbook, p. 8; Ch 2, p. 28; Fig. 9, p. 29). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product.",
+        "url": "./StructureDefinition-GenericProduct.schema.json",
+        "propertyCount": 24
+      },
+      {
+        "filename": "StructureDefinition-Product.schema.json",
+        "id": "http://smart.who.int/pcmt/StructureDefinition-Product.schema.json",
+        "title": "Product",
+        "description": "A Product represents a physical item or set of items which can be held in inventory, ordered, exchanged, dispensed or other utilized within the health system, clinical and supply chain workflows. Anchored to dth-pc Product Master Data (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data) and Generic Product (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product).",
+        "url": "./StructureDefinition-Product.schema.json",
+        "propertyCount": 27
+      },
+      {
+        "filename": "StructureDefinition-ProductAuthorization.schema.json",
+        "id": "http://smart.who.int/pcmt/StructureDefinition-ProductAuthorization.schema.json",
+        "title": "Product Authorization",
+        "description": "A record of authorization or compliance for one or more Products with a set of regulatory, policy, (pre-)qualification, or legal requirements. Anchored to dth-pc Regulated Trade Item (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item).",
+        "url": "./StructureDefinition-ProductAuthorization.schema.json",
+        "propertyCount": 10
+      },
+      {
+        "filename": "StructureDefinition-RegulatedTradeItem.schema.json",
+        "id": "http://smart.who.int/pcmt/StructureDefinition-RegulatedTradeItem.schema.json",
+        "title": "Regulated Trade Item",
+        "description": "A Regulated Trade Item represents an authorization of a Trade item within a given jurisdiction under a Product Authorization (WHO DTH Product Catalogue Handbook, Ch 2, p. 28; Fig. 9, p. 29). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item.",
+        "url": "./StructureDefinition-RegulatedTradeItem.schema.json",
+        "propertyCount": 19
+      },
+      {
+        "filename": "StructureDefinition-TradeItem.schema.json",
+        "id": "http://smart.who.int/pcmt/StructureDefinition-TradeItem.schema.json",
+        "title": "Trade Item",
+        "description": "Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer (WHO DTH Product Catalogue Handbook, Ch 2, p. 28; Fig. 9, p. 29). Models the WHO Product Catalogue narrow sense of Trade Item (broadMatch GS1 Trade Item per litlfred/smart-ra#142). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item.",
+        "url": "./StructureDefinition-TradeItem.schema.json",
+        "propertyCount": 23
+      }
+    ]
+  }
+}

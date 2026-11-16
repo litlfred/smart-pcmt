@@ -1,0 +1,1594 @@
+{
+  "$schema": "folio-fhir-artifact-index/v2",
+  "id": "smart-pcmt",
+  "title": "smart.who.int.pcmt — artefact index (from the IG Publisher AST cache)",
+  "packageId": "smart.who.int.pcmt",
+  "version": "0.2.0",
+  "status": "draft",
+  "canonicalBase": "http://smart.who.int/pcmt",
+  "source": {
+    "kind": "output",
+    "of": ".",
+    "revision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+    "readAt": "2026-11-16"
+  },
+  "provenance": {},
+  "sidecarApi": "present",
+  "count": 30,
+  "artifacts": [
+    {
+      "key": "Binary/DthPcFig12GenericMR001",
+      "resourceType": "Binary",
+      "id": "DthPcFig12GenericMR001",
+      "title": "DthPcFig12GenericMR001",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Binary-DthPcFig12GenericMR001.json"
+        },
+        "localPath": "resources/Binary/DthPcFig12GenericMR001.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "Binary/DthPcFig12MfrBCase",
+      "resourceType": "Binary",
+      "id": "DthPcFig12MfrBCase",
+      "title": "DthPcFig12MfrBCase",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Binary-DthPcFig12MfrBCase.json"
+        },
+        "localPath": "resources/Binary/DthPcFig12MfrBCase.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "Binary/DthPcFig12MfrBInnerPack",
+      "resourceType": "Binary",
+      "id": "DthPcFig12MfrBInnerPack",
+      "title": "DthPcFig12MfrBInnerPack",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Binary-DthPcFig12MfrBInnerPack.json"
+        },
+        "localPath": "resources/Binary/DthPcFig12MfrBInnerPack.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "Binary/DthPcFig12MfrBPallet",
+      "resourceType": "Binary",
+      "id": "DthPcFig12MfrBPallet",
+      "title": "DthPcFig12MfrBPallet",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Binary-DthPcFig12MfrBPallet.json"
+        },
+        "localPath": "resources/Binary/DthPcFig12MfrBPallet.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "Binary/DthPcFig12TradeItemMfrA",
+      "resourceType": "Binary",
+      "id": "DthPcFig12TradeItemMfrA",
+      "title": "DthPcFig12TradeItemMfrA",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Binary-DthPcFig12TradeItemMfrA.json"
+        },
+        "localPath": "resources/Binary/DthPcFig12TradeItemMfrA.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "Binary/DthPcNpc01101001",
+      "resourceType": "Binary",
+      "id": "DthPcNpc01101001",
+      "title": "DthPcNpc01101001",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Binary-DthPcNpc01101001.json"
+        },
+        "localPath": "resources/Binary/DthPcNpc01101001.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "Binary/DthPcNpcMfr001Gtin58904093825700",
+      "resourceType": "Binary",
+      "id": "DthPcNpcMfr001Gtin58904093825700",
+      "title": "DthPcNpcMfr001Gtin58904093825700",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Binary-DthPcNpcMfr001Gtin58904093825700.json"
+        },
+        "localPath": "resources/Binary/DthPcNpcMfr001Gtin58904093825700.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "Binary/DthPcNpcMfr001Gtin58904093825793",
+      "resourceType": "Binary",
+      "id": "DthPcNpcMfr001Gtin58904093825793",
+      "title": "DthPcNpcMfr001Gtin58904093825793",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Binary-DthPcNpcMfr001Gtin58904093825793.json"
+        },
+        "localPath": "resources/Binary/DthPcNpcMfr001Gtin58904093825793.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "Binary/DthPcNpcMfr002SkuP006008",
+      "resourceType": "Binary",
+      "id": "DthPcNpcMfr002SkuP006008",
+      "title": "DthPcNpcMfr002SkuP006008",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Binary-DthPcNpcMfr002SkuP006008.json"
+        },
+        "localPath": "resources/Binary/DthPcNpcMfr002SkuP006008.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "Binary/DthPcNpcMfr002SkuP006009",
+      "resourceType": "Binary",
+      "id": "DthPcNpcMfr002SkuP006009",
+      "title": "DthPcNpcMfr002SkuP006009",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Binary-DthPcNpcMfr002SkuP006009.json"
+        },
+        "localPath": "resources/Binary/DthPcNpcMfr002SkuP006009.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "CodeSystem/AttributeType",
+      "resourceType": "CodeSystem",
+      "id": "AttributeType",
+      "name": "AttributeType",
+      "title": "Attribute type of Products",
+      "description": "Attribute type of Products",
+      "canonical": "http://smart.who.int/pcmt/CodeSystem/AttributeType",
+      "version": "0.2.0",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-AttributeType.json"
+        },
+        "localPath": "resources/CodeSystem/AttributeType.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "CodeSystem/ProductRelationship",
+      "resourceType": "CodeSystem",
+      "id": "ProductRelationship",
+      "name": "ProductRelationship",
+      "title": "Product Relationship",
+      "description": "ProductRelationship Code System",
+      "canonical": "http://smart.who.int/pcmt/CodeSystem/ProductRelationship",
+      "version": "0.2.0",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-ProductRelationship.json"
+        },
+        "localPath": "resources/CodeSystem/ProductRelationship.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "CodeSystem/RegulatationType",
+      "resourceType": "CodeSystem",
+      "id": "RegulatationType",
+      "name": "RegulatationType",
+      "title": "Product Regulation Type",
+      "description": "Product Regulation Status",
+      "canonical": "http://smart.who.int/pcmt/CodeSystem/RegulatationType",
+      "version": "0.2.0",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-RegulatationType.json"
+        },
+        "localPath": "resources/CodeSystem/RegulatationType.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "CodeSystem/Status",
+      "resourceType": "CodeSystem",
+      "id": "Status",
+      "name": "Status",
+      "title": "Product and regulatory authorization status",
+      "description": "Product and regulatory authorization status",
+      "canonical": "http://smart.who.int/pcmt/CodeSystem/Status",
+      "version": "0.2.0",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-Status.json"
+        },
+        "localPath": "resources/CodeSystem/Status.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "CodeSystem/pcmt-glossary",
+      "resourceType": "CodeSystem",
+      "id": "pcmt-glossary",
+      "name": "PCMTGlossary",
+      "title": "PCMT Glossary Terms",
+      "description": "CodeSystem for product attributes and terminology used in the SMART Product Catalogue Management Tool (PCMT). Core domain entities (Generic Product, Trade Item, Regulated Trade Item, Product Master Data) are anchored in the mounted dth-pc glossary (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/).",
+      "canonical": "http://smart.who.int/pcmt/CodeSystem/pcmt-glossary",
+      "version": "0.2.0",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-pcmt-glossary.json"
+        },
+        "localPath": "resources/CodeSystem/pcmt-glossary.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "ImplementationGuide/smart.who.int.pcmt",
+      "resourceType": "ImplementationGuide",
+      "id": "smart.who.int.pcmt",
+      "name": "SMARTPCMT",
+      "title": "SMART Product Catalog",
+      "description": "Data exchange specifications for Product Catalog supporting the SMART Guidelines",
+      "canonical": "http://smart.who.int/pcmt/ImplementationGuide/smart.who.int.pcmt",
+      "version": "0.2.0",
+      "profiles": [
+        "http://smart.who.int/smart-base/ImplementationGuide-SGImplementationGuide"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ImplementationGuide-smart.who.int.pcmt.json"
+        },
+        "localPath": "resources/ImplementationGuide/smart.who.int.pcmt.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/DthPcRegulatedTradeItem",
+      "resourceType": "StructureDefinition",
+      "id": "DthPcRegulatedTradeItem",
+      "name": "DthPcRegulatedTradeItem",
+      "title": "Regulated Trade Item (DTH product catalogue handbook, Fig. 9)",
+      "description": "A trade item as authorised in a jurisdiction, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Trade Item has zero or more Regulated Trade Items. This IG's ProductAuthorization carries a related but different set of elements. Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item.",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem",
+      "version": "0.2.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DthPcRegulatedTradeItem.json"
+        },
+        "localPath": "resources/StructureDefinition/DthPcRegulatedTradeItem.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "ig-api/sidecars/StructureDefinition-DthPcRegulatedTradeItem.openapi.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-DthPcRegulatedTradeItem.openapi.json",
+          "bytes": 10410
+        },
+        "schema": {
+          "url": "ig-api/sidecars/StructureDefinition-DthPcRegulatedTradeItem.schema.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-DthPcRegulatedTradeItem.schema.json",
+          "bytes": 7536
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/DthPcTradeItem",
+      "resourceType": "StructureDefinition",
+      "id": "DthPcTradeItem",
+      "name": "DthPcTradeItem",
+      "title": "Trade Item (DTH product catalogue handbook, Fig. 9)",
+      "description": "A packaged, identified unit of a Generic Product as traded, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Generic Product has zero or more Trade Items. Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item.",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem",
+      "version": "0.2.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DthPcTradeItem.json"
+        },
+        "localPath": "resources/StructureDefinition/DthPcTradeItem.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "ig-api/sidecars/StructureDefinition-DthPcTradeItem.openapi.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-DthPcTradeItem.openapi.json",
+          "bytes": 10685
+        },
+        "schema": {
+          "url": "ig-api/sidecars/StructureDefinition-DthPcTradeItem.schema.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-DthPcTradeItem.schema.json",
+          "bytes": 7818
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/GenericProduct",
+      "resourceType": "StructureDefinition",
+      "id": "GenericProduct",
+      "name": "GenericProduct",
+      "title": "Generic Product",
+      "description": "In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information (WHO DTH Product Catalogue Handbook, p. 8; Ch 2, p. 28; Fig. 9, p. 29). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product.",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/GenericProduct",
+      "version": "0.2.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-GenericProduct.json"
+        },
+        "localPath": "resources/StructureDefinition/GenericProduct.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "ig-api/sidecars/StructureDefinition-GenericProduct.openapi.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-GenericProduct.openapi.json",
+          "bytes": 11791
+        },
+        "schema": {
+          "url": "ig-api/sidecars/StructureDefinition-GenericProduct.schema.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-GenericProduct.schema.json",
+          "bytes": 8802
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/MedicationCatalogItem",
+      "resourceType": "StructureDefinition",
+      "id": "MedicationCatalogItem",
+      "name": "MedicationCatalogItem",
+      "title": "Medication Catalog Item",
+      "description": "This profile represents a catalog item that is a medication",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/MedicationCatalogItem",
+      "version": "0.2.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-MedicationCatalogItem.json"
+        },
+        "localPath": "resources/StructureDefinition/MedicationCatalogItem.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/Product",
+      "resourceType": "StructureDefinition",
+      "id": "Product",
+      "name": "Product",
+      "title": "Product",
+      "description": "A Product represents a physical item or set of items which can be held in inventory, ordered, exchanged, dispensed or other utilized within the health system, clinical and supply chain workflows. Anchored to dth-pc Product Master Data (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data) and Generic Product (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product).",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/Product",
+      "version": "0.2.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-Product.json"
+        },
+        "localPath": "resources/StructureDefinition/Product.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "ig-api/sidecars/StructureDefinition-Product.openapi.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-Product.openapi.json",
+          "bytes": 12573
+        },
+        "schema": {
+          "url": "ig-api/sidecars/StructureDefinition-Product.schema.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-Product.schema.json",
+          "bytes": 9530
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/ProductAuthorization",
+      "resourceType": "StructureDefinition",
+      "id": "ProductAuthorization",
+      "name": "ProductAuthorization",
+      "title": "Product Authorization",
+      "description": "A record of authorization or compliance for one or more Products with a set of regulatory, policy, (pre-)qualification, or legal requirements. Anchored to dth-pc Regulated Trade Item (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item).",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+      "version": "0.2.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-ProductAuthorization.json"
+        },
+        "localPath": "resources/StructureDefinition/ProductAuthorization.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "ig-api/sidecars/StructureDefinition-ProductAuthorization.openapi.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-ProductAuthorization.openapi.json",
+          "bytes": 6416
+        },
+        "schema": {
+          "url": "ig-api/sidecars/StructureDefinition-ProductAuthorization.schema.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-ProductAuthorization.schema.json",
+          "bytes": 4314
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/ProductID",
+      "resourceType": "StructureDefinition",
+      "id": "ProductID",
+      "name": "ProductID",
+      "title": "ProductID",
+      "description": "The business identifier of a  product in a product catalogue.\n\nIn FHIR R6, this could also be a reference to an InventoryItem",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/ProductID",
+      "version": "0.2.0",
+      "category": "Structures: Extension Definitions",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-ProductID.json"
+        },
+        "localPath": "resources/StructureDefinition/ProductID.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/RegulatedTradeItem",
+      "resourceType": "StructureDefinition",
+      "id": "RegulatedTradeItem",
+      "name": "RegulatedTradeItem",
+      "title": "Regulated Trade Item",
+      "description": "A Regulated Trade Item represents an authorization of a Trade item within a given jurisdiction under a Product Authorization (WHO DTH Product Catalogue Handbook, Ch 2, p. 28; Fig. 9, p. 29). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item.",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem",
+      "version": "0.2.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-RegulatedTradeItem.json"
+        },
+        "localPath": "resources/StructureDefinition/RegulatedTradeItem.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "ig-api/sidecars/StructureDefinition-RegulatedTradeItem.openapi.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-RegulatedTradeItem.openapi.json",
+          "bytes": 10256
+        },
+        "schema": {
+          "url": "ig-api/sidecars/StructureDefinition-RegulatedTradeItem.schema.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-RegulatedTradeItem.schema.json",
+          "bytes": 7519
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/TradeItem",
+      "resourceType": "StructureDefinition",
+      "id": "TradeItem",
+      "name": "TradeItem",
+      "title": "Trade Item",
+      "description": "Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer (WHO DTH Product Catalogue Handbook, Ch 2, p. 28; Fig. 9, p. 29). Models the WHO Product Catalogue narrow sense of Trade Item (broadMatch GS1 Trade Item per litlfred/smart-ra#142). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item.",
+      "canonical": "http://smart.who.int/pcmt/StructureDefinition/TradeItem",
+      "version": "0.2.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-TradeItem.json"
+        },
+        "localPath": "resources/StructureDefinition/TradeItem.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "ig-api/sidecars/StructureDefinition-TradeItem.openapi.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-TradeItem.openapi.json",
+          "bytes": 10924
+        },
+        "schema": {
+          "url": "ig-api/sidecars/StructureDefinition-TradeItem.schema.json",
+          "localPath": "ig-api/sidecars/StructureDefinition-TradeItem.schema.json",
+          "bytes": 8012
+        }
+      }
+    },
+    {
+      "key": "ValueSet/AttributeType",
+      "resourceType": "ValueSet",
+      "id": "AttributeType",
+      "name": "AttributeType",
+      "title": "AttributeType for a Product",
+      "description": "Product status",
+      "canonical": "http://smart.who.int/pcmt/ValueSet/AttributeType",
+      "version": "0.2.0",
+      "category": "Terminology: Value Sets",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ValueSet-AttributeType.json"
+        },
+        "localPath": "resources/ValueSet/AttributeType.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      },
+      "sidecars": {
+        "displays": {
+          "url": "ig-api/sidecars/ValueSet-AttributeType.displays.json",
+          "localPath": "ig-api/sidecars/ValueSet-AttributeType.displays.json",
+          "bytes": 1651
+        },
+        "jsonld": {
+          "url": "ig-api/sidecars/ValueSet-AttributeType.jsonld",
+          "localPath": "ig-api/sidecars/ValueSet-AttributeType.jsonld",
+          "bytes": 908
+        },
+        "openapi": {
+          "url": "ig-api/sidecars/ValueSet-AttributeType.openapi.json",
+          "localPath": "ig-api/sidecars/ValueSet-AttributeType.openapi.json",
+          "bytes": 2594
+        },
+        "schema": {
+          "url": "ig-api/sidecars/ValueSet-AttributeType.schema.json",
+          "localPath": "ig-api/sidecars/ValueSet-AttributeType.schema.json",
+          "bytes": 1412
+        }
+      }
+    },
+    {
+      "key": "ValueSet/NameType",
+      "resourceType": "ValueSet",
+      "id": "NameType",
+      "name": "NameType",
+      "title": "Name Type for a Product",
+      "description": "Product name type",
+      "canonical": "http://smart.who.int/pcmt/ValueSet/NameType",
+      "version": "0.2.0",
+      "category": "Terminology: Value Sets",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ValueSet-NameType.json"
+        },
+        "localPath": "resources/ValueSet/NameType.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      },
+      "sidecars": {
+        "displays": {
+          "url": "ig-api/sidecars/ValueSet-NameType.displays.json",
+          "localPath": "ig-api/sidecars/ValueSet-NameType.displays.json",
+          "bytes": 1855
+        },
+        "jsonld": {
+          "url": "ig-api/sidecars/ValueSet-NameType.jsonld",
+          "localPath": "ig-api/sidecars/ValueSet-NameType.jsonld",
+          "bytes": 1150
+        },
+        "openapi": {
+          "url": "ig-api/sidecars/ValueSet-NameType.openapi.json",
+          "localPath": "ig-api/sidecars/ValueSet-NameType.openapi.json",
+          "bytes": 2626
+        },
+        "schema": {
+          "url": "ig-api/sidecars/ValueSet-NameType.schema.json",
+          "localPath": "ig-api/sidecars/ValueSet-NameType.schema.json",
+          "bytes": 1464
+        }
+      }
+    },
+    {
+      "key": "ValueSet/ProductRelationship",
+      "resourceType": "ValueSet",
+      "id": "ProductRelationship",
+      "name": "ProductRelationship",
+      "title": "Product Relationships",
+      "description": "Product relationship value set",
+      "canonical": "http://smart.who.int/pcmt/ValueSet/ProductRelationship",
+      "version": "0.2.0",
+      "category": "Terminology: Value Sets",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ValueSet-ProductRelationship.json"
+        },
+        "localPath": "resources/ValueSet/ProductRelationship.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      },
+      "sidecars": {
+        "displays": {
+          "url": "ig-api/sidecars/ValueSet-ProductRelationship.displays.json",
+          "localPath": "ig-api/sidecars/ValueSet-ProductRelationship.displays.json",
+          "bytes": 2610
+        },
+        "jsonld": {
+          "url": "ig-api/sidecars/ValueSet-ProductRelationship.jsonld",
+          "localPath": "ig-api/sidecars/ValueSet-ProductRelationship.jsonld",
+          "bytes": 1930
+        },
+        "openapi": {
+          "url": "ig-api/sidecars/ValueSet-ProductRelationship.openapi.json",
+          "localPath": "ig-api/sidecars/ValueSet-ProductRelationship.openapi.json",
+          "bytes": 2740
+        },
+        "schema": {
+          "url": "ig-api/sidecars/ValueSet-ProductRelationship.schema.json",
+          "localPath": "ig-api/sidecars/ValueSet-ProductRelationship.schema.json",
+          "bytes": 1516
+        }
+      }
+    },
+    {
+      "key": "ValueSet/RegulationType",
+      "resourceType": "ValueSet",
+      "id": "RegulationType",
+      "name": "RegulationType",
+      "title": "Regulation Type for a Regulated Product",
+      "description": "Regulated Product Regulation type",
+      "canonical": "http://smart.who.int/pcmt/ValueSet/RegulationType",
+      "version": "0.2.0",
+      "category": "Terminology: Value Sets",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ValueSet-RegulationType.json"
+        },
+        "localPath": "resources/ValueSet/RegulationType.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      }
+    },
+    {
+      "key": "ValueSet/Status",
+      "resourceType": "ValueSet",
+      "id": "Status",
+      "name": "Status",
+      "title": "Status for a Product",
+      "description": "Product status",
+      "canonical": "http://smart.who.int/pcmt/ValueSet/Status",
+      "version": "0.2.0",
+      "category": "Terminology: Value Sets",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ValueSet-Status.json"
+        },
+        "localPath": "resources/ValueSet/Status.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+          "inputDigest": "b320b25fdfa66a005610347c9b3e9353ecc1af892c79ae7d337d4a20d91719b3"
+        },
+        "materializedAt": "2026-11-16T19:57:29.796823706Z"
+      },
+      "sidecars": {
+        "displays": {
+          "url": "ig-api/sidecars/ValueSet-Status.displays.json",
+          "localPath": "ig-api/sidecars/ValueSet-Status.displays.json",
+          "bytes": 1623
+        },
+        "jsonld": {
+          "url": "ig-api/sidecars/ValueSet-Status.jsonld",
+          "localPath": "ig-api/sidecars/ValueSet-Status.jsonld",
+          "bytes": 887
+        },
+        "openapi": {
+          "url": "ig-api/sidecars/ValueSet-Status.openapi.json",
+          "localPath": "ig-api/sidecars/ValueSet-Status.openapi.json",
+          "bytes": 2482
+        },
+        "schema": {
+          "url": "ig-api/sidecars/ValueSet-Status.schema.json",
+          "localPath": "ig-api/sidecars/ValueSet-Status.schema.json",
+          "bytes": 1356
+        }
+      }
+    }
+  ]
+}

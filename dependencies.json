@@ -1,0 +1,627 @@
+{
+  "$schema" : "ig-ast-dependencies/v1",
+  "authority" : "cache",
+  "edges" : 69,
+  "resolvedInIg" : 44,
+  "dependencies" : [{
+    "source" : "http://smart.who.int/pcmt/ImplementationGuide/smart.who.int.pcmt|0.2.0",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/smart-base/ImplementationGuide-SGImplementationGuide",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "ImplementationGuide.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/AttributeType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/AttributeType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/ProductRelationship",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/ProductRelationship|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/Status",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/Status|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem|0.2.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/Product",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization",
+    "targetVersion" : "3.8.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/AttributeType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/AttributeType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/NameType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/NameType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/Status",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/Status|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/Product",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization",
+    "targetVersion" : "3.8.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "kind" : "uses",
+    "target" : "http://hl7.org/fhir/StructureDefinition/SimpleQuantity",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/AttributeType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/AttributeType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/NameType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/NameType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/ProductRelationship",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/ProductRelationship|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/Status",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/Status|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://terminology.ehdsi.eu/ValueSet/eHDSIRouteofAdministration",
+    "targetVersion" : "0.2.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://terminology.hl7.org/ValueSet/v3-DispensableDrugForm",
+    "targetVersion" : "3.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/Product",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "kind" : "uses",
+    "target" : "http://hl7.org/fhir/StructureDefinition/SimpleQuantity",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/MedicationCatalogItem|0.2.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/MedicationCatalogItem|0.2.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/ProductID",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/ProductID|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/RegulationType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/RegulationType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/Status",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/Status|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization|0.2.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/Product",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization|0.2.0",
+    "kind" : "refers to",
+    "target" : "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization",
+    "targetVersion" : "3.8.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/ProductID|0.2.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/ProductID|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/MedicationCatalogItem",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/MedicationCatalogItem|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/AttributeType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/AttributeType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/NameType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/NameType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/ProductRelationship",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/ProductRelationship|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/Status",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/Status|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://terminology.ehdsi.eu/ValueSet/eHDSIRouteofAdministration",
+    "targetVersion" : "0.2.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://terminology.hl7.org/ValueSet/v3-DispensableDrugForm",
+    "targetVersion" : "3.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/Product",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "kind" : "refers to",
+    "target" : "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization",
+    "targetVersion" : "3.8.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "kind" : "uses",
+    "target" : "http://hl7.org/fhir/StructureDefinition/SimpleQuantity",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/AttributeType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/AttributeType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/ProductRelationship",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/ProductRelationship|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/Status",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/Status|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem|0.2.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/Product",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization",
+    "targetVersion" : "3.8.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/AttributeType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/AttributeType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/NameType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/NameType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt/ValueSet/Status",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/ValueSet/Status|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/GenericProduct|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/Product",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/Product|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "kind" : "refers to",
+    "target" : "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization",
+    "targetVersion" : "3.8.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/StructureDefinition/TradeItem|0.2.0",
+    "kind" : "uses",
+    "target" : "http://hl7.org/fhir/StructureDefinition/SimpleQuantity",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/ValueSet/AttributeType|0.2.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/pcmt/CodeSystem/AttributeType",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/CodeSystem/AttributeType|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/ValueSet/NameType|0.2.0",
+    "kind" : "includes from",
+    "target" : "http://hl7.org/fhir/device-nametype",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/ValueSet/ProductRelationship|0.2.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/pcmt/CodeSystem/ProductRelationship",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/CodeSystem/ProductRelationship|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/pcmt/ValueSet/Status|0.2.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/pcmt/CodeSystem/Status",
+    "targetVersion" : "0.2.0",
+    "resolved" : "http://smart.who.int/pcmt/CodeSystem/Status|0.2.0",
+    "path" : null,
+    "origin" : "publisher"
+  }]
+}

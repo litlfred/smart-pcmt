@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/pcmt/ValueSet-ProductRelationship.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/pcmt/CodeSystem-ProductRelationship"
+  },
+  "@id": "http://smart.who.int/pcmt/ValueSet-ProductRelationship.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-16T19:57:29.796823706Z",
+  "@graph": [
+    {
+      "id": "#contains",
+      "name": "This relationship is used to represent some packaging packgaing, assemblage of kits or other physical containment of products.    The Product contains the associated Products that are referenced"
+    },
+    {
+      "id": "#vial_contains",
+      "name": "This relationship is a speciialization of the #package-contains concept which represents that the product is a vial"
+    },
+    {
+      "id": "#inner_pack_contains",
+      "name": "This relationship is a speciialization of the #package-contains concept which represents that the product is an inner pack"
+    },
+    {
+      "id": "#case_contains",
+      "name": "This relationship is a speciialization of the #package-contains concept which represents that the product is a case"
+    },
+    {
+      "id": "#pallet_contains",
+      "name": "This relationship is a speciialization of the #package-contains concept which represents that the product is a pallet"
+    },
+    {
+      "id": "#equivalent",
+      "name": "This relationship indicates tha product is equivalent to the referenced product, for example such as with duplicate entries in a catalogue for the same phtsical item."
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

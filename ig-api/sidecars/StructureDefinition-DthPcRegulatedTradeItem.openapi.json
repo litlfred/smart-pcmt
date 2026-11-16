@@ -1,0 +1,276 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Regulated Trade Item (DTH product catalogue handbook, Fig. 9) API",
+    "description": "A trade item as authorised in a jurisdiction, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Trade Item has zero or more Regulated Trade Items. This IG's ProductAuthorization carries a related but different set of elements. Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/StructureDefinition-DthPcRegulatedTradeItem.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the Logical Model StructureDefinition-DthPcRegulatedTradeItem",
+        "description": "This endpoint serves the JSON Schema definition for the Logical Model StructureDefinition-DthPcRegulatedTradeItem.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for StructureDefinition-DthPcRegulatedTradeItem",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./StructureDefinition-DthPcRegulatedTradeItem.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "StructureDefinition-DthPcRegulatedTradeItem": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/pcmt/StructureDefinition-DthPcRegulatedTradeItem.schema.json",
+        "title": "Regulated Trade Item (DTH product catalogue handbook, Fig. 9)",
+        "description": "A trade item as authorised in a jurisdiction, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Trade Item has zero or more Regulated Trade Items. This IG's ProductAuthorization carries a related but different set of elements. Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item.",
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "DthPcRegulatedTradeItem",
+            "description": "Resource type identifier for DthPcRegulatedTradeItem logical model"
+          },
+          "@context": {
+            "description": "JSON-LD context for this logical model with ValueSet vocabularies",
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "URI reference to external JSON-LD context"
+              },
+              {
+                "type": "object",
+                "description": "Inline JSON-LD context",
+                "properties": {
+                  "@version": {
+                    "type": "number",
+                    "const": 1.1
+                  },
+                  "fhir": {
+                    "type": "string",
+                    "const": "http://hl7.org/fhir/"
+                  }
+                },
+                "additionalProperties": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              {
+                "type": "array",
+                "description": "Array of JSON-LD context objects/URIs",
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "uri"
+                    },
+                    {
+                      "type": "object"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "@type": {
+            "type": "string",
+            "description": "JSON-LD type identifier for DthPcRegulatedTradeItem logical model",
+            "examples": [
+              "LogicalModel-DthPcRegulatedTradeItem"
+            ]
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            },
+            "minItems": 1,
+            "description": "Authorisation identifier, e.g. a marketing authorisation or product registration number"
+          },
+          "status": {
+            "$ref": "./ValueSet-Status.schema.json",
+            "description": "Authorisation status"
+          },
+          "jurisdiction": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            },
+            "minItems": 1,
+            "description": "The jurisdiction where the trade item is authorised"
+          },
+          "authorisationHolder": {
+            "type": "object",
+            "description": "The holder of the authorisation"
+          },
+          "validityPeriod": {
+            "type": "object",
+            "description": "Validity period of the authorisation"
+          },
+          "authorisedTradeItem": {
+            "type": "object",
+            "description": "The trade item that is authorised"
+          },
+          "attribute": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "FHIR BackboneElement"
+            },
+            "description": "Attributes of the regulated trade item"
+          },
+          "id": {
+            "type": "object",
+            "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."
+          },
+          "modifierExtension": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "FHIR Extension"
+            },
+            "description": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."
+          },
+          "type": {
+            "$ref": "./ValueSet-AttributeType.schema.json",
+            "description": "The attribute type"
+          },
+          "value[x]": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "object"
+              },
+              {
+                "type": "object",
+                "description": "FHIR Ratio"
+              },
+              {
+                "type": "object",
+                "description": "FHIR Annotation"
+              },
+              {
+                "type": "object"
+              },
+              {
+                "type": "object",
+                "description": "FHIR Duration"
+              },
+              {
+                "type": "object"
+              }
+            ],
+            "description": "The value of the attribute"
+          },
+          "associatedProduct": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "FHIR BackboneElement"
+            },
+            "description": "Associations with other products"
+          },
+          "product": {
+            "type": "object",
+            "description": "The associated product"
+          },
+          "relationship": {
+            "type": "array",
+            "items": {
+              "$ref": "./ValueSet-ProductRelationship.schema.json",
+              "description": "Coding-shaped {system, code} object from ValueSet ProductRelationship"
+            },
+            "minItems": 1,
+            "description": "The relationship"
+          },
+          "quantity": {
+            "type": "object",
+            "description": "How many"
+          }
+        },
+        "required": [
+          "resourceType",
+          "identifier",
+          "status",
+          "jurisdiction",
+          "authorisationHolder",
+          "authorisedTradeItem",
+          "type",
+          "value[x]",
+          "product",
+          "relationship",
+          "quantity"
+        ],
+        "allOf": [
+          {
+            "$ref": "./StructureDefinition-FHIRSchemaBase.schema.json"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "resourceDefinition": {
+                "type": "string",
+                "format": "uri",
+                "const": "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem"
+              },
+              "fhir:parent": {
+                "type": "string",
+                "const": "http://hl7.org/fhir/StructureDefinition/Base"
+              },
+              "jsonld:valuesets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "const": [
+                  "AttributeType",
+                  "ProductRelationship",
+                  "Status"
+                ]
+              },
+              "jsonld:contextTemplate": {
+                "type": "object",
+                "const": {
+                  "@version": 1.1,
+                  "fhir": "http://hl7.org/fhir/",
+                  "AttributeType": "http://smart.who.int/pcmt/ValueSet-AttributeType.jsonld",
+                  "ProductRelationship": "http://smart.who.int/pcmt/ValueSet-ProductRelationship.jsonld",
+                  "Status": "http://smart.who.int/pcmt/ValueSet-Status.jsonld"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
