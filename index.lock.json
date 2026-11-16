@@ -4,7 +4,7 @@
     {
       "harness": "smart-base",
       "repository": "litlfred/smart-base",
-      "ref": "bdf771ec77f1a93f0365a35237cbec67f4b36e66"
+      "ref": "ebf19f235bd14081e8a7c73c09afb4fec5813728"
     },
     {
       "harness": "fhir-harness",
@@ -54,7 +54,7 @@
     {
       "harness": "dth-pc",
       "repository": "litlfred/dth-pc",
-      "ref": "f905aa867346f65b55348b3fd2be4f5aad92616d"
+      "ref": "c2e2d77241b7bf9305f81afe847c2ee66c7a2a06"
     }
   ],
   "instances": [
@@ -235,7 +235,7 @@
     {
       "instance": "dth-pc",
       "repository": "litlfred/dth-pc",
-      "sha": "f905aa867346f65b55348b3fd2be4f5aad92616d",
+      "sha": "c2e2d77241b7bf9305f81afe847c2ee66c7a2a06",
       "upstreamRoot": "",
       "path": "dth-pc",
       "via": "dth-pc",
@@ -257,7 +257,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-16",
-        "ref": "f905aa867346f65b55348b3fd2be4f5aad92616d",
+        "ref": "c2e2d77241b7bf9305f81afe847c2ee66c7a2a06",
         "approver": "unverified"
       }
     },
@@ -361,7 +361,7 @@
     {
       "instance": "smart-base",
       "repository": "litlfred/smart-base",
-      "sha": "bdf771ec77f1a93f0365a35237cbec67f4b36e66",
+      "sha": "ebf19f235bd14081e8a7c73c09afb4fec5813728",
       "upstreamRoot": "smart-base",
       "path": "smart-base",
       "via": "smart-base",
@@ -375,7 +375,7 @@
           "id": "*",
           "path": "smart-base",
           "upstreamPath": "smart-base",
-          "treeDigest": "211b2d588fda4c287b92f826b0e3f748adaadfc72be6d47addf90211c2616d6b",
+          "treeDigest": "8ecf368d2e6f68ee23fbaf69c1d9696d6fef30f6b2acfc434dd554fb9dd986e5",
           "files": 460,
           "except": [
             "L1",
@@ -392,7 +392,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-16",
-        "ref": "bdf771ec77f1a93f0365a35237cbec67f4b36e66",
+        "ref": "ebf19f235bd14081e8a7c73c09afb4fec5813728",
         "approver": "unverified"
       }
     },
