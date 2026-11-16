@@ -1,0 +1,15 @@
+{
+  "$schema": "qa-reports-manifest/v1",
+  "key": "main/b0d3151d70bb353055a27df293c238087acefcd0",
+  "source": "b0d3151d70bb353055a27df293c238087acefcd0",
+  "written_at": "2026-11-16T22:25:13.519Z",
+  "producer": {
+    "run": "https://github.com/litlfred/smart-pcmt/actions/runs/43969639633"
+  },
+  "roots": [
+    "smart-pcmt/test/results"
+  ],
+  "payloadTree": "3500532660c4be95de3a565a1e353ae7a6d278ed",
+  "files": 4,
+  "bytes": 18550
+}
