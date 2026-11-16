@@ -1,11 +1,13 @@
 {
   "$schema": "qa-reports-index/v1",
   "main": {
-    "sha": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
-    "written_at": "2026-11-16T19:51:46.128Z"
+    "sha": "5d2f49b5d654c30dc4855c674debb9d00e2fe90e",
+    "written_at": "2026-11-16T21:40:03.274Z"
   },
   "skipped": {
     "973142601e8d010bb0ece4eaff5b70fd233aa20d": "841dc56997684796bbce0d19a09b0b5daf7ba4ac",
-    "main/973142601e8d010bb0ece4eaff5b70fd233aa20d": "main/841dc56997684796bbce0d19a09b0b5daf7ba4ac"
+    "main/973142601e8d010bb0ece4eaff5b70fd233aa20d": "main/841dc56997684796bbce0d19a09b0b5daf7ba4ac",
+    "5d2f49b5d654c30dc4855c674debb9d00e2fe90e": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+    "main/5d2f49b5d654c30dc4855c674debb9d00e2fe90e": "main/ad8617f6ce2262ac385ace9c9e0419a8cae66233"
   }
 }
