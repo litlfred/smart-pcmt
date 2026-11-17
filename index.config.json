@@ -54,7 +54,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "1529a1914ad4215856f15203fb19be02e3bfb3cb",
+          "ref": "b36c50cdb9baeb5f2d33bfed4ee320c6845f29e7",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -63,9 +63,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "1529a1914ad4215856f15203fb19be02e3bfb3cb",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "b36c50cdb9baeb5f2d33bfed4ee320c6845f29e7",
+              "evidence": "litlfred 2026-11-17: merge-and-repin window to 09:18Z (owner ~06:18Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge what green and ready')"
             }
           }
         }
@@ -113,7 +113,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "b699993ab043af4154c4f4c4e51c66224d0dbb9e",
+          "ref": "ff45c94570075215bb128d386ef00feacf0bbd61",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -128,9 +128,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "b699993ab043af4154c4f4c4e51c66224d0dbb9e",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "ff45c94570075215bb128d386ef00feacf0bbd61",
+              "evidence": "litlfred 2026-11-17: merge-and-repin window to 09:18Z (owner ~06:18Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge what green and ready')"
             }
           }
         }
@@ -141,7 +141,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "dcd503fa1dffd4bf5982602f44305ec4ec9003b2",
+          "ref": "99f173e2c2fe4aeaab6f0560339a0e9688b27fb1",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -156,9 +156,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "dcd503fa1dffd4bf5982602f44305ec4ec9003b2",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "99f173e2c2fe4aeaab6f0560339a0e9688b27fb1",
+              "evidence": "litlfred 2026-11-17: merge-and-repin window to 09:18Z (owner ~06:18Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge what green and ready')"
             }
           }
         }
@@ -169,7 +169,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "8dbf8023d8563ea023be0d8c153f7a0d39e888c0",
+          "ref": "1b18760f71c69bd391bf0d6c28c79c36603b6939",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -181,9 +181,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "8dbf8023d8563ea023be0d8c153f7a0d39e888c0",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "1b18760f71c69bd391bf0d6c28c79c36603b6939",
+              "evidence": "litlfred 2026-11-17: merge-and-repin window to 09:18Z (owner ~06:18Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge what green and ready')"
             }
           }
         }
@@ -290,7 +290,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "6327e275f4e9c3d0826176afdcc9023a2e51c12c",
+          "ref": "e30cbe6705ea8078e4b415c9c49bf4d80ee97c76",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -328,9 +328,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "6327e275f4e9c3d0826176afdcc9023a2e51c12c",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "e30cbe6705ea8078e4b415c9c49bf4d80ee97c76",
+              "evidence": "litlfred 2026-11-17: merge-and-repin window to 09:18Z (owner ~06:18Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge what green and ready')"
             }
           }
         }
@@ -341,7 +341,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-pc",
-          "ref": "050d5dc5a7863b91a259ea8460837c32f0419b92",
+          "ref": "5624ca868700cdd36f4b6a82f5d99396102e584c",
           "overrides": {
             "dth-pc": {
               "directories": [
@@ -382,9 +382,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "050d5dc5a7863b91a259ea8460837c32f0419b92",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "5624ca868700cdd36f4b6a82f5d99396102e584c",
+              "evidence": "litlfred 2026-11-17: merge-and-repin window to 09:18Z (owner ~06:18Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge what green and ready')"
             }
           }
         }
