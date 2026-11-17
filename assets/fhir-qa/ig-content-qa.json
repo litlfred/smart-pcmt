@@ -1,0 +1,17 @@
+{
+  "$schema": "ig-content-qa-verdict/v1",
+  "items": 677,
+  "contentDigest": "sha256:f086f6cde81a72b40105edd87a16f05896f894880809bc6549e1a7380cb527ec",
+  "patternHits": [],
+  "reviewedDigest": "sha256:f086f6cde81a72b40105edd87a16f05896f894880809bc6549e1a7380cb527ec",
+  "reviewer": {
+    "kind": "agent",
+    "name": "claude",
+    "session": "https://claude.ai/code/session_01EucfRnsEX8REFUM37UCY7o"
+  },
+  "reviewedAt": "2026-11-16T20:42:59.050Z",
+  "ok": true,
+  "state": "reviewed",
+  "openFindings": [],
+  "said": "677 text(s) reviewed by agent claude at 2026-11-16T20:42:59.050Z; no pattern hit, no open finding"
+}

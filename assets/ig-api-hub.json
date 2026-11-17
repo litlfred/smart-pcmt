@@ -1,0 +1,338 @@
+{
+  "@context": {
+    "schema": "https://schema.org/"
+  },
+  "@id": "assets/ig-api-hub.json",
+  "@type": "schema:WebAPI",
+  "schema:name": "DAK API",
+  "schema:documentation": "openapi/",
+  "schema:hasPart": [
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-DthPcRegulatedTradeItem.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-DthPcRegulatedTradeItem.openapi.json",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-DthPcRegulatedTradeItem.html",
+        "schema:identifier": "StructureDefinition/DthPcRegulatedTradeItem"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-DthPcRegulatedTradeItem.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-DthPcRegulatedTradeItem.schema.json",
+      "schema:url": "artifact/StructureDefinition-DthPcRegulatedTradeItem.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-DthPcRegulatedTradeItem.html",
+        "schema:identifier": "StructureDefinition/DthPcRegulatedTradeItem"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-DthPcTradeItem.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-DthPcTradeItem.openapi.json",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-DthPcTradeItem.html",
+        "schema:identifier": "StructureDefinition/DthPcTradeItem"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-DthPcTradeItem.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-DthPcTradeItem.schema.json",
+      "schema:url": "artifact/StructureDefinition-DthPcTradeItem.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-DthPcTradeItem.html",
+        "schema:identifier": "StructureDefinition/DthPcTradeItem"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-GenericProduct.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-GenericProduct.openapi.json",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-GenericProduct.html",
+        "schema:identifier": "StructureDefinition/GenericProduct"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-GenericProduct.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-GenericProduct.schema.json",
+      "schema:url": "artifact/StructureDefinition-GenericProduct.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-GenericProduct.html",
+        "schema:identifier": "StructureDefinition/GenericProduct"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-Product.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-Product.openapi.json",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-Product.html",
+        "schema:identifier": "StructureDefinition/Product"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-Product.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-Product.schema.json",
+      "schema:url": "artifact/StructureDefinition-Product.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-Product.html",
+        "schema:identifier": "StructureDefinition/Product"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-ProductAuthorization.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-ProductAuthorization.openapi.json",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-ProductAuthorization.html",
+        "schema:identifier": "StructureDefinition/ProductAuthorization"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-ProductAuthorization.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-ProductAuthorization.schema.json",
+      "schema:url": "artifact/StructureDefinition-ProductAuthorization.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-ProductAuthorization.html",
+        "schema:identifier": "StructureDefinition/ProductAuthorization"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-RegulatedTradeItem.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-RegulatedTradeItem.openapi.json",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-RegulatedTradeItem.html",
+        "schema:identifier": "StructureDefinition/RegulatedTradeItem"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-RegulatedTradeItem.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-RegulatedTradeItem.schema.json",
+      "schema:url": "artifact/StructureDefinition-RegulatedTradeItem.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-RegulatedTradeItem.html",
+        "schema:identifier": "StructureDefinition/RegulatedTradeItem"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-TradeItem.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-TradeItem.openapi.json",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-TradeItem.html",
+        "schema:identifier": "StructureDefinition/TradeItem"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "StructureDefinition-TradeItem.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/StructureDefinition-TradeItem.schema.json",
+      "schema:url": "artifact/StructureDefinition-TradeItem.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/StructureDefinition-TradeItem.html",
+        "schema:identifier": "StructureDefinition/TradeItem"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-AttributeType.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-AttributeType.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-AttributeType.html",
+        "schema:identifier": "ValueSet/AttributeType"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-AttributeType.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-AttributeType.jsonld",
+      "schema:url": "artifact/ValueSet-AttributeType.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-AttributeType.html",
+        "schema:identifier": "ValueSet/AttributeType"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-AttributeType.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-AttributeType.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-AttributeType.html",
+        "schema:identifier": "ValueSet/AttributeType"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-AttributeType.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-AttributeType.schema.json",
+      "schema:url": "artifact/ValueSet-AttributeType.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-AttributeType.html",
+        "schema:identifier": "ValueSet/AttributeType"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-NameType.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-NameType.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-NameType.html",
+        "schema:identifier": "ValueSet/NameType"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-NameType.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-NameType.jsonld",
+      "schema:url": "artifact/ValueSet-NameType.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-NameType.html",
+        "schema:identifier": "ValueSet/NameType"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-NameType.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-NameType.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-NameType.html",
+        "schema:identifier": "ValueSet/NameType"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-NameType.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-NameType.schema.json",
+      "schema:url": "artifact/ValueSet-NameType.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-NameType.html",
+        "schema:identifier": "ValueSet/NameType"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-ProductRelationship.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-ProductRelationship.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-ProductRelationship.html",
+        "schema:identifier": "ValueSet/ProductRelationship"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-ProductRelationship.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-ProductRelationship.jsonld",
+      "schema:url": "artifact/ValueSet-ProductRelationship.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-ProductRelationship.html",
+        "schema:identifier": "ValueSet/ProductRelationship"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-ProductRelationship.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-ProductRelationship.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-ProductRelationship.html",
+        "schema:identifier": "ValueSet/ProductRelationship"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-ProductRelationship.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-ProductRelationship.schema.json",
+      "schema:url": "artifact/ValueSet-ProductRelationship.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-ProductRelationship.html",
+        "schema:identifier": "ValueSet/ProductRelationship"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Status.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-Status.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Status.html",
+        "schema:identifier": "ValueSet/Status"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Status.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-Status.jsonld",
+      "schema:url": "artifact/ValueSet-Status.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Status.html",
+        "schema:identifier": "ValueSet/Status"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Status.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-Status.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Status.html",
+        "schema:identifier": "ValueSet/Status"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Status.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/sidecars/ValueSet-Status.schema.json",
+      "schema:url": "artifact/ValueSet-Status.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Status.html",
+        "schema:identifier": "ValueSet/Status"
+      }
+    }
+  ],
+  "schema:workExample": [
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "LogicalModels.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/site/LogicalModels.schema.json"
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSets.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/ig-api/site/ValueSets.schema.json"
+    }
+  ]
+}

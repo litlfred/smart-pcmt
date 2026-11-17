@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/smart-pcmt/en/cat-harness/harness/smart-pcmt/",
+  "url": "https://litlfred.github.io/smart-pcmt/en/cat-harness/harness/smart-pcmt/",
+  "@type": "WebPage",
+  "name": "WHO SMART Guidelines — Product Catalogue (PCMT) on SMART Product Catalog",
+  "about": {
+    "@id": "https://litlfred.github.io/smart-pcmt/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "smart-pcmt",
+    "name": "WHO SMART Guidelines — Product Catalogue (PCMT)",
+    "description": "The WHO SMART Product Catalog implementation guide (FHIR IG source under input/), as a harnessed instance of smart-base, in the shape of smart-immunizations. Downstream of litlfred/dth-pc (owner, 2026-10-31): its logical models and terms align to the product catalogue concepts dth-pc defines (Generic Product, Trade Item, Regulated Trade Item, Product Master Data) and never redefine them. Plan: litlfred/smart-ra#145.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/smart-pcmt",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/smart-base/"
+      },
+      {
+        "@id": "https://litlfred.github.io/smart-ra/"
+      },
+      {
+        "@id": "https://litlfred.github.io/dth-sc/"
+      },
+      {
+        "@id": "https://litlfred.github.io/dth-pc/"
+      }
+    ]
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/smart-pcmt/",
+    "name": "SMART Product Catalog"
+  },
+  "significantLink": [
+    "https://github.com/litlfred/smart-pcmt/tree/732ecea35bdf1cc5147469a28853c20b985bb29c",
+    "https://github.com/litlfred/smart-pcmt/blob/732ecea35bdf1cc5147469a28853c20b985bb29c/README.md",
+    "https://github.com/litlfred/smart-pcmt/blob/732ecea35bdf1cc5147469a28853c20b985bb29c/AGENTS.md"
+  ]
+}

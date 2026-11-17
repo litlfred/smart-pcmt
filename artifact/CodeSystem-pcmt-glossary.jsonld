@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "CodeSystem-pcmt-glossary",
+  "@type": "fhir:CodeSystem",
+  "dcterms:identifier": "CodeSystem/pcmt-glossary",
+  "schema:name": "PCMTGlossary",
+  "dcterms:title": "PCMT Glossary Terms",
+  "dcterms:description": "CodeSystem for product attributes and terminology used in the SMART Product Catalogue Management Tool (PCMT). Core domain entities (Generic Product, Trade Item, Regulated Trade Item, Product Master Data) are anchored in the mounted dth-pc glossary (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/).",
+  "schema:version": "0.2.0",
+  "dcterms:type": "Terminology: Code Systems",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/pcmt/CodeSystem/pcmt-glossary"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-pcmt-glossary.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/resources/CodeSystem/pcmt-glossary.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "ad8617f6ce2262ac385ace9c9e0419a8cae66233"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.pcmt",
+    "schema:version": "0.2.0",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/pcmt"
+    }
+  }
+}

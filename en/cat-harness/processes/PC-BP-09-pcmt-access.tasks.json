@@ -1,0 +1,141 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_PC_BP_09_PCMT_Access",
+ "markers": [
+  {
+   "id": "Task_ImportPublishWHO",
+   "name": "Import Source Catalogues & Publish Catalogues -> WHO",
+   "left": 28.76,
+   "top": 4.24,
+   "box": {
+    "left": 20.7,
+    "top": 13.56,
+    "width": 1.89,
+    "height": 4.07
+   }
+  },
+  {
+   "id": "Task_BrowseSelectWHO",
+   "name": "Browse Catalogues -> WHO (View-Only) & Request Product Copy or Country Edit",
+   "left": 28.76,
+   "top": 37.29,
+   "box": {
+    "left": 20.7,
+    "top": 46.61,
+    "width": 1.89,
+    "height": 4.07
+   }
+  },
+  {
+   "id": "Task_EvalAccessMatrix",
+   "name": "Evaluate Catalogue Access Matrix (PC-DT-03: userGroup x catalogue)",
+   "left": 46.08,
+   "top": 68.64,
+   "box": {
+    "left": 38.01,
+    "top": 77.97,
+    "width": 1.89,
+    "height": 4.07
+   }
+  },
+  {
+   "id": "Task_CopyFromWHOToCountry",
+   "name": "Copy Selected GenericProduct / TradeItem from Catalogues -> WHO to Country Catalogue",
+   "left": 75.99,
+   "top": 64.41,
+   "box": {
+    "left": 67.53,
+    "top": 82.2,
+    "width": 1.89,
+    "height": 4.07
+   }
+  },
+  {
+   "id": "Task_EditCountryCatalogue",
+   "name": "Edit Owned Country Catalogue (Catalogues -> CA / CB) & Attach ProductAuthorization",
+   "left": 75.99,
+   "top": 37.29,
+   "box": {
+    "left": 67.53,
+    "top": 46.61,
+    "width": 1.89,
+    "height": 4.07
+   }
+  },
+  {
+   "id": "Task_ExportSynchronize",
+   "name": "Export & Synchronize Country Catalogue to National eLMIS / ERP",
+   "left": 92.52,
+   "top": 37.29,
+   "box": {
+    "left": 84.45,
+    "top": 46.61,
+    "width": 1.89,
+    "height": 4.07
+   }
+  }
+ ],
+ "processHref": "PC-BP-09-pcmt-access.html",
+ "tasks": {
+  "Task_ImportPublishWHO": {
+   "id": "Task_ImportPublishWHO",
+   "name": "Import Source Catalogues & Publish Catalogues -> WHO",
+   "type": "bpmn:UserTask",
+   "stepHref": "PC-BP-09-pcmt-access.html#step-Task_ImportPublishWHO",
+   "lane": "WHO Group (WHOGroup)",
+   "laneHref": "PC-BP-09-pcmt-access.html#lane-Lane_WHOGroup",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_BrowseSelectWHO": {
+   "id": "Task_BrowseSelectWHO",
+   "name": "Browse Catalogues -> WHO (View-Only) & Request Product Copy or Country Edit",
+   "type": "bpmn:UserTask",
+   "stepHref": "PC-BP-09-pcmt-access.html#step-Task_BrowseSelectWHO",
+   "lane": "Country User Group (CAGroup / CBGroup)",
+   "laneHref": "PC-BP-09-pcmt-access.html#lane-Lane_CountryGroup",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_EvalAccessMatrix": {
+   "id": "Task_EvalAccessMatrix",
+   "name": "Evaluate Catalogue Access Matrix (PC-DT-03: userGroup x catalogue)",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "PC-BP-09-pcmt-access.html#step-Task_EvalAccessMatrix",
+   "lane": "WHO-hosted PCMT Access Control & Copy Engine",
+   "laneHref": "PC-BP-09-pcmt-access.html#lane-Lane_PCMTAccessEngine",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Task_CopyFromWHOToCountry": {
+   "id": "Task_CopyFromWHOToCountry",
+   "name": "Copy Selected GenericProduct / TradeItem from Catalogues -> WHO to Country Catalogue",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "PC-BP-09-pcmt-access.html#step-Task_CopyFromWHOToCountry",
+   "lane": "WHO-hosted PCMT Access Control & Copy Engine",
+   "laneHref": "PC-BP-09-pcmt-access.html#lane-Lane_PCMTAccessEngine",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Task_EditCountryCatalogue": {
+   "id": "Task_EditCountryCatalogue",
+   "name": "Edit Owned Country Catalogue (Catalogues -> CA / CB) & Attach ProductAuthorization",
+   "type": "bpmn:UserTask",
+   "stepHref": "PC-BP-09-pcmt-access.html#step-Task_EditCountryCatalogue",
+   "lane": "Country User Group (CAGroup / CBGroup)",
+   "laneHref": "PC-BP-09-pcmt-access.html#lane-Lane_CountryGroup",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_ExportSynchronize": {
+   "id": "Task_ExportSynchronize",
+   "name": "Export & Synchronize Country Catalogue to National eLMIS / ERP",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "PC-BP-09-pcmt-access.html#step-Task_ExportSynchronize",
+   "lane": "Country User Group (CAGroup / CBGroup)",
+   "laneHref": "PC-BP-09-pcmt-access.html#lane-Lane_CountryGroup",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}

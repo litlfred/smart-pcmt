@@ -1,0 +1,7 @@
+{
+  "$schema": "fhir-artifact-index-ref/v1",
+  "index": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/fhir-artifact-index/index.json",
+  "base": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/",
+  "repository": "litlfred/smart-pcmt",
+  "commit": "c1106e58995f781eac2785df8705e0af8761d4df"
+}

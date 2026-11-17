@@ -1,0 +1,401 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-index-jsonld/v1",
+  "@id": "index.jsonld",
+  "@type": "fhir:ImplementationGuide",
+  "dcterms:identifier": "smart.who.int.pcmt",
+  "schema:version": "0.2.0",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/pcmt"
+  },
+  "dcterms:title": "SMART Product Catalog",
+  "schema:numberOfItems": 30,
+  "schema:hasPart": [
+    {
+      "@id": "Binary-DthPcFig12GenericMR001",
+      "@type": "fhir:Binary",
+      "dcterms:identifier": "Binary/DthPcFig12GenericMR001",
+      "dcterms:title": "DthPcFig12GenericMR001",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Binary-DthPcFig12GenericMR001.json"
+      }
+    },
+    {
+      "@id": "Binary-DthPcFig12MfrBCase",
+      "@type": "fhir:Binary",
+      "dcterms:identifier": "Binary/DthPcFig12MfrBCase",
+      "dcterms:title": "DthPcFig12MfrBCase",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Binary-DthPcFig12MfrBCase.json"
+      }
+    },
+    {
+      "@id": "Binary-DthPcFig12MfrBInnerPack",
+      "@type": "fhir:Binary",
+      "dcterms:identifier": "Binary/DthPcFig12MfrBInnerPack",
+      "dcterms:title": "DthPcFig12MfrBInnerPack",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Binary-DthPcFig12MfrBInnerPack.json"
+      }
+    },
+    {
+      "@id": "Binary-DthPcFig12MfrBPallet",
+      "@type": "fhir:Binary",
+      "dcterms:identifier": "Binary/DthPcFig12MfrBPallet",
+      "dcterms:title": "DthPcFig12MfrBPallet",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Binary-DthPcFig12MfrBPallet.json"
+      }
+    },
+    {
+      "@id": "Binary-DthPcFig12TradeItemMfrA",
+      "@type": "fhir:Binary",
+      "dcterms:identifier": "Binary/DthPcFig12TradeItemMfrA",
+      "dcterms:title": "DthPcFig12TradeItemMfrA",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Binary-DthPcFig12TradeItemMfrA.json"
+      }
+    },
+    {
+      "@id": "Binary-DthPcNpc01101001",
+      "@type": "fhir:Binary",
+      "dcterms:identifier": "Binary/DthPcNpc01101001",
+      "dcterms:title": "DthPcNpc01101001",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Binary-DthPcNpc01101001.json"
+      }
+    },
+    {
+      "@id": "Binary-DthPcNpcMfr001Gtin58904093825700",
+      "@type": "fhir:Binary",
+      "dcterms:identifier": "Binary/DthPcNpcMfr001Gtin58904093825700",
+      "dcterms:title": "DthPcNpcMfr001Gtin58904093825700",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Binary-DthPcNpcMfr001Gtin58904093825700.json"
+      }
+    },
+    {
+      "@id": "Binary-DthPcNpcMfr001Gtin58904093825793",
+      "@type": "fhir:Binary",
+      "dcterms:identifier": "Binary/DthPcNpcMfr001Gtin58904093825793",
+      "dcterms:title": "DthPcNpcMfr001Gtin58904093825793",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Binary-DthPcNpcMfr001Gtin58904093825793.json"
+      }
+    },
+    {
+      "@id": "Binary-DthPcNpcMfr002SkuP006008",
+      "@type": "fhir:Binary",
+      "dcterms:identifier": "Binary/DthPcNpcMfr002SkuP006008",
+      "dcterms:title": "DthPcNpcMfr002SkuP006008",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Binary-DthPcNpcMfr002SkuP006008.json"
+      }
+    },
+    {
+      "@id": "Binary-DthPcNpcMfr002SkuP006009",
+      "@type": "fhir:Binary",
+      "dcterms:identifier": "Binary/DthPcNpcMfr002SkuP006009",
+      "dcterms:title": "DthPcNpcMfr002SkuP006009",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Binary-DthPcNpcMfr002SkuP006009.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-AttributeType",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/AttributeType",
+      "dcterms:title": "Attribute type of Products",
+      "dcterms:description": "Attribute type of Products",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/CodeSystem/AttributeType"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-AttributeType.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-ProductRelationship",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/ProductRelationship",
+      "dcterms:title": "Product Relationship",
+      "dcterms:description": "ProductRelationship Code System",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/CodeSystem/ProductRelationship"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-ProductRelationship.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-RegulatationType",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/RegulatationType",
+      "dcterms:title": "Product Regulation Type",
+      "dcterms:description": "Product Regulation Status",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/CodeSystem/RegulatationType"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-RegulatationType.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-Status",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/Status",
+      "dcterms:title": "Product and regulatory authorization status",
+      "dcterms:description": "Product and regulatory authorization status",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/CodeSystem/Status"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-Status.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-pcmt-glossary",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/pcmt-glossary",
+      "dcterms:title": "PCMT Glossary Terms",
+      "schema:name": "PCMTGlossary",
+      "dcterms:description": "CodeSystem for product attributes and terminology used in the SMART Product Catalogue Management Tool (PCMT). Core domain entities (Generic Product, Trade Item, Regulated Trade Item, Product Master Data) are anchored in the mounted dth-pc glossary (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/).",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/CodeSystem/pcmt-glossary"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-pcmt-glossary.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-DthPcRegulatedTradeItem",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/DthPcRegulatedTradeItem",
+      "dcterms:title": "Regulated Trade Item (DTH product catalogue handbook, Fig. 9)",
+      "dcterms:description": "A trade item as authorised in a jurisdiction, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Trade Item has zero or more Regulated Trade Items. This IG's ProductAuthorization carries a related but different set of elements. Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item.",
+      "dcterms:type": "Structures: Logical Models",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/StructureDefinition/DthPcRegulatedTradeItem"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DthPcRegulatedTradeItem.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-DthPcTradeItem",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/DthPcTradeItem",
+      "dcterms:title": "Trade Item (DTH product catalogue handbook, Fig. 9)",
+      "dcterms:description": "A packaged, identified unit of a Generic Product as traded, as drawn in Fig. 9 of the WHO Digital transformation handbook for health product catalogues (2025). One Generic Product has zero or more Trade Items. Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item.",
+      "dcterms:type": "Structures: Logical Models",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DthPcTradeItem.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-GenericProduct",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/GenericProduct",
+      "dcterms:title": "Generic Product",
+      "dcterms:description": "In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information (WHO DTH Product Catalogue Handbook, p. 8; Ch 2, p. 28; Fig. 9, p. 29). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product.",
+      "dcterms:type": "Structures: Logical Models",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/StructureDefinition/GenericProduct"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-GenericProduct.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-Product",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/Product",
+      "dcterms:title": "Product",
+      "dcterms:description": "A Product represents a physical item or set of items which can be held in inventory, ordered, exchanged, dispensed or other utilized within the health system, clinical and supply chain workflows. Anchored to dth-pc Product Master Data (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data) and Generic Product (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product).",
+      "dcterms:type": "Structures: Logical Models",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/StructureDefinition/Product"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-Product.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-ProductAuthorization",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/ProductAuthorization",
+      "dcterms:title": "Product Authorization",
+      "dcterms:description": "A record of authorization or compliance for one or more Products with a set of regulatory, policy, (pre-)qualification, or legal requirements. Anchored to dth-pc Regulated Trade Item (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item).",
+      "dcterms:type": "Structures: Logical Models",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-ProductAuthorization.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-RegulatedTradeItem",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/RegulatedTradeItem",
+      "dcterms:title": "Regulated Trade Item",
+      "dcterms:description": "A Regulated Trade Item represents an authorization of a Trade item within a given jurisdiction under a Product Authorization (WHO DTH Product Catalogue Handbook, Ch 2, p. 28; Fig. 9, p. 29). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item.",
+      "dcterms:type": "Structures: Logical Models",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-RegulatedTradeItem.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-TradeItem",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/TradeItem",
+      "dcterms:title": "Trade Item",
+      "dcterms:description": "Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer (WHO DTH Product Catalogue Handbook, Ch 2, p. 28; Fig. 9, p. 29). Models the WHO Product Catalogue narrow sense of Trade Item (broadMatch GS1 Trade Item per litlfred/smart-ra#142). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item.",
+      "dcterms:type": "Structures: Logical Models",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/StructureDefinition/TradeItem"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-TradeItem.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-MedicationCatalogItem",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/MedicationCatalogItem",
+      "dcterms:title": "Medication Catalog Item",
+      "dcterms:description": "This profile represents a catalog item that is a medication",
+      "dcterms:type": "Structures: Resource Profiles",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/StructureDefinition/MedicationCatalogItem"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-MedicationCatalogItem.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-ProductID",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/ProductID",
+      "dcterms:title": "ProductID",
+      "dcterms:description": "The business identifier of a  product in a product catalogue.\n\nIn FHIR R6, this could also be a reference to an InventoryItem",
+      "dcterms:type": "Structures: Extension Definitions",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/StructureDefinition/ProductID"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-ProductID.json"
+      }
+    },
+    {
+      "@id": "ValueSet-AttributeType",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/AttributeType",
+      "dcterms:title": "AttributeType for a Product",
+      "dcterms:description": "Product status",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/ValueSet/AttributeType"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-AttributeType.json"
+      }
+    },
+    {
+      "@id": "ValueSet-NameType",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/NameType",
+      "dcterms:title": "Name Type for a Product",
+      "dcterms:description": "Product name type",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/ValueSet/NameType"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-NameType.json"
+      }
+    },
+    {
+      "@id": "ValueSet-ProductRelationship",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/ProductRelationship",
+      "dcterms:title": "Product Relationships",
+      "dcterms:description": "Product relationship value set",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/ValueSet/ProductRelationship"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-ProductRelationship.json"
+      }
+    },
+    {
+      "@id": "ValueSet-RegulationType",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/RegulationType",
+      "dcterms:title": "Regulation Type for a Regulated Product",
+      "dcterms:description": "Regulated Product Regulation type",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/ValueSet/RegulationType"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-RegulationType.json"
+      }
+    },
+    {
+      "@id": "ValueSet-Status",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/Status",
+      "dcterms:title": "Status for a Product",
+      "dcterms:description": "Product status",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/ValueSet/Status"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-Status.json"
+      }
+    },
+    {
+      "@id": "ImplementationGuide-smart.who.int.pcmt",
+      "@type": "fhir:ImplementationGuide",
+      "dcterms:identifier": "ImplementationGuide/smart.who.int.pcmt",
+      "dcterms:title": "SMART Product Catalog",
+      "schema:name": "SMARTPCMT",
+      "dcterms:description": "Data exchange specifications for Product Catalog supporting the SMART Guidelines",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/pcmt/ImplementationGuide/smart.who.int.pcmt"
+      },
+      "schema:contentUrl": {
+        "@id": "../ImplementationGuide-smart.who.int.pcmt.json"
+      }
+    }
+  ]
+}

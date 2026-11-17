@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "StructureDefinition-RegulatedTradeItem",
+  "@type": "fhir:StructureDefinition",
+  "dcterms:identifier": "StructureDefinition/RegulatedTradeItem",
+  "schema:name": "RegulatedTradeItem",
+  "dcterms:title": "Regulated Trade Item",
+  "dcterms:description": "A Regulated Trade Item represents an authorization of a Trade item within a given jurisdiction under a Product Authorization (WHO DTH Product Catalogue Handbook, Ch 2, p. 28; Fig. 9, p. 29). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item.",
+  "schema:version": "0.2.0",
+  "dcterms:type": "Structures: Logical Models",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-RegulatedTradeItem.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-pcmt/c1106e58995f781eac2785df8705e0af8761d4df/resources/StructureDefinition/RegulatedTradeItem.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "ad8617f6ce2262ac385ace9c9e0419a8cae66233"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.pcmt",
+    "schema:version": "0.2.0",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/pcmt"
+    }
+  }
+}
