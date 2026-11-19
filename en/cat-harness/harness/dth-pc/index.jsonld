@@ -22,13 +22,13 @@
         "@id": "https://litlfred.github.io/smart-ra/"
       },
       {
-        "@id": "https://litlfred.github.io/dth-sc/"
+        "@id": "https://worldhealthorganization.github.io/dth-sc/"
       }
     ],
     "additionalProperty": {
       "@type": "PropertyValue",
       "name": "pinnedCommit",
-      "value": "5624ca868700cdd36f4b6a82f5d99396102e584c"
+      "value": "e4fa8053f9ec1d15a250df7b1e71f9fe7035ff43"
     }
   },
   "isPartOf": {
@@ -36,7 +36,7 @@
     "name": "SMART Product Catalog"
   },
   "significantLink": [
-    "https://litlfred.github.io/folio-assistant/#harness-dth-pc",
-    "https://github.com/litlfred/dth-pc/tree/5624ca868700cdd36f4b6a82f5d99396102e584c"
+    "https://litlfred.github.io/folio-assistant/dth-pc/",
+    "https://github.com/litlfred/dth-pc/tree/e4fa8053f9ec1d15a250df7b1e71f9fe7035ff43"
   ]
 }

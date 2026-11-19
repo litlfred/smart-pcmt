@@ -22,7 +22,7 @@
         "@id": "https://litlfred.github.io/smart-ra/"
       },
       {
-        "@id": "https://litlfred.github.io/dth-sc/"
+        "@id": "https://worldhealthorganization.github.io/dth-sc/"
       },
       {
         "@id": "https://litlfred.github.io/dth-pc/"
@@ -34,8 +34,8 @@
     "name": "SMART Product Catalog"
   },
   "significantLink": [
-    "https://github.com/litlfred/smart-pcmt/tree/732ecea35bdf1cc5147469a28853c20b985bb29c",
-    "https://github.com/litlfred/smart-pcmt/blob/732ecea35bdf1cc5147469a28853c20b985bb29c/README.md",
-    "https://github.com/litlfred/smart-pcmt/blob/732ecea35bdf1cc5147469a28853c20b985bb29c/AGENTS.md"
+    "https://github.com/litlfred/smart-pcmt/tree/b4fc4769c98dd2d8da526e7970be17f63611c3e4",
+    "https://github.com/litlfred/smart-pcmt/blob/b4fc4769c98dd2d8da526e7970be17f63611c3e4/README.md",
+    "https://github.com/litlfred/smart-pcmt/blob/b4fc4769c98dd2d8da526e7970be17f63611c3e4/AGENTS.md"
   ]
 }

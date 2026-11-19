@@ -7,7 +7,7 @@
   "@type": "WebPage",
   "name": "Digital Transformation Handbook for Health Supply Chain Architecture on SMART Product Catalog",
   "about": {
-    "@id": "https://litlfred.github.io/dth-sc/",
+    "@id": "https://worldhealthorganization.github.io/dth-sc/",
     "@type": "SoftwareSourceCode",
     "identifier": "dth-sc",
     "name": "Digital Transformation Handbook for Health Supply Chain Architecture",
@@ -25,7 +25,7 @@
     "additionalProperty": {
       "@type": "PropertyValue",
       "name": "pinnedCommit",
-      "value": "e30cbe6705ea8078e4b415c9c49bf4d80ee97c76"
+      "value": "19d5c2bd4c023e457c8c505184a0a9600704d7ab"
     }
   },
   "isPartOf": {
@@ -33,7 +33,7 @@
     "name": "SMART Product Catalog"
   },
   "significantLink": [
-    "https://litlfred.github.io/folio-assistant/#harness-dth-sc",
-    "https://github.com/litlfred/dth-sc/tree/e30cbe6705ea8078e4b415c9c49bf4d80ee97c76"
+    "https://litlfred.github.io/folio-assistant/dth-sc/",
+    "https://github.com/litlfred/dth-sc/tree/19d5c2bd4c023e457c8c505184a0a9600704d7ab"
   ]
 }

@@ -2,14 +2,14 @@
   "$schema": "folio-site-build/v1",
   "instance": "smart-pcmt",
   "platform": {
-    "commit": "e194197e96df4db29fc71650e189c973a4d930cb"
+    "commit": "6dd108f5cdb33eae9482a4b55f1f88b3f98ecb4b"
   },
   "source": {
     "repo": "litlfred/smart-pcmt",
     "ref": "main",
-    "commit": "732ecea35bdf1cc5147469a28853c20b985bb29c"
+    "commit": "b4fc4769c98dd2d8da526e7970be17f63611c3e4"
   },
-  "builtAt": "2026-11-17T07:04:34.834Z",
+  "builtAt": "2026-11-19T08:52:06.632Z",
   "ast": {
     "commit": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
     "verdict": "valid",

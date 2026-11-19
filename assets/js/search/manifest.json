@@ -2,24 +2,17 @@
   "$schema": "folio-search-manifest/v1",
   "source": {
     "path": "assets/js/search-data.json",
-    "sha256": "f9ec8e343cf2f6a027689fd51cd9e9437f1dbc15dc0b87e9025bac74aef468b3",
+    "sha256": "37eddf1feaec38bd502f144f5ca460201b68c9728bb28e9c2a4036745280effa",
     "entries": 110,
-    "bytes": 475289
+    "bytes": 474749
   },
   "scopes": [
     {
       "id": "_platform",
       "kind": "platform",
       "path": "assets/js/search/_platform.json",
-      "entries": 56,
-      "bytes": 58108
-    },
-    {
-      "id": "cat-harness",
-      "kind": "instance",
-      "path": "assets/js/search/cat-harness.json",
-      "entries": 54,
-      "bytes": 414010
+      "entries": 110,
+      "bytes": 471577
     }
   ],
   "remote": [
@@ -29,5 +22,19 @@
       "href": "id-lookup/?index=who-iris/",
       "entries": 53
     }
-  ]
+  ],
+  "layers": [
+    "bootstrap",
+    "bootstrap-tools",
+    "cat-harness",
+    "cat-harness-tools",
+    "dpi-h-ra",
+    "dth-pc",
+    "dth-sc",
+    "fhir-harness",
+    "folio-assistant-core",
+    "smart-base",
+    "who-iris"
+  ],
+  "kgSearch": "slices/search.html?slice=kg"
 }
