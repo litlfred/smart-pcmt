@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "328e07312e44958d4d749c99dcee8f8209e7e55a",
+          "ref": "c0aaf442f0e68528709a26790765bbc1cc1fde7e",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -41,9 +41,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-19",
-              "ref": "328e07312e44958d4d749c99dcee8f8209e7e55a",
-              "evidence": "litlfred 2026-11-19: re-pin and merge window to ~11:56Z; card in session session_01EucfRoHwp2Hn6RCDjSj44u, 'Yes, re-pin all 11' (sync of litlfred/WHO smart-pcmt, WHO smart-pcmt#8)"
+              "on": "2026-11-21",
+              "ref": "c0aaf442f0e68528709a26790765bbc1cc1fde7e",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
@@ -54,7 +54,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "d34ae7692a304983a495b20b62f37b8b98d3cb85",
+          "ref": "c58d29582aa06ffcebf19b6eda9a2778ceaaa088",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -63,9 +63,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-19",
-              "ref": "d34ae7692a304983a495b20b62f37b8b98d3cb85",
-              "evidence": "litlfred 2026-11-19: re-pin and merge window to ~11:56Z; card in session session_01EucfRoHwp2Hn6RCDjSj44u, 'Yes, re-pin all 11' (sync of litlfred/WHO smart-pcmt, WHO smart-pcmt#8)"
+              "on": "2026-11-21",
+              "ref": "c58d29582aa06ffcebf19b6eda9a2778ceaaa088",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
@@ -113,7 +113,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "419d59505a971a36d7e2e0162705be1828296188",
+          "ref": "559988aa5aa0ff2ed5d8186545e9a2fcc08925b6",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -128,9 +128,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-19",
-              "ref": "419d59505a971a36d7e2e0162705be1828296188",
-              "evidence": "litlfred 2026-11-19: re-pin and merge window to ~11:56Z; card in session session_01EucfRoHwp2Hn6RCDjSj44u, 'Yes, re-pin all 11' (sync of litlfred/WHO smart-pcmt, WHO smart-pcmt#8)"
+              "on": "2026-11-21",
+              "ref": "559988aa5aa0ff2ed5d8186545e9a2fcc08925b6",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
@@ -169,7 +169,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "6dd108f5cdb33eae9482a4b55f1f88b3f98ecb4b",
+          "ref": "8691b09acc175c43e569a51e36dac14412d8b8cf",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -181,9 +181,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-19",
-              "ref": "6dd108f5cdb33eae9482a4b55f1f88b3f98ecb4b",
-              "evidence": "litlfred 2026-11-19: re-pin and merge window to ~11:56Z; card in session session_01EucfRoHwp2Hn6RCDjSj44u, 'Yes, re-pin all 11' (sync of litlfred/WHO smart-pcmt, WHO smart-pcmt#8)"
+              "on": "2026-11-21",
+              "ref": "8691b09acc175c43e569a51e36dac14412d8b8cf",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
@@ -241,7 +241,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "fe66c5f8ed87e0eface26fe2951532ab9bd12b4b",
+          "ref": "0ce33a4603dbb9fb86906720e8305fc36904ec48",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -277,9 +277,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-19",
-              "ref": "fe66c5f8ed87e0eface26fe2951532ab9bd12b4b",
-              "evidence": "litlfred 2026-11-19: re-pin and merge window to ~11:56Z; card in session session_01EucfRoHwp2Hn6RCDjSj44u, 'Yes, re-pin all 11' (sync of litlfred/WHO smart-pcmt, WHO smart-pcmt#8)"
+              "on": "2026-11-21",
+              "ref": "0ce33a4603dbb9fb86906720e8305fc36904ec48",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
@@ -342,7 +342,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-pc",
-          "ref": "e4fa8053f9ec1d15a250df7b1e71f9fe7035ff43",
+          "ref": "e9e0d07ace5452767f9d34a45cc0bf194d0719b7",
           "overrides": {
             "dth-pc": {
               "directories": [
@@ -384,9 +384,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-19",
-              "ref": "e4fa8053f9ec1d15a250df7b1e71f9fe7035ff43",
-              "evidence": "litlfred 2026-11-19: re-pin and merge window to ~11:56Z; card in session session_01EucfRoHwp2Hn6RCDjSj44u, 'Yes, re-pin all 11' (sync of litlfred/WHO smart-pcmt, WHO smart-pcmt#8)"
+              "on": "2026-11-21",
+              "ref": "e9e0d07ace5452767f9d34a45cc0bf194d0719b7",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
