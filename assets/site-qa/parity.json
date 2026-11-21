@@ -4,35 +4,6 @@
  "shortfall": [],
  "droppedByRuling": [],
  "current": {
-  "pages": 1134,
-  "counts": {
-   "siteNav": 0,
-   "search": 1044,
-   "navbarRow": 110,
-   "rail": 1044,
-   "translationMeta": 1044
-  },
-  "dirs": [
-   "artifact",
-   "assets",
-   "cat-harness",
-   "en",
-   "fhir-artifact-index",
-   "id-lookup",
-   "openapi",
-   "smart-base"
-  ],
-  "index": [
-   "search",
-   "navbarRow",
-   "rail",
-   "translationMeta"
-  ],
-  "stamp": {
-   "present": true
-  }
- },
- "candidate": {
   "pages": 1157,
   "counts": {
    "siteNav": 0,
@@ -64,15 +35,47 @@
    "present": true
   }
  },
+ "candidate": {
+  "pages": 1162,
+  "counts": {
+   "siteNav": 0,
+   "search": 1072,
+   "navbarRow": 133,
+   "rail": 1072,
+   "translationMeta": 1072
+  },
+  "dirs": [
+   "artifact",
+   "assets",
+   "cat-harness",
+   "en",
+   "fhir-artifact-index",
+   "id-lookup",
+   "openapi",
+   "payload",
+   "slices",
+   "smart-base",
+   "v0"
+  ],
+  "index": [
+   "search",
+   "navbarRow",
+   "rail",
+   "translationMeta"
+  ],
+  "stamp": {
+   "present": true
+  }
+ },
  "baseline": {
   "features": {
-   "pages": 1157,
+   "pages": 1162,
    "counts": {
     "siteNav": 0,
-    "search": 1067,
+    "search": 1072,
     "navbarRow": 133,
-    "rail": 1067,
-    "translationMeta": 1067
+    "rail": 1072,
+    "translationMeta": 1072
    },
    "dirs": [
     "artifact",
@@ -97,6 +100,6 @@
     "present": true
    }
   },
-  "from": "b4fc4769c98d"
+  "from": "378bb23919ac"
  }
 }

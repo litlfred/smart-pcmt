@@ -19,7 +19,7 @@
         "@id": "https://litlfred.github.io/smart-base/"
       },
       {
-        "@id": "https://litlfred.github.io/smart-ra/"
+        "@id": "https://worldhealthorganization.github.io/smart-ra/"
       },
       {
         "@id": "https://worldhealthorganization.github.io/dth-sc/"
@@ -28,7 +28,7 @@
     "additionalProperty": {
       "@type": "PropertyValue",
       "name": "pinnedCommit",
-      "value": "e4fa8053f9ec1d15a250df7b1e71f9fe7035ff43"
+      "value": "e9e0d07ace5452767f9d34a45cc0bf194d0719b7"
     }
   },
   "isPartOf": {
@@ -37,6 +37,6 @@
   },
   "significantLink": [
     "https://litlfred.github.io/folio-assistant/dth-pc/",
-    "https://github.com/litlfred/dth-pc/tree/e4fa8053f9ec1d15a250df7b1e71f9fe7035ff43"
+    "https://github.com/litlfred/dth-pc/tree/e9e0d07ace5452767f9d34a45cc0bf194d0719b7"
   ]
 }
