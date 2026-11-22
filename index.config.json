@@ -290,7 +290,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "c6b8fc5c983a5f8760099080eeb757772b1311a2",
+          "ref": "bf86518e088f3ce634f5515e667e033f0d1ab9f9",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -329,8 +329,8 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-21",
-              "ref": "c6b8fc5c983a5f8760099080eeb757772b1311a2",
+              "on": "2026-11-22",
+              "ref": "bf86518e088f3ce634f5515e667e033f0d1ab9f9",
               "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
@@ -342,7 +342,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-pc",
-          "ref": "66a90f54649e90d5c628a3be8ed5549ebf70571e",
+          "ref": "423a39c36b10d06d7abf7efc54c953e808640636",
           "overrides": {
             "dth-pc": {
               "directories": [
@@ -384,8 +384,8 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-21",
-              "ref": "66a90f54649e90d5c628a3be8ed5549ebf70571e",
+              "on": "2026-11-22",
+              "ref": "423a39c36b10d06d7abf7efc54c953e808640636",
               "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
