@@ -49,12 +49,12 @@
     {
       "harness": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "ref": "bf86518e088f3ce634f5515e667e033f0d1ab9f9"
+      "ref": "c0323569793e9e4c006d15f0c2d43b1ac956193b"
     },
     {
       "harness": "dth-pc",
       "repository": "litlfred/dth-pc",
-      "ref": "423a39c36b10d06d7abf7efc54c953e808640636"
+      "ref": "9213885c15bba1924defa5c8b36546b11c672042"
     }
   ],
   "instances": [
@@ -235,7 +235,7 @@
     {
       "instance": "dth-pc",
       "repository": "litlfred/dth-pc",
-      "sha": "423a39c36b10d06d7abf7efc54c953e808640636",
+      "sha": "9213885c15bba1924defa5c8b36546b11c672042",
       "upstreamRoot": "",
       "path": "dth-pc",
       "via": "dth-pc",
@@ -264,14 +264,14 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-22",
-        "ref": "423a39c36b10d06d7abf7efc54c953e808640636",
+        "ref": "9213885c15bba1924defa5c8b36546b11c672042",
         "approver": "unverified"
       }
     },
     {
       "instance": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "sha": "bf86518e088f3ce634f5515e667e033f0d1ab9f9",
+      "sha": "c0323569793e9e4c006d15f0c2d43b1ac956193b",
       "upstreamRoot": "",
       "path": "dth-sc",
       "via": "dth-sc",
@@ -300,7 +300,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-22",
-        "ref": "bf86518e088f3ce634f5515e667e033f0d1ab9f9",
+        "ref": "c0323569793e9e4c006d15f0c2d43b1ac956193b",
         "approver": "unverified"
       }
     },
