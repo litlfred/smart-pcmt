@@ -28,7 +28,7 @@
     "additionalProperty": {
       "@type": "PropertyValue",
       "name": "pinnedCommit",
-      "value": "423a39c36b10d06d7abf7efc54c953e808640636"
+      "value": "9213885c15bba1924defa5c8b36546b11c672042"
     }
   },
   "isPartOf": {
@@ -37,6 +37,6 @@
   },
   "significantLink": [
     "https://litlfred.github.io/folio-assistant/dth-pc/",
-    "https://github.com/litlfred/dth-pc/tree/423a39c36b10d06d7abf7efc54c953e808640636"
+    "https://github.com/litlfred/dth-pc/tree/9213885c15bba1924defa5c8b36546b11c672042"
   ]
 }
